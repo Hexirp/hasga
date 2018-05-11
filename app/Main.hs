@@ -1,6 +1,6 @@
 module Main where
  import Prelude
- import Data.IORef (IORef, newIORef, readIORef, writeIORef)
+ import Data.IORef (IORef, newIORef, readIORef, modifyIORef')
  import System.IO (stdin, stdout, BufferMode(..), hSetBuffering)
  import Control.Exception (evaluate)
  import Data.Word (Word64)
