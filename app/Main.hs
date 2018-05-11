@@ -96,7 +96,5 @@ module Main where
 
  fetch :: IORef Word64 -> IO Word64
  fetch ref = do
-  w  <- readIORef ref
-  w' <- evaluate (xorshift64 w)
-  writeIORef ref w'
-  return w'
+  modifyIORef' ref xorshift64
+  readIORef ref
