@@ -21,7 +21,6 @@ description:         Please see the README on GitHub at <https://github.com/Hexi
 
 dependencies:
 - base >= 4.7 && < 4.12
-- gloss
 
 library:
   source-dirs: src
@@ -34,7 +33,6 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    - -O2
     dependencies:
     - hasga
 
