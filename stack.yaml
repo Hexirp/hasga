@@ -34,7 +34,9 @@ resolver: lts-11.13
 #  - auto-update
 #  - wai
 packages:
-- .
+- location:
+  git: git@github.com:benl23x5/gloss.git
+  commit: baf289dcd9249a5ffdf9613f4299ca02ab31de36
 # Dependency packages to be pulled from upstream that are not in the resolver
 # using the same syntax as the packages field.
 # (e.g., acme-missiles-0.3)
