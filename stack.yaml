@@ -35,7 +35,7 @@ resolver: lts-11.13
 #  - wai
 packages:
 - location:
-    git: git@github.com:thalerjonathan/gloss.git
+    git: https://github.com/benl23x5/gloss.git
     commit: baf289dcd9249a5ffdf9613f4299ca02ab31de36
   subdirs:
   - gloss
