@@ -34,16 +34,16 @@ resolver: lts-11.13
 #  - auto-update
 #  - wai
 packages:
-- location:
-    git: https://github.com/thalerjonathan/gloss.git
-    commit: baf289dcd9249a5ffdf9613f4299ca02ab31de36
-  subdirs:
-  - gloss
+- .
 
 # Dependency packages to be pulled from upstream that are not in the resolver
 # using the same syntax as the packages field.
 # (e.g., acme-missiles-0.3)
-# extra-deps: []
+extra-deps:
+- github: thalerjonathan/gloss
+  commit: baf289dcd9249a5ffdf9613f4299ca02ab31de36
+  subdirs:
+  - gloss
 
 # Override default flag values for local packages and extra-deps
 flags:
