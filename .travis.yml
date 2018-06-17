@@ -9,10 +9,6 @@ addons:
   apt:
     packages:
       - libgmp-dev
-      - libxrandr-dev
-      - libxinerama-dev
-      - libxcursor-dev
-      - libxi-dev
 
 before_install:
   - mkdir -p ~/.local/bin

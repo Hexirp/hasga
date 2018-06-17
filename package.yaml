@@ -35,7 +35,6 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - hasga
-    - gloss
 
 tests:
   hasga-test:
