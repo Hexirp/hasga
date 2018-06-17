@@ -40,6 +40,7 @@ packages:
 # using the same syntax as the packages field.
 # (e.g., acme-missiles-0.3)
 extra-deps:
+- GLFW-b-3.2.1.0
 - github: thalerjonathan/gloss
   commit: baf289dcd9249a5ffdf9613f4299ca02ab31de36
   subdirs:
