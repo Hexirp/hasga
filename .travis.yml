@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
       - libgmp-dev
+      - libsdl2
 
 before_install:
   - mkdir -p ~/.local/bin
