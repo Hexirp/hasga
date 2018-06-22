@@ -4,7 +4,7 @@ module Main where
  import Graphics.Gloss
 
  main :: IO ()
- main = simulate di white sp 0 vi (\_ _ m -> m + 0.05)
+ main = simulate di white sp 0 vi (\_ _ m -> m + 0.2)
 
  di :: Display
  di = InWindow "I see you." (400, 400) (200, 200)
