@@ -4,7 +4,14 @@ module Main where
  import Graphics.Gloss
 
  main :: IO ()
- main = display (InWindow "Hello, World!" (400, 150) (10, 10)) white picture
+ main = simulate di white 0 vi (\_ _ m -> m + 0.05)
 
- picture :: Picture
- picture = Translate (-170) (-20) $ Scale 0.5 0.5 $ Text "Hello, World"
+ di :: Display
+ di = InWindow "I see you." (400, 400) (200, 200)
+
+ vi :: Float -> Picture
+ vi m = Rotate m $ Polygon [
+  (0, 0),
+  (0, 10),
+  (10, 10),
+  (10, 0)]
