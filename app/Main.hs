@@ -84,11 +84,16 @@ module Main where
 
  -- | View state of the game
  viewGameState :: GameState -> String
- viewGameState a = intercalate "\n" f
+ viewGameState a = f xv
   where
    b2c :: Bool -> Char
    b2c x = if x then '#' else '-'
-   f :: [[Char]]
-   f = [ g x | x <- [0..63] ]
-   g :: Word8 -> [Char]
-   g x = [ b2c $ a ! (x, y) | y <- [0..63] ]
+   xv :: [[Bool]]
+   xv = [ g x | x <- [0..63] ]
+   yv :: Word8 -> [Bool]
+   yv x = [ a ! (x, y) | y <- [0..63] ]
+   f :: [[Bool]] -> String
+   f []       = ""
+   f (x : xs) = g x ++ "\n" ++ f xs
+   g :: [Bool] -> String
+   g = map b2c
