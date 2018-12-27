@@ -27,7 +27,15 @@ module Main where
 
  -- | Initial state of the game
  newGameState :: GameState
- newGameState = arrayByIndex fieldSize f
+ newGameState = arrayByIndex fieldSize (uncurry f)
   where
-   f :: (Word8, Word8) -> Bool
-   f (x, y) = undefined
+   --  #
+   --   #
+   -- ###
+   f :: Word8 -> Word8 -> Bool
+   f 0 1 = True
+   f 1 2 = True
+   f 2 0 = True
+   f 2 1 = True
+   f 2 2 = True
+   f _ _ = False
