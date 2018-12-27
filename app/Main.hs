@@ -2,6 +2,8 @@ module Main where
 
  import Prelude
 
+ import Control.Exception (evaluate)
+
  import Data.List (intercalate)
 
  import Data.Word
@@ -10,10 +12,8 @@ module Main where
  import Data.Array.IArray
  import Data.Array.Unboxed
 
- import Data.IORef
-
  main :: IO ()
- main = loop $ newIORef newGameState
+ main = loop newGameState
 
  loop :: GameState -> IO ()
  loop a = do
