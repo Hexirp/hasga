@@ -30,4 +30,4 @@ module Main where
  newGameState = arrayByIndex fieldSize f
   where
    f :: (Word8, Word8) -> Bool
-   f x y = undefined
+   f (x, y) = undefined
