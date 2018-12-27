@@ -10,8 +10,17 @@ module Main where
  import Data.Array.IArray
  import Data.Array.Unboxed
 
+ import Data.IORef
+
  main :: IO ()
- main = return ()
+ main = loop $ newIORef newGameState
+
+ loop :: GameState -> IO ()
+ loop a = do
+  v <- evaluate $ viewGameState a
+  print v
+  b <- evaluate $ updateGameState a
+  loop b
 
  -- xy-.
  -- z-w.
