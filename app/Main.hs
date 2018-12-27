@@ -9,6 +9,9 @@ module Main where
  import Data.Array.IArray
  import Data.Array.Unboxed
 
+ main :: IO ()
+ main = return ()
+
  type GameState = UArray (Word8, Word8) Bool
 
  newGameState :: GameState
