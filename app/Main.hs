@@ -89,7 +89,7 @@ module Main where
    b2c :: Bool -> Char
    b2c x = if x then '#' else '-'
    xv :: [[Bool]]
-   xv = [ g x | x <- [0..63] ]
+   xv = [ yv x | x <- [0..63] ]
    yv :: Word8 -> [Bool]
    yv x = [ a ! (x, y) | y <- [0..63] ]
    f :: [[Bool]] -> String
