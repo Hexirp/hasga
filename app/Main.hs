@@ -3,6 +3,7 @@ module Main where
  import Prelude
 
  import Control.Exception (evaluate)
+ import Control.Concurrent (threadDelay)
 
  import Data.List (intercalate)
 
@@ -17,6 +18,7 @@ module Main where
 
  loop :: GameState -> IO ()
  loop a = do
+  threadDelay $ 200 * 1000
   v <- evaluate $ viewGameState a
   putStrLn v
   b <- evaluate $ updateGameState a
