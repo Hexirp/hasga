@@ -13,8 +13,12 @@ module Main where
  import Data.Array.IArray
  import Data.Array.Unboxed
 
+ import System.IO
+
  main :: IO ()
- main = loop newGameState
+ main = do
+  hSetBuffering stdout NoBuffering
+  loop newGameState
 
  loop :: GameState -> IO ()
  loop a = do
