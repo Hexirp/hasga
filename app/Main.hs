@@ -2,6 +2,8 @@ module Main where
 
  import Prelude
 
+ import Data.List (intercalate)
+
  import Data.Word
 
  import Data.Ix
@@ -73,9 +75,11 @@ module Main where
 
  -- | View state of the game
  viewGameState :: GameState -> String
- viewGameState a = intercalate "\n" [ f x | x <- [0..63] ]
+ viewGameState a = intercalate "\n" f
   where
    b2c :: Bool -> Char
    b2c x = if x then '#' else '-'
-   f :: Word8 -> String
-   f x = [ a ! (x, y) | y <- [0..63] ]
+   f :: [[Char]]
+   f = [ g x | x <- [0..63] ]
+   g :: Word8 -> [Char]
+   g x = [ b2c $ a ! (x, y) | y <- [0..63] ]
