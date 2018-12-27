@@ -22,12 +22,12 @@ module Main where
  arrayByIndex bd f = array bd [ (i, f i) | i <- range bd ]
 
  -- | Size of the field
- fielsSize :: ((Word8, Word8), (Word8, Word8))
+ fieldSize :: ((Word8, Word8), (Word8, Word8))
  fieldSize = ((0, 0), (63, 63))
 
  -- | Initial state of the game
  newGameState :: GameState
- newGameState = arrayByIndex boundsField f
+ newGameState = arrayByIndex fieldSize f
   where
    f :: (Word8, Word8) -> Bool
    f x y = undefined
