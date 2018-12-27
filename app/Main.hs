@@ -50,11 +50,11 @@ module Main where
 
  -- | Width of x
  xWidth :: Word8
- xWidth = 32
+ xWidth = 16
 
  -- | Width of y
  yWidth :: Word8
- yWidth = 32
+ yWidth = 17
 
  -- | Size of the field
  fieldSize :: ((Word8, Word8), (Word8, Word8))
