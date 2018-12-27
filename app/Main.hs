@@ -18,7 +18,7 @@ module Main where
  loop :: GameState -> IO ()
  loop a = do
   v <- evaluate $ viewGameState a
-  print v
+  putStrLn v
   b <- evaluate $ updateGameState a
   loop b
 
