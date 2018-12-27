@@ -1,20 +1,15 @@
 module Main where
+
  import Prelude
 
- import Graphics.Gloss
+ import Data.Word
 
- main :: IO ()
- main = simulate di white sp 0 vi (\_ _ m -> m + 0.2)
+ import Data.Ix
+ import Data.Array
+ import Data.Array.IArray
+ import Data.Array.Unboxed
 
- di :: Display
- di = InWindow "I see you." (400, 400) (200, 200)
+ type GameState = UArray (Word8, Word8) Bool
 
- sp :: Int
- sp = 30
-
- vi :: Float -> Picture
- vi m = Rotate m $ Polygon [
-  (0, 0),
-  (0, 50),
-  (50, 50),
-  (50, 0)]
+ newGameState :: GameState
+ newGameState = undefined
