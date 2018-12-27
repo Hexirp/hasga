@@ -13,6 +13,7 @@ module Main where
 
  type GameState = UArray (Word8, Word8) Bool
 
+ -- | Build array by function to compute elements from index
  arrayByIndex
   :: (IArray a e, Ix i)
   => (i, i) -- ^ bounds of the array: (lower, highest)
@@ -20,5 +21,13 @@ module Main where
   -> a i e
  arrayByIndex bd f = array bd [ (i, f i) | i <- range bd ]
 
+ -- | Size of the field
+ fielsSize :: ((Word8, Word8), (Word8, Word8))
+ fieldSize = ((0, 0), (63, 63))
+
+ -- | Initial state of the game
  newGameState :: GameState
- newGameState = undefined
+ newGameState = arrayByIndex boundsField f
+  where
+   f :: (Word8, Word8) -> Bool
+   f x y = undefined
