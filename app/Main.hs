@@ -70,3 +70,12 @@ module Main where
      if n4 then n == 2 || n == 3 else n == 3
    g :: (Word8, Word8) -> Bool
    g (x, y) = a ! (x `mod` 64, y `mod` 64)
+
+ -- | View state of the game
+ viewGameState :: GameState -> String
+ viewGameState a = intercalate "\n" [ f x | x <- [0..63] ]
+  where
+   b2c :: Bool -> Char
+   b2c x = if x then '#' else '-'
+   f :: Word8 -> String
+   f x = [ a ! (x, y) | y <- [0..63] ]
