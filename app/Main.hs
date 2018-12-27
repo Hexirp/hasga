@@ -22,7 +22,7 @@ module Main where
 
  loop :: GameState -> IO ()
  loop a = do
-  threadDelay $ 50 * 1000
+  threadDelay $ 100 * 1000
   v <- evaluate $ viewGameState a
   putStrLn v
   b <- evaluate $ updateGameState a
@@ -50,7 +50,7 @@ module Main where
 
  -- | Size of the field
  fieldSize :: ((Word8, Word8), (Word8, Word8))
- fieldSize = ((0, 0), (15, 15))
+ fieldSize = ((0, 0), (63, 63))
 
  -- | Initial state of the game
  newGameState :: GameState
@@ -86,7 +86,7 @@ module Main where
     in
      if n4 then n == 2 || n == 3 else n == 3
    g :: (Word8, Word8) -> Bool
-   g (x, y) = a ! (x `mod` 16, y `mod` 16)
+   g (x, y) = a ! (x `mod` 64, y `mod` 64)
 
  -- | View state of the game
  viewGameState :: GameState -> String
@@ -95,9 +95,9 @@ module Main where
    b2c :: Bool -> Char
    b2c x = if x then '#' else '-'
    xv :: [[Bool]]
-   xv = [ yv x | x <- [0..15] ]
+   xv = [ yv x | x <- [0..63] ]
    yv :: Word8 -> [Bool]
-   yv x = [ a ! (x, y) | y <- [0..15] ]
+   yv x = [ a ! (x, y) | y <- [0..63] ]
    f :: [[Bool]] -> String
    f []       = ""
    f (x : xs) = g x ++ "\n" ++ f xs
