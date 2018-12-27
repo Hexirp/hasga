@@ -5,7 +5,6 @@ module Main where
  import Data.Word
 
  import Data.Ix
- import Data.Array
  import Data.Array.IArray
  import Data.Array.Unboxed
 
