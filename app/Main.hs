@@ -11,6 +11,16 @@ module Main where
  main :: IO ()
  main = return ()
 
+ -- xy-.
+ -- z-w.
+ -- -v-.
+ -- ....
+ --
+ -- x = (0, 0)
+ -- y = (0, 1)
+ -- z = (1, 0)
+ -- w = (1, 2)
+ -- v = (2, 1)
  type GameState = UArray (Word8, Word8) Bool
 
  -- | Build array by function to compute elements from index
@@ -29,8 +39,8 @@ module Main where
  newGameState :: GameState
  newGameState = arrayByIndex fieldSize (uncurry f)
   where
-   --  #
-   --   #
+   -- -#-
+   -- --#
    -- ###
    f :: Word8 -> Word8 -> Bool
    f 0 1 = True
