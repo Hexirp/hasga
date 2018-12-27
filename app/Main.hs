@@ -94,7 +94,7 @@ module Main where
     in
      if n4 then n == 2 || n == 3 else n == 3
    g :: (Word8, Word8) -> Bool
-   g (x, y) = a ! (x `mod` xWidth, y `mod` xWidth)
+   g (x, y) = a ! (x `mod` xWidth, y `mod` yWidth)
 
  -- | View state of the game
  viewGameState :: GameState -> String
