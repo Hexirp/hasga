@@ -110,4 +110,5 @@ module Main where
    f []       = ""
    f (x : xs) = g x ++ "\n" ++ f xs
    g :: [Bool] -> String
-   g = map b2c
+   g []       = ""
+   g (x : xs) = ' ' : b2c x : g xs
