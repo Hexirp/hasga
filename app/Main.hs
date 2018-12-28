@@ -1,4 +1,4 @@
-{-# OPTIONS -ddump-to-file -ddump-asm -O #-}
+{-# OPTIONS -O #-}
 
 module Main where
 
@@ -23,10 +23,8 @@ module Main where
   loop newGameState $ 4 * 1000
 
  loop :: GameState -> Int -> IO ()
- loop a 0 = return ()
- loop a i = do
-  putStrLn (viewGameState a)
-  loop (updateGameState a) (i - 1)
+ loop a 0 = putStrLn (viewGameState a)
+ loop a i = loop (updateGameState a) (i - 1)
 
  -- xy-.
  -- z-w.
