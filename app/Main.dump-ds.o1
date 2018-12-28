@@ -1,9 +1,9 @@
 
 ==================== Desugar (after optimization) ====================
-2018-12-28 10:48:18.4936642 UTC
+2018-12-28 10:54:57.7793625 UTC
 
 Result size of Desugar (after optimization)
-  = {terms: 469, types: 342, coercions: 0, joins: 3/9}
+  = {terms: 475, types: 347, coercions: 0, joins: 3/9}
 
 -- RHS size: {terms: 28, types: 41, coercions: 0, joins: 0/0}
 arrayByIndex
@@ -12,32 +12,32 @@ arrayByIndex
      (i, i) -> (i -> e) -> a i e
 [LclIdX]
 arrayByIndex
-  = \ (@ (a_a4ww :: * -> * -> *))
-      (@ e_a4wx)
-      (@ i_a4wy)
-      ($dIArray_a4wA :: IArray a_a4ww e_a4wx)
-      ($dIx_a4wB :: Ix i_a4wy)
-      (bd_a24R :: (i_a4wy, i_a4wy))
-      (f_a24S :: i_a4wy -> e_a4wx) ->
+  = \ (@ (a_a4wv :: * -> * -> *))
+      (@ e_a4ww)
+      (@ i_a4wx)
+      ($dIArray_a4wz :: IArray a_a4wv e_a4ww)
+      ($dIx_a4wA :: Ix i_a4wx)
+      (bd_a24Q :: (i_a4wx, i_a4wx))
+      (f_a24R :: i_a4wx -> e_a4ww) ->
       array
-        @ a_a4ww
-        @ e_a4wx
-        @ i_a4wy
-        $dIArray_a4wA
-        $dIx_a4wB
-        bd_a24R
+        @ a_a4wv
+        @ e_a4ww
+        @ i_a4wx
+        $dIArray_a4wz
+        $dIx_a4wA
+        bd_a24Q
         (GHC.Base.build
-           @ (i_a4wy, e_a4wx)
-           (\ (@ a_d4F8)
-              (c_d4F9 [OS=OneShot] :: (i_a4wy, e_a4wx) -> a_d4F8 -> a_d4F8)
-              (n_d4Fa [OS=OneShot] :: a_d4F8) ->
+           @ (i_a4wx, e_a4ww)
+           (\ (@ a_d4Fb)
+              (c_d4Fc [OS=OneShot] :: (i_a4wx, e_a4ww) -> a_d4Fb -> a_d4Fb)
+              (n_d4Fd [OS=OneShot] :: a_d4Fb) ->
               GHC.Base.foldr
-                @ i_a4wy
-                @ a_d4F8
-                (\ (ds_d4Fc :: i_a4wy) (ds_d4Fb [OS=OneShot] :: a_d4F8) ->
-                   c_d4F9 (ds_d4Fc, f_a24S ds_d4Fc) ds_d4Fb)
-                n_d4Fa
-                (range @ i_a4wy $dIx_a4wB bd_a24R)))
+                @ i_a4wx
+                @ a_d4Fb
+                (\ (ds_d4Ff :: i_a4wx) (ds_d4Fe [OS=OneShot] :: a_d4Fb) ->
+                   c_d4Fc (ds_d4Ff, f_a24R ds_d4Ff) ds_d4Fe)
+                n_d4Fd
+                (range @ i_a4wx $dIx_a4wA bd_a24Q)))
 
 -- RHS size: {terms: 5, types: 0, coercions: 0, joins: 0/0}
 Main.$trModule :: GHC.Types.Module
@@ -47,9 +47,9 @@ Main.$trModule
       (GHC.Types.TrNameS "main"#) (GHC.Types.TrNameS "Main"#)
 
 -- RHS size: {terms: 3, types: 2, coercions: 0, joins: 0/0}
-$dIx_a4we :: Ix (Int8, Int8)
+$dIx_a4wd :: Ix (Int8, Int8)
 [LclId]
-$dIx_a4we
+$dIx_a4wd
   = GHC.Arr.$fIx(,) @ Int8 @ Int8 GHC.Int.$fIxInt8 GHC.Int.$fIxInt8
 
 -- RHS size: {terms: 3, types: 1, coercions: 0, joins: 0/0}
@@ -81,38 +81,38 @@ fieldSize
 updateGameState :: GameState -> GameState
 [LclIdX]
 updateGameState
-  = \ (a_a25b :: GameState) ->
+  = \ (a_a25a :: GameState) ->
       let {
-        g_a25d :: (Int8, Int8) -> Bool
+        g_a25c :: (Int8, Int8) -> Bool
         [LclId]
-        g_a25d
-          = \ (ds_d4FS :: (Int8, Int8)) ->
-              case ds_d4FS of { (x_a3ro, y_a3rp) ->
+        g_a25c
+          = \ (ds_d4FV :: (Int8, Int8)) ->
+              case ds_d4FV of { (x_a3rn, y_a3ro) ->
               ! @ UArray
                 @ Bool
                 @ (Int8, Int8)
                 Data.Array.Base.$fIArrayUArrayBool
-                $dIx_a4we
-                a_a25b
-                (mod @ Int8 GHC.Int.$fIntegralInt8 x_a3ro xWidth,
-                 mod @ Int8 GHC.Int.$fIntegralInt8 y_a3rp yWidth)
+                $dIx_a4wd
+                a_a25a
+                (mod @ Int8 GHC.Int.$fIntegralInt8 x_a3rn xWidth,
+                 mod @ Int8 GHC.Int.$fIntegralInt8 y_a3ro yWidth)
               } } in
       arrayByIndex
         @ UArray
         @ Bool
         @ (Int8, Int8)
         Data.Array.Base.$fIArrayUArrayBool
-        $dIx_a4we
+        $dIx_a4wd
         fieldSize
         (uncurry
            @ Int8
            @ Int8
            @ Bool
-           (\ (x_a25e :: Int8) (y_a25f :: Int8) ->
+           (\ (x_a25d :: Int8) (y_a25e :: Int8) ->
               let {
-                n_a25p :: Int
+                n_a25o :: Int
                 [LclId]
-                n_a25p
+                n_a25o
                   = $ @ 'GHC.Types.LiftedRep
                       @ [Bool]
                       @ Int
@@ -122,117 +122,117 @@ updateGameState
                          (id @ Bool)
                          (GHC.Base.build
                             @ Bool
-                            (\ (@ a_d4FE)
-                               (c_d4FF [OS=OneShot] :: Bool -> a_d4FE -> a_d4FE)
-                               (n_d4FG [OS=OneShot] :: a_d4FE) ->
-                               c_d4FF
-                                 (g_a25d
+                            (\ (@ a_d4FH)
+                               (c_d4FI [OS=OneShot] :: Bool -> a_d4FH -> a_d4FH)
+                               (n_d4FJ [OS=OneShot] :: a_d4FH) ->
+                               c_d4FI
+                                 (g_a25c
                                     (- @ Int8
                                        GHC.Int.$fNumInt8
-                                       x_a25e
+                                       x_a25d
                                        (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
                                      - @ Int8
                                        GHC.Int.$fNumInt8
-                                       y_a25f
+                                       y_a25e
                                        (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
-                                 (c_d4FF
-                                    (g_a25d
+                                 (c_d4FI
+                                    (g_a25c
                                        (- @ Int8
                                           GHC.Int.$fNumInt8
-                                          x_a25e
+                                          x_a25d
                                           (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
-                                        y_a25f))
-                                    (c_d4FF
-                                       (g_a25d
+                                        y_a25e))
+                                    (c_d4FI
+                                       (g_a25c
                                           (- @ Int8
                                              GHC.Int.$fNumInt8
-                                             x_a25e
+                                             x_a25d
                                              (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
                                            + @ Int8
                                              GHC.Int.$fNumInt8
-                                             y_a25f
+                                             y_a25e
                                              (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
-                                       (c_d4FF
-                                          (g_a25d
-                                             (x_a25e,
+                                       (c_d4FI
+                                          (g_a25c
+                                             (x_a25d,
                                               - @ Int8
                                                 GHC.Int.$fNumInt8
-                                                y_a25f
+                                                y_a25e
                                                 (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
-                                          (c_d4FF
-                                             (g_a25d
-                                                (x_a25e,
+                                          (c_d4FI
+                                             (g_a25c
+                                                (x_a25d,
                                                  + @ Int8
                                                    GHC.Int.$fNumInt8
-                                                   y_a25f
+                                                   y_a25e
                                                    (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
-                                             (c_d4FF
-                                                (g_a25d
+                                             (c_d4FI
+                                                (g_a25c
                                                    (+ @ Int8
                                                       GHC.Int.$fNumInt8
-                                                      x_a25e
+                                                      x_a25d
                                                       (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
                                                     - @ Int8
                                                       GHC.Int.$fNumInt8
-                                                      y_a25f
+                                                      y_a25e
                                                       (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
-                                                (c_d4FF
-                                                   (g_a25d
+                                                (c_d4FI
+                                                   (g_a25c
                                                       (+ @ Int8
                                                          GHC.Int.$fNumInt8
-                                                         x_a25e
+                                                         x_a25d
                                                          (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
-                                                       y_a25f))
-                                                   (c_d4FF
-                                                      (g_a25d
+                                                       y_a25e))
+                                                   (c_d4FI
+                                                      (g_a25c
                                                          (+ @ Int8
                                                             GHC.Int.$fNumInt8
-                                                            x_a25e
+                                                            x_a25d
                                                             (fromInteger
                                                                @ Int8 GHC.Int.$fNumInt8 1),
                                                           + @ Int8
                                                             GHC.Int.$fNumInt8
-                                                            y_a25f
+                                                            y_a25e
                                                             (fromInteger
                                                                @ Int8 GHC.Int.$fNumInt8 1)))
-                                                      n_d4FG)))))))))) } in
-              case g_a25d (x_a25e, y_a25f) of {
-                False -> == @ Int GHC.Classes.$fEqInt n_a25p (GHC.Types.I# 3#);
+                                                      n_d4FJ)))))))))) } in
+              case g_a25c (x_a25d, y_a25e) of {
+                False -> == @ Int GHC.Classes.$fEqInt n_a25o (GHC.Types.I# 3#);
                 True ->
                   ||
-                    (== @ Int GHC.Classes.$fEqInt n_a25p (GHC.Types.I# 2#))
-                    (== @ Int GHC.Classes.$fEqInt n_a25p (GHC.Types.I# 3#))
+                    (== @ Int GHC.Classes.$fEqInt n_a25o (GHC.Types.I# 2#))
+                    (== @ Int GHC.Classes.$fEqInt n_a25o (GHC.Types.I# 3#))
               }))
 
 -- RHS size: {terms: 95, types: 79, coercions: 0, joins: 0/4}
 viewGameState :: GameState -> String
 [LclIdX]
 viewGameState
-  = \ (a_a3Bo :: GameState) ->
+  = \ (a_a3Bn :: GameState) ->
       let {
-        yv_a3Br :: Int8 -> [Bool]
+        yv_a3Bq :: Int8 -> [Bool]
         [LclId]
-        yv_a3Br
-          = \ (x_a3Bw :: Int8) ->
+        yv_a3Bq
+          = \ (x_a3Bv :: Int8) ->
               GHC.Base.build
                 @ Bool
-                (\ (@ a_d4F0)
-                   (c_d4F1 [OS=OneShot] :: Bool -> a_d4F0 -> a_d4F0)
-                   (n_d4F2 [OS=OneShot] :: a_d4F0) ->
+                (\ (@ a_d4F3)
+                   (c_d4F4 [OS=OneShot] :: Bool -> a_d4F3 -> a_d4F3)
+                   (n_d4F5 [OS=OneShot] :: a_d4F3) ->
                    GHC.Base.foldr
                      @ Int8
-                     @ a_d4F0
-                     (\ (ds_d4F4 :: Int8) (ds_d4F3 [OS=OneShot] :: a_d4F0) ->
-                        c_d4F1
+                     @ a_d4F3
+                     (\ (ds_d4F7 :: Int8) (ds_d4F6 [OS=OneShot] :: a_d4F3) ->
+                        c_d4F4
                           (! @ UArray
                              @ Bool
                              @ (Int8, Int8)
                              Data.Array.Base.$fIArrayUArrayBool
-                             $dIx_a4we
-                             a_a3Bo
-                             (x_a3Bw, ds_d4F4))
-                          ds_d4F3)
-                     n_d4F2
+                             $dIx_a4wd
+                             a_a3Bn
+                             (x_a3Bv, ds_d4F7))
+                          ds_d4F6)
+                     n_d4F5
                      (enumFromTo
                         @ Int8
                         GHC.Int.$fEnumInt8
@@ -242,52 +242,52 @@ viewGameState
                            yWidth
                            (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))) } in
       let {
-        b2c_a3Bp :: Bool -> Char
+        b2c_a3Bo :: Bool -> Char
         [LclId]
-        b2c_a3Bp
-          = \ (x_a3Bu :: Bool) ->
-              case x_a3Bu of {
+        b2c_a3Bo
+          = \ (x_a3Bt :: Bool) ->
+              case x_a3Bt of {
                 False -> GHC.Types.C# '-'#;
                 True -> GHC.Types.C# '#'#
               } } in
       letrec {
-        g_a3Bt [Occ=LoopBreaker] :: [Bool] -> String
+        g_a3Bs [Occ=LoopBreaker] :: [Bool] -> String
         [LclId]
-        g_a3Bt
-          = \ (ds_d4EK :: [Bool]) ->
-              case ds_d4EK of {
+        g_a3Bs
+          = \ (ds_d4EN :: [Bool]) ->
+              case ds_d4EN of {
                 [] -> GHC.Types.[] @ Char;
-                : x_a3BA xs_a3BB ->
+                : x_a3Bz xs_a3BA ->
                   GHC.Types.:
                     @ Char
                     (GHC.Types.C# ' '#)
-                    (GHC.Types.: @ Char (b2c_a3Bp x_a3BA) (g_a3Bt xs_a3BB))
+                    (GHC.Types.: @ Char (b2c_a3Bo x_a3Bz) (g_a3Bs xs_a3BA))
               }; } in
       letrec {
-        f_a3Bs [Occ=LoopBreaker] :: [[Bool]] -> String
+        f_a3Br [Occ=LoopBreaker] :: [[Bool]] -> String
         [LclId]
-        f_a3Bs
-          = \ (ds_d4Ep :: [[Bool]]) ->
-              case ds_d4Ep of {
+        f_a3Br
+          = \ (ds_d4Es :: [[Bool]]) ->
+              case ds_d4Es of {
                 [] -> GHC.Types.[] @ Char;
-                : x_a3By xs_a3Bz ->
+                : x_a3Bx xs_a3By ->
                   ++
                     @ Char
-                    (g_a3Bt x_a3By)
-                    (++ @ Char (GHC.CString.unpackCString# "\n"#) (f_a3Bs xs_a3Bz))
+                    (g_a3Bs x_a3Bx)
+                    (++ @ Char (GHC.CString.unpackCString# "\n"#) (f_a3Br xs_a3By))
               }; } in
-      f_a3Bs
+      f_a3Br
         (GHC.Base.build
            @ [Bool]
-           (\ (@ a_d4ES)
-              (c_d4ET [OS=OneShot] :: [Bool] -> a_d4ES -> a_d4ES)
-              (n_d4EU [OS=OneShot] :: a_d4ES) ->
+           (\ (@ a_d4EV)
+              (c_d4EW [OS=OneShot] :: [Bool] -> a_d4EV -> a_d4EV)
+              (n_d4EX [OS=OneShot] :: a_d4EV) ->
               GHC.Base.foldr
                 @ Int8
-                @ a_d4ES
-                (\ (ds_d4EW :: Int8) (ds_d4EV [OS=OneShot] :: a_d4ES) ->
-                   c_d4ET (yv_a3Br ds_d4EW) ds_d4EV)
-                n_d4EU
+                @ a_d4EV
+                (\ (ds_d4EZ :: Int8) (ds_d4EY [OS=OneShot] :: a_d4EV) ->
+                   c_d4EW (yv_a3Bq ds_d4EZ) ds_d4EY)
+                n_d4EX
                 (enumFromTo
                    @ Int8
                    GHC.Int.$fEnumInt8
@@ -298,18 +298,24 @@ viewGameState
                       (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))))
 
 Rec {
--- RHS size: {terms: 20, types: 6, coercions: 0, joins: 0/0}
-loop [Occ=LoopBreaker] :: GameState -> Int -> IO ()
+-- RHS size: {terms: 24, types: 9, coercions: 0, joins: 0/0}
+loop [Occ=LoopBreaker] :: GameState -> Int -> String
 [LclIdX]
 loop
-  = \ (a_a24O :: GameState) (ds_d4FX :: Int) ->
-      case ds_d4FX of { GHC.Types.I# ds_d4FZ ->
-      case ds_d4FZ of {
+  = \ (a_a24N :: GameState) (ds_d4G0 :: Int) ->
+      case ds_d4G0 of { GHC.Types.I# ds_d4G2 ->
+      case ds_d4G2 of {
         __DEFAULT ->
-          loop
-            (updateGameState a_a24O)
-            (- @ Int GHC.Num.$fNumInt ds_d4FX (GHC.Types.I# 1#));
-        0# -> putStrLn (viewGameState a_a24O)
+          ++
+            @ Char
+            (viewGameState a_a24N)
+            (++
+               @ Char
+               (GHC.CString.unpackCString# "\n"#)
+               (loop
+                  (updateGameState a_a24N)
+                  (- @ Int GHC.Num.$fNumInt ds_d4G0 (GHC.Types.I# 1#))));
+        0# -> GHC.Types.[] @ Char
       }
       }
 end Rec }
@@ -323,54 +329,54 @@ newGameState
       @ Bool
       @ (Int8, Int8)
       Data.Array.Base.$fIArrayUArrayBool
-      $dIx_a4we
+      $dIx_a4wd
       fieldSize
       (uncurry
          @ Int8
          @ Int8
          @ Bool
-         (\ (ds_d4Fn :: Int8) (ds_d4Fo :: Int8) ->
+         (\ (ds_d4Fq :: Int8) (ds_d4Fr :: Int8) ->
             join {
-              fail_d4FA :: GHC.Prim.Void# -> Bool
+              fail_d4FD :: GHC.Prim.Void# -> Bool
               [LclId[JoinId(1)]]
-              fail_d4FA _ [Occ=Dead, OS=OneShot]
+              fail_d4FD _ [Occ=Dead, OS=OneShot]
                 = join {
-                    fail_d4Fy :: GHC.Prim.Void# -> Bool
+                    fail_d4FB :: GHC.Prim.Void# -> Bool
                     [LclId[JoinId(1)]]
-                    fail_d4Fy _ [Occ=Dead, OS=OneShot]
+                    fail_d4FB _ [Occ=Dead, OS=OneShot]
                       = join {
-                          fail_d4Fs :: GHC.Prim.Void# -> Bool
+                          fail_d4Fv :: GHC.Prim.Void# -> Bool
                           [LclId[JoinId(1)]]
-                          fail_d4Fs _ [Occ=Dead, OS=OneShot] = GHC.Types.False } in
+                          fail_d4Fv _ [Occ=Dead, OS=OneShot] = GHC.Types.False } in
                         case ==
                                @ Int8
                                GHC.Int.$fEqInt8
-                               ds_d4Fn
+                               ds_d4Fq
                                (fromInteger @ Int8 GHC.Int.$fNumInt8 2)
                         of {
-                          False -> jump fail_d4Fs GHC.Prim.void#;
+                          False -> jump fail_d4Fv GHC.Prim.void#;
                           True ->
                             case ==
                                    @ Int8
                                    GHC.Int.$fEqInt8
-                                   ds_d4Fo
+                                   ds_d4Fr
                                    (fromInteger @ Int8 GHC.Int.$fNumInt8 0)
                             of {
                               False ->
                                 case ==
                                        @ Int8
                                        GHC.Int.$fEqInt8
-                                       ds_d4Fo
+                                       ds_d4Fr
                                        (fromInteger @ Int8 GHC.Int.$fNumInt8 1)
                                 of {
                                   False ->
                                     case ==
                                            @ Int8
                                            GHC.Int.$fEqInt8
-                                           ds_d4Fo
+                                           ds_d4Fr
                                            (fromInteger @ Int8 GHC.Int.$fNumInt8 2)
                                     of {
-                                      False -> jump fail_d4Fs GHC.Prim.void#;
+                                      False -> jump fail_d4Fv GHC.Prim.void#;
                                       True -> GHC.Types.True
                                     };
                                   True -> GHC.Types.True
@@ -381,41 +387,41 @@ newGameState
                   case ==
                          @ Int8
                          GHC.Int.$fEqInt8
-                         ds_d4Fn
+                         ds_d4Fq
                          (fromInteger @ Int8 GHC.Int.$fNumInt8 1)
                   of {
-                    False -> jump fail_d4Fy GHC.Prim.void#;
+                    False -> jump fail_d4FB GHC.Prim.void#;
                     True ->
                       case ==
                              @ Int8
                              GHC.Int.$fEqInt8
-                             ds_d4Fo
+                             ds_d4Fr
                              (fromInteger @ Int8 GHC.Int.$fNumInt8 2)
                       of {
-                        False -> jump fail_d4Fy GHC.Prim.void#;
+                        False -> jump fail_d4FB GHC.Prim.void#;
                         True -> GHC.Types.True
                       }
                   } } in
             case ==
                    @ Int8
                    GHC.Int.$fEqInt8
-                   ds_d4Fn
+                   ds_d4Fq
                    (fromInteger @ Int8 GHC.Int.$fNumInt8 0)
             of {
-              False -> jump fail_d4FA GHC.Prim.void#;
+              False -> jump fail_d4FD GHC.Prim.void#;
               True ->
                 case ==
                        @ Int8
                        GHC.Int.$fEqInt8
-                       ds_d4Fo
+                       ds_d4Fr
                        (fromInteger @ Int8 GHC.Int.$fNumInt8 1)
                 of {
-                  False -> jump fail_d4FA GHC.Prim.void#;
+                  False -> jump fail_d4FD GHC.Prim.void#;
                   True -> GHC.Types.True
                 }
             }))
 
--- RHS size: {terms: 14, types: 8, coercions: 0, joins: 0/0}
+-- RHS size: {terms: 16, types: 11, coercions: 0, joins: 0/0}
 main :: IO ()
 [LclIdX]
 main
@@ -426,10 +432,14 @@ main
       @ ()
       (hSetBuffering stdout GHC.IO.Handle.Types.NoBuffering)
       ($ @ 'GHC.Types.LiftedRep
-         @ Int
+         @ String
          @ (IO ())
-         (loop newGameState)
-         (* @ Int GHC.Num.$fNumInt (GHC.Types.I# 4#) (GHC.Types.I# 1000#)))
+         putStrLn
+         ($ @ 'GHC.Types.LiftedRep
+            @ Int
+            @ String
+            (loop newGameState)
+            (* @ Int GHC.Num.$fNumInt (GHC.Types.I# 4#) (GHC.Types.I# 1000#))))
 
 -- RHS size: {terms: 2, types: 1, coercions: 0, joins: 0/0}
 :Main.main :: IO ()
