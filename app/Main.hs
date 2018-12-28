@@ -1,4 +1,4 @@
-{-# OPTIONS -ddump-to-file -ddump-simpl -O #-}
+{-# OPTIONS -ddump-to-file -ddump-asm -O #-}
 
 module Main where
 

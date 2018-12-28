@@ -1,0 +1,3854 @@
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0496151 UTC
+
+[]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0496151 UTC
+
+[section ""data" . Main.viewGameState1_closure" {
+     Main.viewGameState1_closure:
+         const Main.viewGameState1_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.viewGameState1_entry() //  [R1]
+         { info_tbl: [(c9b8,
+                       label: Main.viewGameState1_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9b8: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9b9; else goto c9ba;
+       c9b9: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9ba: // global
+           (_c9b5::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9b5::I64 == 0) goto c9b7; else goto c9b6;
+       c9b7: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9b6: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9b5::I64;
+           R3 = 15;
+           R2 = 0;
+           Sp = Sp - 16;
+           call GHC.Int.$w$cenumFromTo3_info(R3,
+                                             R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0652387 UTC
+
+[section ""data" . Main.viewGameState2_closure" {
+     Main.viewGameState2_closure:
+         const Main.viewGameState2_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.viewGameState2_entry() //  [R1]
+         { info_tbl: [(c9bm,
+                       label: Main.viewGameState2_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9bm: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9bn; else goto c9bo;
+       c9bn: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9bo: // global
+           (_c9bj::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9bj::I64 == 0) goto c9bl; else goto c9bk;
+       c9bl: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9bk: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9bj::I64;
+           R3 = 16;
+           R2 = 0;
+           Sp = Sp - 16;
+           call GHC.Int.$w$cenumFromTo3_info(R3,
+                                             R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0652387 UTC
+
+[section ""cstring" . Main.arrayByIndex17_bytes" {
+     Main.arrayByIndex17_bytes:
+         I8[] [41]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.074254 UTC
+
+[section ""cstring" . Main.arrayByIndex18_bytes" {
+     Main.arrayByIndex18_bytes:
+         I8[] [32,110,111,116,32,105,110,32,114,97,110,103,101,32,91,48,46,46]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.074254 UTC
+
+[section ""cstring" . Main.arrayByIndex1_bytes" {
+     Main.arrayByIndex1_bytes:
+         I8[] [69,114,114,111,114,32,105,110,32,97,114,114,97,121,32,105,110,100,101,120,59,32]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.074254 UTC
+
+[section ""data" . Main.arrayByIndex4_closure" {
+     Main.arrayByIndex4_closure:
+         const GHC.Types.I#_con_info;
+         const 76;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.074254 UTC
+
+[section ""data" . Main.arrayByIndex5_closure" {
+     Main.arrayByIndex5_closure:
+         const GHC.Types.I#_con_info;
+         const 83;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.074254 UTC
+
+[section ""data" . Main.arrayByIndex6_closure" {
+     Main.arrayByIndex6_closure:
+         const GHC.Types.I#_con_info;
+         const 31;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.074254 UTC
+
+[section ""data" . Main.arrayByIndex7_closure" {
+     Main.arrayByIndex7_closure:
+         const GHC.Types.I#_con_info;
+         const 82;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0898916 UTC
+
+[section ""cstring" . Main.arrayByIndex9_bytes" {
+     Main.arrayByIndex9_bytes:
+         I8[] [108,105,98,114,97,114,105,101,115,92,92,97,114,114,97,121,92,92,68,97,116,97,92,92,65,114,114,97,121,92,92,66,97,115,101,46,104,115]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0898916 UTC
+
+[section ""data" . Main.arrayByIndex8_closure" {
+     Main.arrayByIndex8_closure:
+         const Main.arrayByIndex8_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.arrayByIndex8_entry() //  [R1]
+         { info_tbl: [(c9bH,
+                       label: Main.arrayByIndex8_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9bH: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9bI; else goto c9bJ;
+       c9bI: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9bJ: // global
+           (_c9bE::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9bE::I64 == 0) goto c9bG; else goto c9bF;
+       c9bG: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9bF: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9bE::I64;
+           R2 = Main.arrayByIndex9_bytes;
+           Sp = Sp - 16;
+           call GHC.CString.unpackCString#_info(R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0898916 UTC
+
+[section ""cstring" . Main.arrayByIndex11_bytes" {
+     Main.arrayByIndex11_bytes:
+         I8[] [68,97,116,97,46,65,114,114,97,121,46,66,97,115,101]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0898916 UTC
+
+[section ""data" . Main.arrayByIndex10_closure" {
+     Main.arrayByIndex10_closure:
+         const Main.arrayByIndex10_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.arrayByIndex10_entry() //  [R1]
+         { info_tbl: [(c9bV,
+                       label: Main.arrayByIndex10_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9bV: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9bW; else goto c9bX;
+       c9bW: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9bX: // global
+           (_c9bS::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9bS::I64 == 0) goto c9bU; else goto c9bT;
+       c9bU: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9bT: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9bS::I64;
+           R2 = Main.arrayByIndex11_bytes;
+           Sp = Sp - 16;
+           call GHC.CString.unpackCString#_info(R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.0898916 UTC
+
+[section ""cstring" . Main.arrayByIndex13_bytes" {
+     Main.arrayByIndex13_bytes:
+         I8[] [97,114,114,97,121,45,48,46,53,46,50,46,48]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1055171 UTC
+
+[section ""data" . Main.arrayByIndex12_closure" {
+     Main.arrayByIndex12_closure:
+         const Main.arrayByIndex12_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.arrayByIndex12_entry() //  [R1]
+         { info_tbl: [(c9c9,
+                       label: Main.arrayByIndex12_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9c9: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9ca; else goto c9cb;
+       c9ca: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9cb: // global
+           (_c9c6::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9c6::I64 == 0) goto c9c8; else goto c9c7;
+       c9c8: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9c7: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9c6::I64;
+           R2 = Main.arrayByIndex13_bytes;
+           Sp = Sp - 16;
+           call GHC.CString.unpackCString#_info(R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1055171 UTC
+
+[section ""data" . Main.arrayByIndex3_closure" {
+     Main.arrayByIndex3_closure:
+         const GHC.Stack.Types.SrcLoc_con_info;
+         const Main.arrayByIndex12_closure;
+         const Main.arrayByIndex10_closure;
+         const Main.arrayByIndex8_closure;
+         const Main.arrayByIndex7_closure+1;
+         const Main.arrayByIndex6_closure+1;
+         const Main.arrayByIndex5_closure+1;
+         const Main.arrayByIndex4_closure+1;
+         const 0;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1055171 UTC
+
+[section ""cstring" . Main.arrayByIndex15_bytes" {
+     Main.arrayByIndex15_bytes:
+         I8[] [101,114,114,111,114]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1055171 UTC
+
+[section ""data" . Main.arrayByIndex14_closure" {
+     Main.arrayByIndex14_closure:
+         const Main.arrayByIndex14_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.arrayByIndex14_entry() //  [R1]
+         { info_tbl: [(c9co,
+                       label: Main.arrayByIndex14_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9co: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9cp; else goto c9cq;
+       c9cp: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9cq: // global
+           (_c9cl::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9cl::I64 == 0) goto c9cn; else goto c9cm;
+       c9cn: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9cm: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9cl::I64;
+           R2 = Main.arrayByIndex15_bytes;
+           Sp = Sp - 16;
+           call GHC.CString.unpackCString#_info(R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1237923 UTC
+
+[section ""data" . Main.arrayByIndex2_closure" {
+     Main.arrayByIndex2_closure:
+         const GHC.Stack.Types.PushCallStack_con_info;
+         const Main.arrayByIndex14_closure;
+         const Main.arrayByIndex3_closure+1;
+         const GHC.Stack.Types.EmptyCallStack_closure+1;
+         const 0;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.127786 UTC
+
+[section ""data" . lvl_r925_closure" {
+     lvl_r925_closure:
+         const GHC.Types.C#_con_info;
+         const 32;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.131781 UTC
+
+[section ""data" . lvl1_r926_closure" {
+     lvl1_r926_closure:
+         const GHC.Types.C#_con_info;
+         const 45;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1357741 UTC
+
+[section ""data" . lvl2_r927_closure" {
+     lvl2_r927_closure:
+         const GHC.Types.C#_con_info;
+         const 35;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1397691 UTC
+
+[section ""data" . g_r928_closure" {
+     g_r928_closure:
+         const g_r928_info;
+ },
+ sat_s92F_entry() //  [R1]
+         { info_tbl: [(c9cN,
+                       label: sat_s92F_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9cN: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9cO; else goto c9cP;
+       c9cO: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9cP: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           R2 = P64[R1 + 16];
+           Sp = Sp - 16;
+           call g_r928_info(R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s92E_entry() //  [R1]
+         { info_tbl: [(c9cU,
+                       label: block_c9cU_info
+                       rep:StackRep []),
+                      (c9d1,
+                       label: sat_s92E_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9d1: // global
+           if ((Sp + -24) < SpLim) (likely: False) goto c9d2; else goto c9d3;
+       c9d2: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9d3: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 24] = c9cU;
+           R1 = P64[R1 + 16];
+           Sp = Sp - 24;
+           if (R1 & 7 != 0) goto c9cU; else goto c9cV;
+       c9cV: // global
+           call (I64[R1])(R1) returns to c9cU, args: 8, res: 8, upd: 24;
+       c9cU: // global
+           if (R1 & 7 == 1) goto c9cY; else goto c9cZ;
+       c9cY: // global
+           R1 = lvl1_r926_closure+1;
+           Sp = Sp + 8;
+           call (P64[Sp])(R1) args: 24, res: 0, upd: 24;
+       c9cZ: // global
+           R1 = lvl2_r927_closure+1;
+           Sp = Sp + 8;
+           call (P64[Sp])(R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ g_r928_entry() //  [R2]
+         { info_tbl: [(c9cD,
+                       label: block_c9cD_info
+                       rep:StackRep []),
+                      (c9de,
+                       label: g_r928_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 5} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9de: // global
+           if ((Sp + -8) < SpLim) (likely: False) goto c9df; else goto c9dg;
+       c9df: // global
+           R2 = R2;
+           R1 = g_r928_closure;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9dg: // global
+           I64[Sp - 8] = c9cD;
+           R1 = R2;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9cD; else goto c9cE;
+       c9cE: // global
+           call (I64[R1])(R1) returns to c9cD, args: 8, res: 8, upd: 8;
+       c9cD: // global
+           if (R1 & 7 == 1) goto c9db; else goto c9dc;
+       c9db: // global
+           R1 = []_closure+1;
+           Sp = Sp + 8;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9dc: // global
+           Hp = Hp + 96;
+           if (Hp > HpLim) (likely: False) goto c9dn; else goto c9dm;
+       c9dn: // global
+           HpAlloc = 96;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9cD, args: 8, res: 8, upd: 8;
+       c9dm: // global
+           _s92B::P64 = P64[R1 + 6];
+           _s92C::P64 = P64[R1 + 14];
+           I64[Hp - 88] = sat_s92F_info;
+           P64[Hp - 72] = _s92C::P64;
+           I64[Hp - 64] = sat_s92E_info;
+           P64[Hp - 48] = _s92B::P64;
+           I64[Hp - 40] = :_con_info;
+           P64[Hp - 32] = Hp - 64;
+           P64[Hp - 24] = Hp - 88;
+           I64[Hp - 16] = :_con_info;
+           P64[Hp - 8] = lvl_r925_closure+1;
+           P64[Hp] = Hp - 38;
+           R1 = Hp - 14;
+           Sp = Sp + 8;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1483896 UTC
+
+[section ""cstring" . lvl3_r929_bytes" {
+     lvl3_r929_bytes:
+         I8[] [10]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1483896 UTC
+
+[section ""data" . Main.viewGameState_f_closure" {
+     Main.viewGameState_f_closure:
+         const Main.viewGameState_f_info;
+ },
+ sat_s92M_entry() //  [R1]
+         { info_tbl: [(c9dY,
+                       label: sat_s92M_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9dY: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9dZ; else goto c9e0;
+       c9dZ: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9e0: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           R2 = P64[R1 + 16];
+           Sp = Sp - 16;
+           call Main.viewGameState_f_info(R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s92N_entry() //  [R1]
+         { info_tbl: [(c9e1,
+                       label: sat_s92N_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9e1: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9e5; else goto c9e4;
+       c9e5: // global
+           HpAlloc = 24;
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9e4: // global
+           _s92K::P64 = P64[R1 + 16];
+           I64[Hp - 16] = sat_s92M_info;
+           P64[Hp] = _s92K::P64;
+           R3 = Hp - 16;
+           R2 = lvl3_r929_bytes;
+           call GHC.CString.unpackAppendCString#_info(R3,
+                                                      R2) args: 8, res: 0, upd: 8;
+     }
+ },
+ Main.viewGameState_f_entry() //  [R2]
+         { info_tbl: [(c9dK,
+                       label: block_c9dK_info
+                       rep:StackRep []),
+                      (c9ea,
+                       label: Main.viewGameState_f_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 5} }),
+                      (c9ef,
+                       label: block_c9ef_info
+                       rep:StackRep [False])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9ea: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9eb; else goto c9ec;
+       c9eb: // global
+           R2 = R2;
+           R1 = Main.viewGameState_f_closure;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9ec: // global
+           I64[Sp - 8] = c9dK;
+           R1 = R2;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9dK; else goto c9dL;
+       c9dL: // global
+           call (I64[R1])(R1) returns to c9dK, args: 8, res: 8, upd: 8;
+       c9dK: // global
+           if (R1 & 7 == 1) goto c9e7; else goto c9e8;
+       c9e7: // global
+           R1 = []_closure+1;
+           Sp = Sp + 8;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9e8: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9ei; else goto c9eh;
+       c9ei: // global
+           HpAlloc = 24;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9dK, args: 8, res: 8, upd: 8;
+       c9eh: // global
+           _s92J::P64 = P64[R1 + 6];
+           _s92K::P64 = P64[R1 + 14];
+           I64[Hp - 16] = sat_s92N_info;
+           P64[Hp] = _s92K::P64;
+           I64[Sp - 8] = c9ef;
+           R2 = _s92J::P64;
+           P64[Sp] = Hp - 16;
+           Sp = Sp - 8;
+           call g_r928_info(R2) returns to c9ef, args: 8, res: 8, upd: 8;
+       c9ef: // global
+           R3 = P64[Sp + 8];
+           R2 = R1;
+           Sp = Sp + 16;
+           call GHC.Base.++_info(R3, R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1640182 UTC
+
+[section ""data" . Main.arrayByIndex16_closure" {
+     Main.arrayByIndex16_closure:
+         const Main.arrayByIndex16_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.arrayByIndex16_entry() //  [R1]
+         { info_tbl: [(c9eF,
+                       label: Main.arrayByIndex16_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9eF: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9eG; else goto c9eH;
+       c9eG: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9eH: // global
+           (_c9eC::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9eC::I64 == 0) goto c9eE; else goto c9eD;
+       c9eE: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9eD: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9eC::I64;
+           R2 = Main.arrayByIndex17_bytes;
+           Sp = Sp - 16;
+           call GHC.CString.unpackCString#_info(R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1640182 UTC
+
+[section ""data" . Main.viewGameState3_closure" {
+     Main.viewGameState3_closure:
+         const Main.viewGameState3_info;
+         const 0;
+ },
+ sat_s92W_entry() //  [R1]
+         { info_tbl: [(c9f4,
+                       label: block_c9f4_info
+                       rep:StackRep []),
+                      (c9f6,
+                       label: sat_s92W_info
+                       rep:HeapRep 1 nonptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9f6: // global
+           if ((Sp + -24) < SpLim) (likely: False) goto c9f7; else goto c9f8;
+       c9f7: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9f8: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 24] = c9f4;
+           R4 = GHC.Types.[]_closure+1;
+           R3 = I64[R1 + 16];
+           R2 = 0;
+           Sp = Sp - 24;
+           call GHC.Show.$wshowSignedInt_info(R4,
+                                              R3,
+                                              R2) returns to c9f4, args: 8, res: 8, upd: 24;
+       c9f4: // global
+           R4 = R2;
+           R3 = R1;
+           R2 = Main.arrayByIndex16_closure;
+           Sp = Sp + 8;
+           call GHC.Base.++_$s++_info(R4, R3, R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s92X_entry() //  [R1]
+         { info_tbl: [(c9fa,
+                       label: sat_s92X_info
+                       rep:HeapRep 1 nonptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9fa: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9fe; else goto c9fd;
+       c9fe: // global
+           HpAlloc = 24;
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9fd: // global
+           _s92O::I64 = I64[R1 + 16];
+           I64[Hp - 16] = sat_s92W_info;
+           I64[Hp] = _s92O::I64;
+           R3 = Hp - 16;
+           R2 = Main.arrayByIndex18_bytes;
+           call GHC.CString.unpackAppendCString#_info(R3,
+                                                      R2) args: 8, res: 0, upd: 8;
+     }
+ },
+ sat_s92Y_entry() //  [R1]
+         { info_tbl: [(c9eU,
+                       label: block_c9eU_info
+                       rep:StackRep [True]),
+                      (c9ff,
+                       label: sat_s92Y_info
+                       rep:HeapRep 2 nonptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9ff: // global
+           if ((Sp + -32) < SpLim) (likely: False) goto c9fg; else goto c9fh;
+       c9fg: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9fh: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 32] = c9eU;
+           R4 = GHC.Types.[]_closure+1;
+           R3 = I64[R1 + 24];
+           R2 = 0;
+           I64[Sp - 24] = I64[R1 + 16];
+           Sp = Sp - 32;
+           call GHC.Show.$wshowSignedInt_info(R4,
+                                              R3,
+                                              R2) returns to c9eU, args: 8, res: 8, upd: 24;
+       c9eU: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9fk; else goto c9fj;
+       c9fk: // global
+           HpAlloc = 24;
+           R2 = R2;
+           R1 = R1;
+           call stg_gc_pp(R2, R1) returns to c9eU, args: 8, res: 8, upd: 24;
+       c9fj: // global
+           I64[Hp - 16] = sat_s92X_info;
+           I64[Hp] = I64[Sp + 8];
+           R4 = R2;
+           R3 = R1;
+           R2 = Hp - 16;
+           Sp = Sp + 16;
+           call GHC.Base.++_$s++_info(R4, R3, R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ Main.viewGameState3_entry() //  [R3, R2]
+         { info_tbl: [(c9fl,
+                       label: block_c9fl_info
+                       rep:StackRep []),
+                      (c9fn,
+                       label: Main.viewGameState3_info
+                       rep:HeapRep static { Fun {arity: 2 fun_type: ArgSpec 12} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9fn: // global
+           _s92P::I64 = R3;
+           _s92O::I64 = R2;
+           if ((Sp + -8) < SpLim) (likely: False) goto c9fo; else goto c9fp;
+       c9fp: // global
+           Hp = Hp + 32;
+           if (Hp > HpLim) (likely: False) goto c9fr; else goto c9fq;
+       c9fr: // global
+           HpAlloc = 32;
+           goto c9fo;
+       c9fo: // global
+           R3 = _s92P::I64;
+           R2 = _s92O::I64;
+           R1 = Main.viewGameState3_closure;
+           call (stg_gc_fun)(R3, R2, R1) args: 8, res: 0, upd: 8;
+       c9fq: // global
+           I64[Hp - 24] = sat_s92Y_info;
+           I64[Hp - 8] = _s92O::I64;
+           I64[Hp] = _s92P::I64;
+           I64[Sp - 8] = c9fl;
+           R3 = Hp - 24;
+           R2 = Main.arrayByIndex1_bytes;
+           Sp = Sp - 8;
+           call GHC.CString.unpackAppendCString#_info(R3,
+                                                      R2) returns to c9fl, args: 8, res: 8, upd: 8;
+       c9fl: // global
+           R3 = R1;
+           R2 = Main.arrayByIndex2_closure+2;
+           Sp = Sp + 8;
+           call GHC.Err.error_info(R3, R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1745376 UTC
+
+[section ""data" . Main.viewGameState_closure" {
+     Main.viewGameState_closure:
+         const Main.viewGameState_info;
+         const 0;
+ },
+ sat_s93X_entry() //  [R1]
+         { info_tbl: [(c9gj,
+                       label: block_c9gj_info
+                       rep:StackRep [False, False]),
+                      (c9gm,
+                       label: sat_s93X_info
+                       rep:HeapRep 3 ptrs { Thunk }),
+                      (c9gp,
+                       label: block_c9gp_info
+                       rep:StackRep [True, False, False, False, False]),
+                      (c9gu,
+                       label: block_c9gu_info
+                       rep:StackRep [False, True, False, False, False, False]),
+                      (c9gz,
+                       label: block_c9gz_info
+                       rep:StackRep [False, False, True, False, False, False, False]),
+                      (c9gE,
+                       label: block_c9gE_info
+                       rep:StackRep [False, False, True, False, False, True, False]),
+                      (c9gW,
+                       label: block_c9gW_info
+                       rep:StackRep [False, False, True, False, True, True, False]),
+                      (c9h9,
+                       label: block_c9h9_info
+                       rep:StackRep [False, True, True, False, True, True, False]),
+                      (c9he,
+                       label: block_c9he_info
+                       rep:StackRep [False, True, True, False, True, True, True]),
+                      (c9hs,
+                       label: block_c9hs_info
+                       rep:StackRep [True, True, False, True, True, True])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9gm: // global
+           if ((Sp + -80) < SpLim) (likely: False) goto c9gF; else goto c9gG;
+       c9gF: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9gG: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 40] = c9gj;
+           _s934::P64 = P64[R1 + 24];
+           _s939::P64 = P64[R1 + 32];
+           R1 = P64[R1 + 16];
+           P64[Sp - 32] = _s934::P64;
+           P64[Sp - 24] = _s939::P64;
+           Sp = Sp - 40;
+           if (R1 & 7 != 0) goto c9gj; else goto c9gk;
+       c9gk: // global
+           call (I64[R1])(R1) returns to c9gj, args: 8, res: 8, upd: 24;
+       c9gj: // global
+           I64[Sp - 24] = c9gp;
+           _s93d::P64 = P64[R1 + 15];
+           _s93f::P64 = P64[R1 + 23];
+           _s93e::I64 = I64[R1 + 31];
+           R1 = P64[R1 + 7];
+           I64[Sp - 16] = _s93e::I64;
+           P64[Sp - 8] = _s93f::P64;
+           P64[Sp] = _s93d::P64;
+           Sp = Sp - 24;
+           if (R1 & 7 != 0) goto c9gp; else goto c9gq;
+       c9gq: // global
+           call (I64[R1])(R1) returns to c9gp, args: 8, res: 8, upd: 24;
+       c9gp: // global
+           I64[Sp - 8] = c9gu;
+           _s93h::P64 = P64[R1 + 7];
+           _s93i::P64 = P64[R1 + 15];
+           R1 = P64[Sp + 24];
+           P64[Sp] = _s93i::P64;
+           P64[Sp + 24] = _s93h::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9gu; else goto c9gv;
+       c9gv: // global
+           call (I64[R1])(R1) returns to c9gu, args: 8, res: 8, upd: 24;
+       c9gu: // global
+           I64[Sp - 8] = c9gz;
+           _s93k::P64 = P64[R1 + 7];
+           _s93l::P64 = P64[R1 + 15];
+           R1 = P64[Sp + 32];
+           P64[Sp] = _s93l::P64;
+           P64[Sp + 32] = _s93k::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9gz; else goto c9gA;
+       c9gA: // global
+           call (I64[R1])(R1) returns to c9gz, args: 8, res: 8, upd: 24;
+       c9gz: // global
+           I64[Sp] = c9gE;
+           _s93n::I64 = I64[R1 + 7];
+           R1 = P64[Sp + 48];
+           I64[Sp + 48] = _s93n::I64;
+           if (R1 & 7 != 0) goto c9gE; else goto c9gL;
+       c9gL: // global
+           call (I64[R1])(R1) returns to c9gE, args: 8, res: 8, upd: 24;
+       c9gE: // global
+           _s93p::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(I64[Sp + 48],
+                            _s93p::I64)) goto c9hC; else goto c9gX;
+       c9gX: // global
+           I64[Sp] = c9gW;
+           R1 = P64[Sp + 40];
+           I64[Sp + 40] = _s93p::I64;
+           if (R1 & 7 != 0) goto c9gW; else goto c9gY;
+       c9gY: // global
+           call (I64[R1])(R1) returns to c9gW, args: 8, res: 8, upd: 24;
+       c9gW: // global
+           if (%MO_S_Gt_W64(I64[Sp + 40],
+                            I64[R1 + 7])) goto c9hC; else goto c9hf;
+       c9hf: // global
+           I64[Sp] = c9h9;
+           R1 = P64[Sp + 16];
+           if (R1 & 7 != 0) goto c9h9; else goto c9ha;
+       c9ha: // global
+           call (I64[R1])(R1) returns to c9h9, args: 8, res: 8, upd: 24;
+       c9h9: // global
+           I64[Sp] = c9he;
+           _s93x::I64 = I64[R1 + 7];
+           R1 = P64[Sp + 56];
+           I64[Sp + 56] = _s93x::I64;
+           if (R1 & 7 != 0) goto c9he; else goto c9hh;
+       c9hh: // global
+           call (I64[R1])(R1) returns to c9he, args: 8, res: 8, upd: 24;
+       c9he: // global
+           _s93z::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(I64[Sp + 56],
+                            _s93z::I64)) goto c9hC; else goto c9ht;
+       c9ht: // global
+           _s93l::P64 = P64[Sp + 8];
+           I64[Sp + 8] = c9hs;
+           R1 = _s93l::P64;
+           I64[Sp + 16] = _s93z::I64;
+           Sp = Sp + 8;
+           if (R1 & 7 != 0) goto c9hs; else goto c9hu;
+       c9hu: // global
+           call (I64[R1])(R1) returns to c9hs, args: 8, res: 8, upd: 24;
+       c9hs: // global
+           _s93z::I64 = I64[Sp + 8];
+           _s93D::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(_s93z::I64,
+                            _s93D::I64)) goto u9iJ; else goto c9iI;
+       u9iJ: // global
+           Sp = Sp - 8;
+           goto c9hC;
+       c9hC: // global
+           R1 = GHC.Arr.hopelessIndexError_closure;
+           Sp = Sp + 64;
+           call (I64[R1])(R1) args: 24, res: 0, upd: 24;
+       c9iI: // global
+           _s93e::I64 = I64[Sp + 16];
+           _s93x::I64 = I64[Sp + 48];
+           _s93G::I64 = (I64[Sp + 32] - I64[Sp + 40]) * (_s93D::I64 + (1 - _s93x::I64)) + (_s93z::I64 - _s93x::I64);
+           if (%MO_S_Gt_W64(0, _s93G::I64)) goto c9i6; else goto c9iH;
+       c9iH: // global
+           if (%MO_S_Ge_W64(_s93G::I64,
+                            _s93e::I64)) goto c9i6; else goto c9iG;
+       c9i6: // global
+           R3 = _s93G::I64;
+           R2 = _s93e::I64;
+           Sp = Sp + 56;
+           call Main.viewGameState3_info(R3, R2) args: 24, res: 0, upd: 24;
+       c9iG: // global
+           if (I64[P64[Sp + 24] + ((%MO_S_Shr_W64(_s93G::I64,
+                                                  6) << 3) + 16)] & (1 << _s93G::I64 & 63) == 0) goto c9iC; else goto c9iw;
+       c9iC: // global
+           R1 = GHC.Types.False_closure+1;
+           Sp = Sp + 56;
+           call (P64[Sp])(R1) args: 24, res: 0, upd: 24;
+       c9iw: // global
+           R1 = GHC.Types.True_closure+2;
+           Sp = Sp + 56;
+           call (P64[Sp])(R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ go1_s936_entry() //  [R2, R1]
+         { info_tbl: [(c9g8,
+                       label: block_c9g8_info
+                       rep:StackRep [False, False, False]),
+                      (c9iO,
+                       label: go1_s936_info
+                       rep:HeapRep 2 ptrs { Fun {arity: 1 fun_type: ArgSpec 5} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9iO: // global
+           if ((Sp + -32) < SpLim) (likely: False) goto c9iP; else goto c9iQ;
+       c9iP: // global
+           R2 = R2;
+           R1 = R1;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9iQ: // global
+           I64[Sp - 32] = c9g8;
+           _s936::P64 = R1;
+           _s930::P64 = P64[R1 + 7];
+           _s934::P64 = P64[R1 + 15];
+           R1 = R2;
+           P64[Sp - 24] = _s930::P64;
+           P64[Sp - 16] = _s934::P64;
+           P64[Sp - 8] = _s936::P64;
+           Sp = Sp - 32;
+           if (R1 & 7 != 0) goto c9g8; else goto c9g9;
+       c9g9: // global
+           call (I64[R1])(R1) returns to c9g8, args: 8, res: 8, upd: 8;
+       c9g8: // global
+           if (R1 & 7 == 1) goto c9iL; else goto c9iM;
+       c9iL: // global
+           R1 = []_closure+1;
+           Sp = Sp + 32;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9iM: // global
+           Hp = Hp + 96;
+           if (Hp > HpLim) (likely: False) goto c9iW; else goto c9iV;
+       c9iW: // global
+           HpAlloc = 96;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9g8, args: 8, res: 8, upd: 8;
+       c9iV: // global
+           _s939::P64 = P64[R1 + 6];
+           _s93a::P64 = P64[R1 + 14];
+           I64[Hp - 88] = stg_ap_2_upd_info;
+           P64[Hp - 72] = P64[Sp + 24];
+           P64[Hp - 64] = _s93a::P64;
+           I64[Hp - 56] = sat_s93X_info;
+           P64[Hp - 40] = P64[Sp + 8];
+           P64[Hp - 32] = P64[Sp + 16];
+           P64[Hp - 24] = _s939::P64;
+           I64[Hp - 16] = :_con_info;
+           P64[Hp - 8] = Hp - 56;
+           P64[Hp] = Hp - 88;
+           R1 = Hp - 14;
+           Sp = Sp + 32;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+     }
+ },
+ sat_s93Z_entry() //  [R1]
+         { info_tbl: [(c9iX,
+                       label: sat_s93Z_info
+                       rep:HeapRep 2 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9iX: // global
+           _s93Z::P64 = R1;
+           if ((Sp + -16) < SpLim) (likely: False) goto c9iY; else goto c9iZ;
+       c9iZ: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9j1; else goto c9j0;
+       c9j1: // global
+           HpAlloc = 24;
+           goto c9iY;
+       c9iY: // global
+           R1 = _s93Z::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9j0: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = _s93Z::P64;
+           _s930::P64 = P64[_s93Z::P64 + 16];
+           _s934::P64 = P64[_s93Z::P64 + 24];
+           I64[Hp - 16] = go1_s936_info;
+           P64[Hp - 8] = _s930::P64;
+           P64[Hp] = _s934::P64;
+           R2 = Main.viewGameState2_closure;
+           R1 = Hp - 15;
+           Sp = Sp - 16;
+           call go1_s936_info(R2, R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ go_s931_entry() //  [R2, R1]
+         { info_tbl: [(c9fS,
+                       label: block_c9fS_info
+                       rep:StackRep [False, False]),
+                      (c9j6,
+                       label: go_s931_info
+                       rep:HeapRep 1 ptrs { Fun {arity: 1 fun_type: ArgSpec 5} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9j6: // global
+           if ((Sp + -24) < SpLim) (likely: False) goto c9j7; else goto c9j8;
+       c9j7: // global
+           R2 = R2;
+           R1 = R1;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9j8: // global
+           I64[Sp - 24] = c9fS;
+           _s931::P64 = R1;
+           _s930::P64 = P64[R1 + 7];
+           R1 = R2;
+           P64[Sp - 16] = _s930::P64;
+           P64[Sp - 8] = _s931::P64;
+           Sp = Sp - 24;
+           if (R1 & 7 != 0) goto c9fS; else goto c9fT;
+       c9fT: // global
+           call (I64[R1])(R1) returns to c9fS, args: 8, res: 8, upd: 8;
+       c9fS: // global
+           if (R1 & 7 == 1) goto c9j3; else goto c9j4;
+       c9j3: // global
+           R1 = []_closure+1;
+           Sp = Sp + 24;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9j4: // global
+           Hp = Hp + 88;
+           if (Hp > HpLim) (likely: False) goto c9je; else goto c9jd;
+       c9je: // global
+           HpAlloc = 88;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9fS, args: 8, res: 8, upd: 8;
+       c9jd: // global
+           _s934::P64 = P64[R1 + 6];
+           _s935::P64 = P64[R1 + 14];
+           I64[Hp - 80] = stg_ap_2_upd_info;
+           P64[Hp - 64] = P64[Sp + 16];
+           P64[Hp - 56] = _s935::P64;
+           I64[Hp - 48] = sat_s93Z_info;
+           P64[Hp - 32] = P64[Sp + 8];
+           P64[Hp - 24] = _s934::P64;
+           I64[Hp - 16] = :_con_info;
+           P64[Hp - 8] = Hp - 48;
+           P64[Hp] = Hp - 80;
+           R1 = Hp - 14;
+           Sp = Sp + 24;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+     }
+ },
+ Main.viewGameState_entry() //  [R2]
+         { info_tbl: [(c9jf,
+                       label: block_c9jf_info
+                       rep:StackRep []),
+                      (c9jh,
+                       label: Main.viewGameState_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 5} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9jh: // global
+           _s930::P64 = R2;
+           if ((Sp + -8) < SpLim) (likely: False) goto c9ji; else goto c9jj;
+       c9jj: // global
+           Hp = Hp + 16;
+           if (Hp > HpLim) (likely: False) goto c9jl; else goto c9jk;
+       c9jl: // global
+           HpAlloc = 16;
+           goto c9ji;
+       c9ji: // global
+           R2 = _s930::P64;
+           R1 = Main.viewGameState_closure;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9jk: // global
+           I64[Hp - 8] = go_s931_info;
+           P64[Hp] = _s930::P64;
+           I64[Sp - 8] = c9jf;
+           R2 = Main.viewGameState1_closure;
+           R1 = Hp - 7;
+           Sp = Sp - 8;
+           call go_s931_info(R2, R1) returns to c9jf, args: 8, res: 8, upd: 8;
+       c9jf: // global
+           R2 = R1;
+           Sp = Sp + 8;
+           call Main.viewGameState_f_info(R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.1901823 UTC
+
+[section ""data" . Main.xWidth_closure" {
+     Main.xWidth_closure:
+         const GHC.Int.I8#_con_info;
+         const 16;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2058045 UTC
+
+[section ""data" . Main.fieldSize2_closure" {
+     Main.fieldSize2_closure:
+         const GHC.Int.I8#_con_info;
+         const 15;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2058045 UTC
+
+[section ""data" . Main.fieldSize1_closure" {
+     Main.fieldSize1_closure:
+         const (,)_con_info;
+         const Main.fieldSize2_closure+1;
+         const Main.xWidth_closure+1;
+         const 3;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2058045 UTC
+
+[section ""data" . Main.fieldSize4_closure" {
+     Main.fieldSize4_closure:
+         const GHC.Int.I8#_con_info;
+         const 0;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2058045 UTC
+
+[section ""data" . Main.fieldSize3_closure" {
+     Main.fieldSize3_closure:
+         const (,)_con_info;
+         const Main.fieldSize4_closure+1;
+         const Main.fieldSize4_closure+1;
+         const 3;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2058045 UTC
+
+[section ""data" . Main.fieldSize_closure" {
+     Main.fieldSize_closure:
+         const (,)_con_info;
+         const Main.fieldSize3_closure+1;
+         const Main.fieldSize1_closure+1;
+         const 3;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.225955 UTC
+
+[section ""data" . Main.yWidth_closure" {
+     Main.yWidth_closure:
+         const GHC.Int.I8#_con_info;
+         const 17;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2289503 UTC
+
+[section ""cstring" . Main.$trModule2_bytes" {
+     Main.$trModule2_bytes:
+         I8[] [77,97,105,110]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2329421 UTC
+
+[section ""data" . Main.$trModule1_closure" {
+     Main.$trModule1_closure:
+         const GHC.Types.TrNameS_con_info;
+         const Main.$trModule2_bytes;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2369371 UTC
+
+[section ""cstring" . Main.$trModule4_bytes" {
+     Main.$trModule4_bytes:
+         I8[] [109,97,105,110]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2399266 UTC
+
+[section ""data" . Main.$trModule3_closure" {
+     Main.$trModule3_closure:
+         const GHC.Types.TrNameS_con_info;
+         const Main.$trModule4_bytes;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2439248 UTC
+
+[section ""data" . Main.$trModule_closure" {
+     Main.$trModule_closure:
+         const GHC.Types.Module_con_info;
+         const Main.$trModule3_closure+1;
+         const Main.$trModule1_closure+1;
+         const 3;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2469188 UTC
+
+[section ""data" . lvl4_r92a_closure" {
+     lvl4_r92a_closure:
+         const GHC.Types.I#_con_info;
+         const 74;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2485509 UTC
+
+[section ""data" . lvl5_r92b_closure" {
+     lvl5_r92b_closure:
+         const GHC.Types.I#_con_info;
+         const 40;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2485509 UTC
+
+[section ""data" . lvl6_r92c_closure" {
+     lvl6_r92c_closure:
+         const GHC.Types.I#_con_info;
+         const 67;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2485509 UTC
+
+[section ""data" . lvl7_r92d_closure" {
+     lvl7_r92d_closure:
+         const GHC.Stack.Types.SrcLoc_con_info;
+         const Main.arrayByIndex12_closure;
+         const Main.arrayByIndex10_closure;
+         const Main.arrayByIndex8_closure;
+         const lvl4_r92a_closure+1;
+         const lvl5_r92b_closure+1;
+         const lvl4_r92a_closure+1;
+         const lvl6_r92c_closure+1;
+         const 0;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2485509 UTC
+
+[section ""data" . lvl8_r92e_closure" {
+     lvl8_r92e_closure:
+         const GHC.Stack.Types.PushCallStack_con_info;
+         const Main.arrayByIndex14_closure;
+         const lvl7_r92d_closure+1;
+         const GHC.Stack.Types.EmptyCallStack_closure+1;
+         const 0;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2641745 UTC
+
+[section ""cstring" . lvl9_r92f_bytes" {
+     lvl9_r92f_bytes:
+         I8[] [78,101,103,97,116,105,118,101,32,114,97,110,103,101,32,115,105,122,101]
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2641745 UTC
+
+[section ""data" . Main.arrayByIndex19_closure" {
+     Main.arrayByIndex19_closure:
+         const Main.arrayByIndex19_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.arrayByIndex19_entry() //  [R1]
+         { info_tbl: [(c9kw,
+                       label: block_c9kw_info
+                       rep:StackRep []),
+                      (c9ky,
+                       label: Main.arrayByIndex19_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9ky: // global
+           if ((Sp + -24) < SpLim) (likely: False) goto c9kz; else goto c9kA;
+       c9kz: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9kA: // global
+           (_c9kt::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9kt::I64 == 0) goto c9kv; else goto c9ku;
+       c9kv: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9ku: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9kt::I64;
+           I64[Sp - 24] = c9kw;
+           R2 = lvl9_r92f_bytes;
+           Sp = Sp - 24;
+           call GHC.CString.unpackCString#_info(R2) returns to c9kw, args: 8, res: 8, upd: 24;
+       c9kw: // global
+           R3 = R1;
+           R2 = lvl8_r92e_closure+2;
+           Sp = Sp + 8;
+           call GHC.Err.error_info(R3, R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2641745 UTC
+
+[section ""data" . lvl10_r92g_closure" {
+     lvl10_r92g_closure:
+         const GHC.Types.I#_con_info;
+         const 0;
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2746938 UTC
+
+[section ""data" . lvl11_r92h_closure" {
+     lvl11_r92h_closure:
+         const lvl11_r92h_info;
+         const 0;
+ },
+ sat_s948_entry() //  [R1]
+         { info_tbl: [(c9l1,
+                       label: sat_s948_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9l1: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9l2; else goto c9l3;
+       c9l2: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9l3: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           R3 = Main.arrayByIndex16_closure;
+           R2 = P64[R1 + 16];
+           Sp = Sp - 16;
+           call GHC.Base.++_info(R3, R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s949_entry() //  [R1]
+         { info_tbl: [(c9l4,
+                       label: sat_s949_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9l4: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9l8; else goto c9l7;
+       c9l8: // global
+           HpAlloc = 24;
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9l7: // global
+           _s943::P64 = P64[R1 + 16];
+           I64[Hp - 16] = sat_s948_info;
+           P64[Hp] = _s943::P64;
+           R3 = Hp - 16;
+           R2 = Main.arrayByIndex18_bytes;
+           call GHC.CString.unpackAppendCString#_info(R3,
+                                                      R2) args: 8, res: 0, upd: 8;
+     }
+ },
+ sat_s94a_entry() //  [R1]
+         { info_tbl: [(c9kR,
+                       label: block_c9kR_info
+                       rep:StackRep [False]),
+                      (c9l9,
+                       label: sat_s94a_info
+                       rep:HeapRep 1 ptrs 1 nonptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9l9: // global
+           if ((Sp + -32) < SpLim) (likely: False) goto c9la; else goto c9lb;
+       c9la: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9lb: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 32] = c9kR;
+           R4 = GHC.Types.[]_closure+1;
+           R3 = I64[R1 + 24];
+           R2 = 0;
+           P64[Sp - 24] = P64[R1 + 16];
+           Sp = Sp - 32;
+           call GHC.Show.$wshowSignedInt_info(R4,
+                                              R3,
+                                              R2) returns to c9kR, args: 8, res: 8, upd: 24;
+       c9kR: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9le; else goto c9ld;
+       c9le: // global
+           HpAlloc = 24;
+           R2 = R2;
+           R1 = R1;
+           call stg_gc_pp(R2, R1) returns to c9kR, args: 8, res: 8, upd: 24;
+       c9ld: // global
+           I64[Hp - 16] = sat_s949_info;
+           P64[Hp] = P64[Sp + 8];
+           R4 = R2;
+           R3 = R1;
+           R2 = Hp - 16;
+           Sp = Sp + 16;
+           call GHC.Base.++_$s++_info(R4, R3, R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ lvl11_r92h_entry() //  [R3, R2]
+         { info_tbl: [(c9lf,
+                       label: block_c9lf_info
+                       rep:StackRep []),
+                      (c9lh,
+                       label: lvl11_r92h_info
+                       rep:HeapRep static { Fun {arity: 2 fun_type: ArgSpec 14} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9lh: // global
+           _s944::I64 = R3;
+           _s943::P64 = R2;
+           if ((Sp + -8) < SpLim) (likely: False) goto c9li; else goto c9lj;
+       c9lj: // global
+           Hp = Hp + 32;
+           if (Hp > HpLim) (likely: False) goto c9ll; else goto c9lk;
+       c9ll: // global
+           HpAlloc = 32;
+           goto c9li;
+       c9li: // global
+           R3 = _s944::I64;
+           R2 = _s943::P64;
+           R1 = lvl11_r92h_closure;
+           call (stg_gc_fun)(R3, R2, R1) args: 8, res: 0, upd: 8;
+       c9lk: // global
+           I64[Hp - 24] = sat_s94a_info;
+           P64[Hp - 8] = _s943::P64;
+           I64[Hp] = _s944::I64;
+           I64[Sp - 8] = c9lf;
+           R3 = Hp - 24;
+           R2 = Main.arrayByIndex1_bytes;
+           Sp = Sp - 8;
+           call GHC.CString.unpackAppendCString#_info(R3,
+                                                      R2) returns to c9lf, args: 8, res: 8, upd: 8;
+       c9lf: // global
+           R3 = R1;
+           R2 = Main.arrayByIndex2_closure+2;
+           Sp = Sp + 8;
+           call GHC.Err.error_info(R3, R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.2903372 UTC
+
+[section ""data" . Main.$w$sarrayByIndex_closure" {
+     Main.$w$sarrayByIndex_closure:
+         const Main.$w$sarrayByIndex_info;
+         const 0;
+ },
+ Main.$w$sarrayByIndex_slow() //  [R1]
+         { info_tbl: []
+           stack_info: arg_space: 48 updfr_space: Just 8
+         }
+     {offset
+       c9lE: // global
+           R6 = P64[Sp + 32];
+           R5 = P64[Sp + 24];
+           R4 = I64[Sp + 16];
+           R3 = P64[Sp + 8];
+           R2 = I64[Sp];
+           R1 = R1;
+           Sp = Sp + 40;
+           call Main.$w$sarrayByIndex_info(R6,
+                                           R5,
+                                           R4,
+                                           R3,
+                                           R2,
+                                           R1) args: 8, res: 0, upd: 8;
+     }
+ },
+ n_s94q_entry() //  [R1]
+         { info_tbl: [(c9mb,
+                       label: n_s94q_info
+                       rep:HeapRep 2 ptrs 2 nonptrs { Thunk }),
+                      (c9mf,
+                       label: block_c9mf_info
+                       rep:StackRep [True, True, False]),
+                      (c9mk,
+                       label: block_c9mk_info
+                       rep:StackRep [True, True, True])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9mb: // global
+           if ((Sp + -48) < SpLim) (likely: False) goto c9mc; else goto c9n2;
+       c9mc: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9n2: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           _s94c::I64 = I64[R1 + 32];
+           _s94e::I64 = I64[R1 + 40];
+           if (%MO_S_Gt_W64(_s94c::I64,
+                            _s94e::I64)) goto c9m9; else goto c9ma;
+       c9m9: // global
+           R1 = lvl10_r92g_closure+1;
+           Sp = Sp - 16;
+           call (P64[Sp])(R1) args: 24, res: 0, upd: 24;
+       c9ma: // global
+           I64[Sp - 48] = c9mf;
+           _s94f::P64 = P64[R1 + 24];
+           R1 = P64[R1 + 16];
+           I64[Sp - 40] = _s94c::I64;
+           I64[Sp - 32] = _s94e::I64;
+           P64[Sp - 24] = _s94f::P64;
+           Sp = Sp - 48;
+           if (R1 & 7 != 0) goto c9mf; else goto c9mg;
+       c9mg: // global
+           call (I64[R1])(R1) returns to c9mf, args: 8, res: 8, upd: 24;
+       c9mf: // global
+           I64[Sp] = c9mk;
+           _s94t::I64 = I64[R1 + 7];
+           R1 = P64[Sp + 24];
+           I64[Sp + 24] = _s94t::I64;
+           if (R1 & 7 != 0) goto c9mk; else goto c9mm;
+       c9mm: // global
+           call (I64[R1])(R1) returns to c9mk, args: 8, res: 8, upd: 24;
+       c9mk: // global
+           Hp = Hp + 16;
+           if (Hp > HpLim) (likely: False) goto c9ms; else goto c9mr;
+       c9ms: // global
+           HpAlloc = 16;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9mk, args: 8, res: 8, upd: 24;
+       c9mr: // global
+           _s94t::I64 = I64[Sp + 24];
+           _s94v::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(_s94t::I64,
+                            _s94v::I64)) goto c9mw; else goto c9n1;
+       c9mw: // global
+           Hp = Hp - 16;
+           R1 = lvl10_r92g_closure+1;
+           Sp = Sp + 32;
+           call (P64[Sp])(R1) args: 24, res: 0, upd: 24;
+       c9n1: // global
+           _s94x::I64 = (I64[Sp + 16] - I64[Sp + 8]) * (_s94v::I64 + (1 - _s94t::I64)) + (_s94v::I64 - _s94t::I64) + 1;
+           if (%MO_S_Ge_W64(_s94x::I64, 0)) goto c9mZ; else goto c9n0;
+       c9mZ: // global
+           I64[Hp - 8] = GHC.Types.I#_con_info;
+           I64[Hp] = _s94x::I64;
+           R1 = Hp - 7;
+           Sp = Sp + 32;
+           call (P64[Sp])(R1) args: 24, res: 0, upd: 24;
+       c9n0: // global
+           Hp = Hp - 16;
+           R1 = Main.arrayByIndex19_closure;
+           Sp = Sp + 32;
+           call (I64[R1])(R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ Main.$w$sarrayByIndex_entry() //  [R6, R5, R4, R3, R2]
+         { info_tbl: [(c9lW,
+                       label: block_c9lW_info
+                       rep:StackRep [True, False, True, False, False, True, True]),
+                      (c9nb,
+                       label: Main.$w$sarrayByIndex_info
+                       rep:HeapRep static {
+                             Fun {arity: 5
+                                  fun_type: ArgGen [True, False, True, False, False]} }),
+                      (c9nf,
+                       label: block_c9nf_info
+                       rep:StackRep [False, True, False, True, False, False, True,
+                                     False]),
+                      (c9nr,
+                       label: block_c9nr_info
+                       rep:StackRep [False, True, False, True, False, True, True, True]),
+                      (c9nC,
+                       label: block_c9nC_info
+                       rep:StackRep [True]),
+                      (c9nO,
+                       label: block_c9nO_info
+                       rep:StackRep [True]),
+                      (c9o0,
+                       label: block_c9o0_info
+                       rep:StackRep [False, True, False, True, False, False, True,
+                                     False]),
+                      (c9ob,
+                       label: block_c9ob_info
+                       rep:StackRep [False, False, False, True, False, True, False, False,
+                                     True, False]),
+                      (c9og,
+                       label: block_c9og_info
+                       rep:StackRep [True, False, False, False, True, False, True, False,
+                                     False, True, False]),
+                      (c9ol,
+                       label: block_c9ol_info
+                       rep:StackRep [True, True, False, False, False, True, False, True,
+                                     False, False, True, False]),
+                      (c9oL,
+                       label: block_c9oL_info
+                       rep:StackRep [True, True, False, False, False, True, False, True,
+                                     False, False, True, False]),
+                      (c9oW,
+                       label: block_c9oW_info
+                       rep:StackRep [False, False, True, True, False, False, False, True,
+                                     False, True, False, False, True, False]),
+                      (c9pk,
+                       label: block_c9pk_info
+                       rep:StackRep [True, False, False, True, True, False, False, False,
+                                     True, False, True, False, False, True, False]),
+                      (c9q5,
+                       label: block_c9q5_info
+                       rep:StackRep [True, False, False, False, True, True, False, False,
+                                     False, True, False, True, False, False, True, False]),
+                      (c9qo,
+                       label: block_c9qo_info
+                       rep:StackRep [True, True, False, True, True, True, False, False,
+                                     False, True, False, True, False, False, True, False]),
+                      (c9qE,
+                       label: block_c9qE_info
+                       rep:StackRep []),
+                      (c9qJ,
+                       label: block_c9qJ_info
+                       rep:StackRep [True, False, True, False, False]),
+                      (c9qO,
+                       label: block_c9qO_info
+                       rep:StackRep [True, True, False, True, False, False])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9nb: // global
+           if ((Sp + -136) < SpLim) (likely: False) goto c9nc; else goto c9nd;
+       c9nc: // global
+           R1 = Main.$w$sarrayByIndex_closure;
+           I64[Sp - 40] = R2;
+           P64[Sp - 32] = R3;
+           I64[Sp - 24] = R4;
+           P64[Sp - 16] = R5;
+           P64[Sp - 8] = R6;
+           Sp = Sp - 40;
+           call (stg_gc_fun)(R1) args: 48, res: 0, upd: 8;
+       c9nd: // global
+           _s94g::P64 = R6;
+           _s94f::P64 = R5;
+           _s94e::I64 = R4;
+           _s94d::P64 = R3;
+           _s94c::I64 = R2;
+           if (%MO_S_Gt_W64(R2, R4)) goto c9qY; else goto c9n7;
+       c9n7: // global
+           I64[Sp - 48] = c9qJ;
+           R1 = _s94d::P64;
+           I64[Sp - 40] = _s94c::I64;
+           P64[Sp - 32] = _s94d::P64;
+           I64[Sp - 24] = _s94e::I64;
+           P64[Sp - 16] = _s94f::P64;
+           P64[Sp - 8] = _s94g::P64;
+           Sp = Sp - 48;
+           if (R1 & 7 != 0) goto c9qJ; else goto c9qK;
+       c9qK: // global
+           call (I64[R1])(R1) returns to c9qJ, args: 8, res: 8, upd: 8;
+       c9qJ: // global
+           I64[Sp - 8] = c9qO;
+           _s962::I64 = I64[R1 + 7];
+           R1 = P64[Sp + 32];
+           I64[Sp] = _s962::I64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9qO; else goto c9qQ;
+       c9qQ: // global
+           call (I64[R1])(R1) returns to c9qO, args: 8, res: 8, upd: 8;
+       c9qO: // global
+           _s94c::I64 = I64[Sp + 16];
+           _s94d::P64 = P64[Sp + 24];
+           _s94e::I64 = I64[Sp + 32];
+           _s94f::P64 = P64[Sp + 40];
+           _s94g::P64 = P64[Sp + 48];
+           _s962::I64 = I64[Sp + 8];
+           _s964::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(_s962::I64,
+                            _s964::I64)) goto u9rY; else goto c9qZ;
+       u9rY: // global
+           Sp = Sp + 56;
+           goto c9qY;
+       c9qY: // global
+           _s94i::I64 = 0;
+           goto s94h;
+       c9qZ: // global
+           Sp = Sp + 56;
+           _s94i::I64 = (_s94e::I64 - _s94c::I64) * (_s964::I64 + (1 - _s962::I64)) + (_s964::I64 - _s962::I64) + 1;
+           goto s94h;
+       s94h: // global
+           if (%MO_S_Ge_W64(_s94i::I64, 0)) goto c9nh; else goto c9qF;
+       c9nh: // global
+           I64[Sp - 64] = c9lW;
+           _s94k::I64 = %MO_S_Shr_W64(_s94i::I64 + 7, 3);
+           R1 = _s94k::I64;
+           I64[Sp - 56] = _s94c::I64;
+           P64[Sp - 48] = _s94d::P64;
+           I64[Sp - 40] = _s94e::I64;
+           P64[Sp - 32] = _s94f::P64;
+           P64[Sp - 24] = _s94g::P64;
+           I64[Sp - 16] = _s94i::I64;
+           I64[Sp - 8] = _s94k::I64;
+           Sp = Sp - 64;
+           call stg_newByteArray#(R1) returns to c9lW, args: 8, res: 8, upd: 8;
+       c9lW: // global
+           Hp = Hp + 48;
+           if (Hp > HpLim) (likely: False) goto c9nk; else goto c9nj;
+       c9nk: // global
+           HpAlloc = 48;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9lW, args: 8, res: 8, upd: 8;
+       c9nj: // global
+           _s94c::I64 = I64[Sp + 8];
+           _s94d::P64 = P64[Sp + 16];
+           _s94e::I64 = I64[Sp + 24];
+           _s94f::P64 = P64[Sp + 32];
+           call MO_Memset 1(R1 + 16, 0, I64[Sp + 56]);
+           I64[Hp - 40] = n_s94q_info;
+           P64[Hp - 24] = _s94d::P64;
+           P64[Hp - 16] = _s94f::P64;
+           I64[Hp - 8] = _s94c::I64;
+           I64[Hp] = _s94e::I64;
+           I64[Sp - 8] = c9nf;
+           R3 = _s94e::I64;
+           R2 = _s94c::I64;
+           P64[Sp] = R1;
+           P64[Sp + 56] = Hp - 40;
+           Sp = Sp - 8;
+           call GHC.Int.$w$cenumFromTo3_info(R3,
+                                             R2) returns to c9nf, args: 8, res: 8, upd: 8;
+       c9nf: // global
+           _s94Z::P64 = R1;
+           goto c9nY;
+       c9nY: // global
+           I64[Sp] = c9o0;
+           R1 = _s94Z::P64;
+           if (R1 & 7 != 0) goto c9o0; else goto c9o2;
+       c9o2: // global
+           call (I64[R1])(R1) returns to c9o0, args: 8, res: 8, upd: 8;
+       c9o0: // global
+           _s94c::I64 = I64[Sp + 16];
+           _s94d::P64 = P64[Sp + 24];
+           _s94e::I64 = I64[Sp + 32];
+           _s94f::P64 = P64[Sp + 40];
+           _s94i::I64 = I64[Sp + 56];
+           _s94o::P64 = P64[Sp + 8];
+           if (R1 & 7 == 1) goto c9ns; else goto c9on;
+       c9ns: // global
+           Hp = Hp + 120;
+           if (Hp > HpLim) (likely: False) goto c9nw; else goto c9nv;
+       c9nw: // global
+           HpAlloc = 120;
+           I64[Sp] = c9nr;
+           call stg_gc_noregs() returns to c9nr, args: 8, res: 8, upd: 8;
+       c9nr: // global
+           _s94c::I64 = I64[Sp + 16];
+           _s94d::P64 = P64[Sp + 24];
+           _s94e::I64 = I64[Sp + 32];
+           _s94f::P64 = P64[Sp + 40];
+           _s94i::I64 = I64[Sp + 56];
+           _s94o::P64 = P64[Sp + 8];
+           goto c9ns;
+       c9nv: // global
+           I64[Hp - 112] = GHC.Int.I8#_con_info;
+           I64[Hp - 104] = _s94e::I64;
+           I64[Hp - 96] = (,)_con_info;
+           P64[Hp - 88] = Hp - 111;
+           P64[Hp - 80] = _s94f::P64;
+           I64[Hp - 72] = GHC.Int.I8#_con_info;
+           I64[Hp - 64] = _s94c::I64;
+           I64[Hp - 56] = (,)_con_info;
+           P64[Hp - 48] = Hp - 71;
+           P64[Hp - 40] = _s94d::P64;
+           I64[Hp - 32] = Data.Array.Base.UArray_con_info;
+           P64[Hp - 24] = Hp - 55;
+           P64[Hp - 16] = Hp - 95;
+           P64[Hp - 8] = _s94o::P64;
+           I64[Hp] = _s94i::I64;
+           _s96f::P64 = Hp - 31;
+           goto c9ng;
+       c9on: // global
+           I64[Sp - 16] = c9ob;
+           _s952::P64 = P64[R1 + 6];
+           _s953::P64 = P64[R1 + 14];
+           R1 = _s94d::P64;
+           P64[Sp - 8] = _s953::P64;
+           P64[Sp] = _s952::P64;
+           Sp = Sp - 16;
+           if (R1 & 7 != 0) goto c9ob; else goto c9oc;
+       c9oc: // global
+           call (I64[R1])(R1) returns to c9ob, args: 8, res: 8, upd: 8;
+       c9ob: // global
+           I64[Sp - 8] = c9og;
+           _s955::I64 = I64[R1 + 7];
+           R1 = P64[Sp + 56];
+           I64[Sp] = _s955::I64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9og; else goto c9oh;
+       c9oh: // global
+           call (I64[R1])(R1) returns to c9og, args: 8, res: 8, upd: 8;
+       c9og: // global
+           I64[Sp - 8] = c9ol;
+           _s957::I64 = I64[R1 + 7];
+           R3 = _s957::I64;
+           R2 = I64[Sp + 8];
+           I64[Sp] = _s957::I64;
+           Sp = Sp - 8;
+           call GHC.Int.$w$cenumFromTo3_info(R3,
+                                             R2) returns to c9ol, args: 8, res: 8, upd: 8;
+       c9ol: // global
+           _s95d::P64 = R1;
+           goto c9oJ;
+       c9oJ: // global
+           I64[Sp] = c9oL;
+           R1 = _s95d::P64;
+           if (R1 & 7 != 0) goto c9oL; else goto c9oN;
+       c9oN: // global
+           call (I64[R1])(R1) returns to c9oL, args: 8, res: 8, upd: 8;
+       c9oL: // global
+           if (R1 & 7 == 1) goto c9oT; else goto c9oY;
+       c9oT: // global
+           _s94Z::P64 = P64[Sp + 24];
+           Sp = Sp + 32;
+           goto c9nY;
+       c9oY: // global
+           I64[Sp - 16] = c9oW;
+           _s95g::P64 = P64[R1 + 6];
+           _s95h::P64 = P64[R1 + 14];
+           R1 = P64[Sp + 32];
+           P64[Sp - 8] = _s95h::P64;
+           P64[Sp] = _s95g::P64;
+           Sp = Sp - 16;
+           if (R1 & 7 != 0) goto c9oW; else goto c9oZ;
+       c9oZ: // global
+           call (I64[R1])(R1) returns to c9oW, args: 8, res: 8, upd: 8;
+       c9oW: // global
+           _s95j::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(I64[Sp + 64],
+                            _s95j::I64)) goto c9pE; else goto c9qC;
+       c9qC: // global
+           if (%MO_S_Gt_W64(_s95j::I64,
+                            I64[Sp + 80])) goto c9pE; else goto c9pl;
+       c9pl: // global
+           I64[Sp - 8] = c9pk;
+           _s95i::P64 = R1;
+           R1 = P64[Sp + 16];
+           I64[Sp] = _s95j::I64;
+           P64[Sp + 16] = _s95i::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9pk; else goto c9pm;
+       c9pm: // global
+           call (I64[R1])(R1) returns to c9pk, args: 8, res: 8, upd: 8;
+       c9pk: // global
+           _s955::I64 = I64[Sp + 40];
+           _s95p::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(_s955::I64,
+                            _s95p::I64)) goto u9s0; else goto c9qB;
+       u9s0: // global
+           Sp = Sp + 8;
+           goto c9pE;
+       c9qB: // global
+           _s957::I64 = I64[Sp + 32];
+           if (%MO_S_Gt_W64(_s95p::I64,
+                            _s957::I64)) goto u9s1; else goto c9qA;
+       u9s1: // global
+           Sp = Sp + 8;
+           goto c9pE;
+       c9pE: // global
+           I64[Sp + 112] = c9qE;
+           R1 = GHC.Arr.hopelessIndexError_closure;
+           Sp = Sp + 112;
+           if (R1 & 7 != 0) goto c9qE; else goto c9qG;
+       c9qA: // global
+           _c9m2::P64 = P64[Sp + 120];
+           _s95u::I64 = (I64[Sp + 8] - I64[Sp + 72]) * (_s957::I64 + (1 - _s955::I64)) + (_s95p::I64 - _s955::I64);
+           if (%MO_S_Gt_W64(0, _s95u::I64)) goto c9q2; else goto c9q6;
+       c9q2: // global
+           _s95b::I64 = _s95u::I64;
+           goto s95a;
+       c9q6: // global
+           I64[Sp - 8] = c9q5;
+           _s95o::P64 = R1;
+           R1 = _c9m2::P64;
+           I64[Sp] = _s95u::I64;
+           P64[Sp + 8] = _s95o::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9q5; else goto c9q7;
+       c9q7: // global
+           call (I64[R1])(R1) returns to c9q5, args: 8, res: 8, upd: 8;
+       c9q5: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9qd; else goto c9qc;
+       c9qd: // global
+           HpAlloc = 24;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9q5, args: 8, res: 8, upd: 8;
+       c9qc: // global
+           _s95u::I64 = I64[Sp + 8];
+           if (%MO_S_Ge_W64(_s95u::I64,
+                            I64[R1 + 7])) goto c9qh; else goto c9qp;
+       c9qh: // global
+           Hp = Hp - 24;
+           _c9m2::P64 = P64[Sp + 128];
+           Sp = Sp + 8;
+           _s95b::I64 = _s95u::I64;
+           goto s95a;
+       s95a: // global
+           I64[Sp + 112] = c9nC;
+           R1 = _c9m2::P64;
+           I64[Sp + 120] = _s95b::I64;
+           Sp = Sp + 112;
+           if (R1 & 7 != 0) goto c9nC; else goto c9nD;
+       c9nD: // global
+           call (I64[R1])(R1) returns to c9nC, args: 8, res: 8, upd: 8;
+       c9nC: // global
+           I64[Sp] = c9nO;
+           R4 = GHC.Types.[]_closure+1;
+           R3 = I64[R1 + 7];
+           R2 = 0;
+           call GHC.Show.$wshowSignedInt_info(R4,
+                                              R3,
+                                              R2) returns to c9nO, args: 8, res: 8, upd: 8;
+       c9nO: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9nT; else goto c9nS;
+       c9nT: // global
+           HpAlloc = 24;
+           R2 = R2;
+           R1 = R1;
+           call stg_gc_pp(R2, R1) returns to c9nO, args: 8, res: 8, upd: 8;
+       c9nS: // global
+           I64[Hp - 16] = :_con_info;
+           P64[Hp - 8] = R1;
+           P64[Hp] = R2;
+           _s94Q::I64 = I64[Sp + 8];
+           I64[Sp + 8] = c9qE;
+           R3 = _s94Q::I64;
+           R2 = Hp - 14;
+           Sp = Sp + 8;
+           call lvl11_r92h_info(R3,
+                                R2) returns to c9qE, args: 8, res: 8, upd: 8;
+       c9qp: // global
+           I64[Hp - 16] = (,)_con_info;
+           P64[Hp - 8] = P64[Sp + 32];
+           P64[Hp] = P64[Sp + 16];
+           _s95E::I64 = %MO_S_Shr_W64(_s95u::I64, 6);
+           _s95H::I64 = I64[P64[Sp + 72] + ((_s95E::I64 << 3) + 16)];
+           I64[Sp] = c9qo;
+           R2 = Hp - 15;
+           R1 = P64[Sp + 112];
+           I64[Sp + 16] = _s95H::I64;
+           I64[Sp + 32] = _s95E::I64;
+           call stg_ap_p_fast(R2,
+                              R1) returns to c9qo, args: 8, res: 8, upd: 8;
+       c9qo: // global
+           _s94o::P64 = P64[Sp + 72];
+           _s95h::P64 = P64[Sp + 24];
+           _s95u::I64 = I64[Sp + 8];
+           _s95E::I64 = I64[Sp + 32];
+           _s95H::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9qv; else goto c9qz;
+       c9qv: // global
+           I64[(_s94o::P64 + 16) + (_s95E::I64 << 3)] = _s95H::I64 & (1 << _s95u::I64 & 63) ^ 18446744073709551615;
+           Sp = Sp + 32;
+           _s95d::P64 = _s95h::P64;
+           goto c9oJ;
+       c9qz: // global
+           I64[(_s94o::P64 + 16) + (_s95E::I64 << 3)] = _s95H::I64 | (1 << _s95u::I64 & 63);
+           Sp = Sp + 32;
+           _s95d::P64 = _s95h::P64;
+           goto c9oJ;
+       c9qF: // global
+           I64[Sp - 8] = c9qE;
+           R1 = Main.arrayByIndex19_closure;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9qE; else goto c9qG;
+       c9qG: // global
+           call (I64[R1])(R1) returns to c9qE, args: 8, res: 8, upd: 8;
+       c9qE: // global
+           Sp = Sp - 64;
+           _s96f::P64 = R1;
+           goto c9ng;
+       c9ng: // global
+           R1 = _s96f::P64 & (-8);
+           Sp = Sp + 72;
+           call (I64[R1])(R1) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.3241073 UTC
+
+[section ""data" . Main.$warrayByIndex_closure" {
+     Main.$warrayByIndex_closure:
+         const Main.$warrayByIndex_info;
+         const 0;
+ },
+ n_s96n_entry() //  [R1]
+         { info_tbl: [(c9tt,
+                       label: block_c9tt_info
+                       rep:StackRep []),
+                      (c9tv,
+                       label: n_s96n_info
+                       rep:HeapRep 3 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9tv: // global
+           _s96n::P64 = R1;
+           if ((Sp + -40) < SpLim) (likely: False) goto c9tw; else goto c9tx;
+       c9tx: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9tz; else goto c9ty;
+       c9tz: // global
+           HpAlloc = 24;
+           goto c9tw;
+       c9tw: // global
+           R1 = _s96n::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9ty: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = _s96n::P64;
+           _s96h::P64 = P64[_s96n::P64 + 16];
+           _s96i::P64 = P64[_s96n::P64 + 24];
+           _s96j::P64 = P64[_s96n::P64 + 32];
+           I64[Hp - 16] = (,)_con_info;
+           P64[Hp - 8] = _s96i::P64;
+           P64[Hp] = _s96j::P64;
+           I64[Sp - 24] = c9tt;
+           R2 = _s96h::P64;
+           I64[Sp - 40] = stg_ap_p_info;
+           P64[Sp - 32] = Hp - 15;
+           Sp = Sp - 40;
+           call GHC.Arr.rangeSize_info(R2) returns to c9tt, args: 24, res: 8, upd: 24;
+       c9tt: // global
+           if (%MO_S_Ge_W64(I64[R1 + 7], 0)) goto c9tG; else goto c9tH;
+       c9tG: // global
+           R1 = R1 & (-8);
+           Sp = Sp + 8;
+           call (I64[R1])(R1) args: 24, res: 0, upd: 24;
+       c9tH: // global
+           R1 = Main.arrayByIndex19_closure;
+           Sp = Sp + 8;
+           call (I64[R1])(R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s96y_entry() //  [R1]
+         { info_tbl: [(c9tQ,
+                       label: block_c9tQ_info
+                       rep:StackRep []),
+                      (c9tT,
+                       label: sat_s96y_info
+                       rep:HeapRep 1 ptrs { Thunk }),
+                      (c9tW,
+                       label: block_c9tW_info
+                       rep:StackRep [])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9tT: // global
+           if ((Sp + -24) < SpLim) (likely: False) goto c9tX; else goto c9tY;
+       c9tX: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9tY: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 24] = c9tQ;
+           R1 = P64[R1 + 16];
+           Sp = Sp - 24;
+           if (R1 & 7 != 0) goto c9tQ; else goto c9tR;
+       c9tR: // global
+           call (I64[R1])(R1) returns to c9tQ, args: 8, res: 8, upd: 24;
+       c9tQ: // global
+           I64[Sp] = c9tW;
+           R4 = GHC.Types.[]_closure+1;
+           R3 = I64[R1 + 7];
+           R2 = 0;
+           call GHC.Show.$wshowSignedInt_info(R4,
+                                              R3,
+                                              R2) returns to c9tW, args: 8, res: 8, upd: 24;
+       c9tW: // global
+           R4 = R2;
+           R3 = R1;
+           R2 = Main.arrayByIndex16_closure;
+           Sp = Sp + 8;
+           call GHC.Base.++_$s++_info(R4, R3, R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ lvl23_s96s_entry() //  [R1]
+         { info_tbl: [(c9u2,
+                       label: lvl23_s96s_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9u2: // global
+           _s96s::P64 = R1;
+           if ((Sp + -16) < SpLim) (likely: False) goto c9u3; else goto c9u4;
+       c9u4: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9u6; else goto c9u5;
+       c9u6: // global
+           HpAlloc = 24;
+           goto c9u3;
+       c9u3: // global
+           R1 = _s96s::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9u5: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = _s96s::P64;
+           _s96n::P64 = P64[_s96s::P64 + 16];
+           I64[Hp - 16] = sat_s96y_info;
+           P64[Hp] = _s96n::P64;
+           R3 = Hp - 16;
+           R2 = Main.arrayByIndex18_bytes;
+           Sp = Sp - 16;
+           call GHC.CString.unpackAppendCString#_info(R3,
+                                                      R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s96K_entry() //  [R1]
+         { info_tbl: [(c9uB,
+                       label: block_c9uB_info
+                       rep:StackRep [False]),
+                      (c9uD,
+                       label: sat_s96K_info
+                       rep:HeapRep 1 ptrs 1 nonptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9uD: // global
+           if ((Sp + -32) < SpLim) (likely: False) goto c9uE; else goto c9uF;
+       c9uE: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9uF: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 32] = c9uB;
+           R4 = GHC.Types.[]_closure+1;
+           R3 = I64[R1 + 24];
+           R2 = 0;
+           P64[Sp - 24] = P64[R1 + 16];
+           Sp = Sp - 32;
+           call GHC.Show.$wshowSignedInt_info(R4,
+                                              R3,
+                                              R2) returns to c9uB, args: 8, res: 8, upd: 24;
+       c9uB: // global
+           R4 = R2;
+           R3 = R1;
+           R2 = P64[Sp + 8];
+           Sp = Sp + 16;
+           call GHC.Base.++_$s++_info(R4, R3, R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ sat_s96Q_entry() //  [R1]
+         { info_tbl: [(c9uo,
+                       label: block_c9uo_info
+                       rep:StackRep [False, False]),
+                      (c9uu,
+                       label: block_c9uu_info
+                       rep:StackRep [True, False]),
+                      (c9uH,
+                       label: sat_s96Q_info
+                       rep:HeapRep 5 ptrs { Thunk }),
+                      (c9uL,
+                       label: block_c9uL_info
+                       rep:StackRep []),
+                      (c9uZ,
+                       label: block_c9uZ_info
+                       rep:StackRep [True, False, False])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9uH: // global
+           if ((Sp + -64) < SpLim) (likely: False) goto c9uI; else goto c9uJ;
+       c9uI: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9uJ: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           I64[Sp - 40] = c9uo;
+           R2 = P64[R1 + 16];
+           I64[Sp - 64] = stg_ap_pp_info;
+           P64[Sp - 56] = P64[R1 + 24];
+           P64[Sp - 48] = P64[R1 + 48];
+           P64[Sp - 32] = P64[R1 + 32];
+           P64[Sp - 24] = P64[R1 + 40];
+           Sp = Sp - 64;
+           call GHC.Arr.index_info(R2) returns to c9uo, args: 32, res: 8, upd: 24;
+       c9uo: // global
+           _s96s::P64 = P64[Sp + 16];
+           _s96F::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(0, _s96F::I64)) goto c9uv; else goto c9v0;
+       c9v0: // global
+           I64[Sp - 8] = c9uZ;
+           _s96E::P64 = R1;
+           R1 = P64[Sp + 8];
+           I64[Sp] = _s96F::I64;
+           P64[Sp + 8] = _s96E::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9uZ; else goto c9v1;
+       c9v1: // global
+           call (I64[R1])(R1) returns to c9uZ, args: 8, res: 8, upd: 24;
+       c9uZ: // global
+           _s96F::I64 = I64[Sp + 8];
+           if (%MO_S_Ge_W64(_s96F::I64,
+                            I64[R1 + 7])) goto u9vb; else goto c9va;
+       u9vb: // global
+           _s96s::P64 = P64[Sp + 24];
+           Sp = Sp + 8;
+           goto c9uv;
+       c9uv: // global
+           Hp = Hp + 32;
+           if (Hp > HpLim) (likely: False) goto c9uO; else goto c9uN;
+       c9uO: // global
+           HpAlloc = 32;
+           I64[Sp] = c9uu;
+           I64[Sp + 8] = _s96F::I64;
+           call stg_gc_noregs() returns to c9uu, args: 8, res: 8, upd: 24;
+       c9uu: // global
+           _s96s::P64 = P64[Sp + 16];
+           _s96F::I64 = I64[Sp + 8];
+           goto c9uv;
+       c9uN: // global
+           I64[Hp - 24] = sat_s96K_info;
+           P64[Hp - 8] = _s96s::P64;
+           I64[Hp] = _s96F::I64;
+           I64[Sp + 16] = c9uL;
+           R3 = Hp - 24;
+           R2 = Main.arrayByIndex1_bytes;
+           Sp = Sp + 16;
+           call GHC.CString.unpackAppendCString#_info(R3,
+                                                      R2) returns to c9uL, args: 8, res: 8, upd: 24;
+       c9uL: // global
+           R3 = R1;
+           R2 = Main.arrayByIndex2_closure+2;
+           Sp = Sp + 8;
+           call GHC.Err.error_info(R3, R2) args: 24, res: 0, upd: 24;
+       c9va: // global
+           R1 = P64[Sp + 16] & (-8);
+           Sp = Sp + 32;
+           call (I64[R1])(R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ go_s96z_entry() //  [R2, R1]
+         { info_tbl: [(c9uc,
+                       label: block_c9uc_info
+                       rep:StackRep [False, False, False, False, False, False]),
+                      (c9vg,
+                       label: go_s96z_info
+                       rep:HeapRep 5 ptrs { Fun {arity: 1 fun_type: ArgSpec 5} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9vg: // global
+           if ((Sp + -56) < SpLim) (likely: False) goto c9vh; else goto c9vi;
+       c9vh: // global
+           R2 = R2;
+           R1 = R1;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9vi: // global
+           I64[Sp - 56] = c9uc;
+           _s96z::P64 = R1;
+           _s96h::P64 = P64[R1 + 7];
+           _s96k::P64 = P64[R1 + 15];
+           _s96m::P64 = P64[R1 + 23];
+           _s96n::P64 = P64[R1 + 31];
+           _s96s::P64 = P64[R1 + 39];
+           R1 = R2;
+           P64[Sp - 48] = _s96h::P64;
+           P64[Sp - 40] = _s96k::P64;
+           P64[Sp - 32] = _s96m::P64;
+           P64[Sp - 24] = _s96n::P64;
+           P64[Sp - 16] = _s96s::P64;
+           P64[Sp - 8] = _s96z::P64;
+           Sp = Sp - 56;
+           if (R1 & 7 != 0) goto c9uc; else goto c9ud;
+       c9ud: // global
+           call (I64[R1])(R1) returns to c9uc, args: 8, res: 8, upd: 8;
+       c9uc: // global
+           if (R1 & 7 == 1) goto c9vd; else goto c9ve;
+       c9vd: // global
+           R1 = []_closure+1;
+           Sp = Sp + 56;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9ve: // global
+           Hp = Hp + 168;
+           if (Hp > HpLim) (likely: False) goto c9vp; else goto c9vo;
+       c9vp: // global
+           HpAlloc = 168;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9uc, args: 8, res: 8, upd: 8;
+       c9vo: // global
+           _s96C::P64 = P64[R1 + 6];
+           _s96D::P64 = P64[R1 + 14];
+           I64[Hp - 160] = stg_ap_2_upd_info;
+           P64[Hp - 144] = P64[Sp + 48];
+           P64[Hp - 136] = _s96D::P64;
+           I64[Hp - 128] = stg_ap_2_upd_info;
+           P64[Hp - 112] = P64[Sp + 16];
+           P64[Hp - 104] = _s96C::P64;
+           I64[Hp - 96] = sat_s96Q_info;
+           P64[Hp - 80] = P64[Sp + 8];
+           P64[Hp - 72] = P64[Sp + 24];
+           P64[Hp - 64] = P64[Sp + 32];
+           P64[Hp - 56] = P64[Sp + 40];
+           P64[Hp - 48] = _s96C::P64;
+           I64[Hp - 40] = (,)_con_info;
+           P64[Hp - 32] = Hp - 96;
+           P64[Hp - 24] = Hp - 128;
+           I64[Hp - 16] = :_con_info;
+           P64[Hp - 8] = Hp - 39;
+           P64[Hp] = Hp - 160;
+           R1 = Hp - 14;
+           Sp = Sp + 56;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+     }
+ },
+ sat_s96V_entry() //  [R1]
+         { info_tbl: [(c9vq,
+                       label: block_c9vq_info
+                       rep:StackRep [False]),
+                      (c9vs,
+                       label: sat_s96V_info
+                       rep:HeapRep 4 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9vs: // global
+           _s96V::P64 = R1;
+           if ((Sp + -48) < SpLim) (likely: False) goto c9vt; else goto c9vu;
+       c9vu: // global
+           Hp = Hp + 136;
+           if (Hp > HpLim) (likely: False) goto c9vw; else goto c9vv;
+       c9vw: // global
+           HpAlloc = 136;
+           goto c9vt;
+       c9vt: // global
+           R1 = _s96V::P64;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9vv: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = _s96V::P64;
+           _s96h::P64 = P64[_s96V::P64 + 16];
+           _s96i::P64 = P64[_s96V::P64 + 24];
+           _s96j::P64 = P64[_s96V::P64 + 32];
+           _s96k::P64 = P64[_s96V::P64 + 40];
+           I64[Hp - 128] = (,)_con_info;
+           P64[Hp - 120] = _s96i::P64;
+           P64[Hp - 112] = _s96j::P64;
+           I64[Hp - 104] = n_s96n_info;
+           P64[Hp - 88] = _s96h::P64;
+           P64[Hp - 80] = _s96i::P64;
+           P64[Hp - 72] = _s96j::P64;
+           I64[Hp - 64] = lvl23_s96s_info;
+           _c9to::P64 = Hp - 104;
+           P64[Hp - 48] = _c9to::P64;
+           I64[Hp - 40] = go_s96z_info;
+           P64[Hp - 32] = _s96h::P64;
+           P64[Hp - 24] = _s96k::P64;
+           _c9tn::P64 = Hp - 127;
+           P64[Hp - 16] = _c9tn::P64;
+           P64[Hp - 8] = _c9to::P64;
+           P64[Hp] = Hp - 64;
+           I64[Sp - 32] = c9vq;
+           R2 = _s96h::P64;
+           I64[Sp - 48] = stg_ap_p_info;
+           P64[Sp - 40] = _c9tn::P64;
+           P64[Sp - 24] = Hp - 39;
+           Sp = Sp - 48;
+           call GHC.Arr.range_info(R2) returns to c9vq, args: 24, res: 8, upd: 24;
+       c9vq: // global
+           R2 = R1;
+           R1 = P64[Sp + 8];
+           Sp = Sp + 16;
+           call go_s96z_info(R2, R1) args: 24, res: 0, upd: 24;
+     }
+ },
+ Main.$warrayByIndex_entry() //  [R6, R5, R4, R3, R2]
+         { info_tbl: [(c9vB,
+                       label: Main.$warrayByIndex_info
+                       rep:HeapRep static { Fun {arity: 5 fun_type: ArgSpec 25} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9vB: // global
+           _s96k::P64 = R6;
+           _s96j::P64 = R5;
+           _s96i::P64 = R4;
+           _s96h::P64 = R3;
+           _s96g::P64 = R2;
+           if ((Sp + -32) < SpLim) (likely: False) goto c9vC; else goto c9vD;
+       c9vD: // global
+           Hp = Hp + 72;
+           if (Hp > HpLim) (likely: False) goto c9vF; else goto c9vE;
+       c9vF: // global
+           HpAlloc = 72;
+           goto c9vC;
+       c9vC: // global
+           R6 = _s96k::P64;
+           R5 = _s96j::P64;
+           R4 = _s96i::P64;
+           R3 = _s96h::P64;
+           R2 = _s96g::P64;
+           R1 = Main.$warrayByIndex_closure;
+           call (stg_gc_fun)(R6, R5, R4, R3, R2, R1) args: 8, res: 0, upd: 8;
+       c9vE: // global
+           I64[Hp - 64] = sat_s96V_info;
+           P64[Hp - 48] = _s96h::P64;
+           P64[Hp - 40] = _s96i::P64;
+           P64[Hp - 32] = _s96j::P64;
+           P64[Hp - 24] = _s96k::P64;
+           I64[Hp - 16] = (,)_con_info;
+           P64[Hp - 8] = _s96i::P64;
+           P64[Hp] = _s96j::P64;
+           R2 = _s96g::P64;
+           I64[Sp - 32] = stg_ap_ppp_info;
+           P64[Sp - 24] = _s96h::P64;
+           P64[Sp - 16] = Hp - 15;
+           P64[Sp - 8] = Hp - 64;
+           Sp = Sp - 32;
+           call Data.Array.Base.unsafeArray_info(R2) args: 40, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.34707 UTC
+
+[section ""data" . Main.arrayByIndex_closure" {
+     Main.arrayByIndex_closure:
+         const Main.arrayByIndex_info;
+         const 0;
+ },
+ Main.arrayByIndex_entry() //  [R5, R4, R3, R2]
+         { info_tbl: [(c9wz,
+                       label: block_c9wz_info
+                       rep:StackRep [False, False, False]),
+                      (c9wC,
+                       label: Main.arrayByIndex_info
+                       rep:HeapRep static { Fun {arity: 4 fun_type: ArgSpec 24} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9wC: // global
+           if ((Sp + -32) < SpLim) (likely: False) goto c9wD; else goto c9wE;
+       c9wD: // global
+           R5 = R5;
+           R4 = R4;
+           R3 = R3;
+           R2 = R2;
+           R1 = Main.arrayByIndex_closure;
+           call (stg_gc_fun)(R5, R4, R3, R2, R1) args: 8, res: 0, upd: 8;
+       c9wE: // global
+           I64[Sp - 32] = c9wz;
+           R1 = R4;
+           P64[Sp - 24] = R2;
+           P64[Sp - 16] = R3;
+           P64[Sp - 8] = R5;
+           Sp = Sp - 32;
+           if (R1 & 7 != 0) goto c9wz; else goto c9wA;
+       c9wA: // global
+           call (I64[R1])(R1) returns to c9wz, args: 8, res: 8, upd: 8;
+       c9wz: // global
+           R6 = P64[Sp + 24];
+           R5 = P64[R1 + 15];
+           R4 = P64[R1 + 7];
+           R3 = P64[Sp + 16];
+           R2 = P64[Sp + 8];
+           Sp = Sp + 32;
+           call Main.$warrayByIndex_info(R6,
+                                         R5,
+                                         R4,
+                                         R3,
+                                         R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.3487027 UTC
+
+[section ""data" . Main.updateGameState_closure" {
+     Main.updateGameState_closure:
+         const Main.updateGameState_info;
+         const 0;
+ },
+ $wg_s974_entry() //  [R3, R2, R1]
+         { info_tbl: [(c9wV,
+                       label: block_c9wV_info
+                       rep:StackRep [True, True]),
+                      (c9wY,
+                       label: $wg_s974_info
+                       rep:HeapRep 1 ptrs { Fun {arity: 2 fun_type: ArgSpec 12} }),
+                      (c9x1,
+                       label: block_c9x1_info
+                       rep:StackRep [True, False, False, True, True]),
+                      (c9x6,
+                       label: block_c9x6_info
+                       rep:StackRep [False, True, False, False, True, True]),
+                      (c9xb,
+                       label: block_c9xb_info
+                       rep:StackRep [False, False, True, False, False, True, True]),
+                      (c9xy,
+                       label: block_c9xy_info
+                       rep:StackRep [False, False, True, False, True, True, True]),
+                      (c9xL,
+                       label: block_c9xL_info
+                       rep:StackRep [False, True, True, False, True, True, True]),
+                      (c9xQ,
+                       label: block_c9xQ_info
+                       rep:StackRep [False, True, True, False, True, True, True]),
+                      (c9y6,
+                       label: block_c9y6_info
+                       rep:StackRep [True, True, False, True, True, True])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9wY: // global
+           if ((Sp + -64) < SpLim) (likely: False) goto c9xc; else goto c9xd;
+       c9xc: // global
+           R3 = R3;
+           R2 = R2;
+           R1 = R1;
+           call (stg_gc_fun)(R3, R2, R1) args: 8, res: 0, upd: 8;
+       c9xd: // global
+           I64[Sp - 24] = c9wV;
+           R1 = P64[R1 + 6];
+           I64[Sp - 16] = R2;
+           I64[Sp - 8] = R3;
+           Sp = Sp - 24;
+           if (R1 & 7 != 0) goto c9wV; else goto c9wW;
+       c9wW: // global
+           call (I64[R1])(R1) returns to c9wV, args: 8, res: 8, upd: 8;
+       c9wV: // global
+           I64[Sp - 24] = c9x1;
+           _s979::P64 = P64[R1 + 15];
+           _s97b::P64 = P64[R1 + 23];
+           _s97a::I64 = I64[R1 + 31];
+           R1 = P64[R1 + 7];
+           I64[Sp - 16] = _s97a::I64;
+           P64[Sp - 8] = _s97b::P64;
+           P64[Sp] = _s979::P64;
+           Sp = Sp - 24;
+           if (R1 & 7 != 0) goto c9x1; else goto c9x2;
+       c9x2: // global
+           call (I64[R1])(R1) returns to c9x1, args: 8, res: 8, upd: 8;
+       c9x1: // global
+           I64[Sp - 8] = c9x6;
+           _s97d::P64 = P64[R1 + 7];
+           _s97e::P64 = P64[R1 + 15];
+           R1 = P64[Sp + 24];
+           P64[Sp] = _s97e::P64;
+           P64[Sp + 24] = _s97d::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9x6; else goto c9x7;
+       c9x7: // global
+           call (I64[R1])(R1) returns to c9x6, args: 8, res: 8, upd: 8;
+       c9x6: // global
+           I64[Sp - 8] = c9xb;
+           _s97g::P64 = P64[R1 + 7];
+           _s97h::P64 = P64[R1 + 15];
+           R1 = P64[Sp + 32];
+           P64[Sp] = _s97h::P64;
+           P64[Sp + 32] = _s97g::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9xb; else goto c9xh;
+       c9xh: // global
+           call (I64[R1])(R1) returns to c9xb, args: 8, res: 8, upd: 8;
+       c9xb: // global
+           _s97j::I64 = I64[R1 + 7];
+           _s97k::I64 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(I64[Sp + 48] & 15));
+           if (%MO_S_Gt_W64(_s97j::I64,
+                            _s97k::I64)) goto c9yg; else goto c9xz;
+       c9xz: // global
+           I64[Sp] = c9xy;
+           R1 = P64[Sp + 40];
+           I64[Sp + 40] = _s97k::I64;
+           I64[Sp + 48] = _s97j::I64;
+           if (R1 & 7 != 0) goto c9xy; else goto c9xA;
+       c9xA: // global
+           call (I64[R1])(R1) returns to c9xy, args: 8, res: 8, upd: 8;
+       c9xy: // global
+           if (%MO_S_Gt_W64(I64[Sp + 40],
+                            I64[R1 + 7])) goto c9yg; else goto c9xR;
+       c9xR: // global
+           I64[Sp] = c9xL;
+           R1 = P64[Sp + 16];
+           if (R1 & 7 != 0) goto c9xL; else goto c9xM;
+       c9xM: // global
+           call (I64[R1])(R1) returns to c9xL, args: 8, res: 8, upd: 8;
+       c9xL: // global
+           I64[Sp] = c9xQ;
+           R3 = 17;
+           R2 = I64[Sp + 56];
+           I64[Sp + 56] = I64[R1 + 7];
+           call GHC.Classes.modInt#_info(R3,
+                                         R2) returns to c9xQ, args: 8, res: 8, upd: 8;
+       c9xQ: // global
+           _s97v::I64 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(R1));
+           if (%MO_S_Gt_W64(I64[Sp + 56],
+                            _s97v::I64)) goto c9yg; else goto c9y7;
+       c9y7: // global
+           _s97h::P64 = P64[Sp + 8];
+           I64[Sp + 8] = c9y6;
+           R1 = _s97h::P64;
+           I64[Sp + 16] = _s97v::I64;
+           Sp = Sp + 8;
+           if (R1 & 7 != 0) goto c9y6; else goto c9y8;
+       c9y8: // global
+           call (I64[R1])(R1) returns to c9y6, args: 8, res: 8, upd: 8;
+       c9y6: // global
+           _s97v::I64 = I64[Sp + 8];
+           _s97z::I64 = I64[R1 + 7];
+           if (%MO_S_Gt_W64(_s97v::I64,
+                            _s97z::I64)) goto u9zn; else goto c9zm;
+       u9zn: // global
+           Sp = Sp - 8;
+           goto c9yg;
+       c9yg: // global
+           R1 = GHC.Arr.hopelessIndexError_closure;
+           Sp = Sp + 64;
+           call (I64[R1])(R1) args: 8, res: 0, upd: 8;
+       c9zm: // global
+           _s97a::I64 = I64[Sp + 16];
+           _s97t::I64 = I64[Sp + 48];
+           _s97C::I64 = (I64[Sp + 32] - I64[Sp + 40]) * (_s97z::I64 + (1 - _s97t::I64)) + (_s97v::I64 - _s97t::I64);
+           if (%MO_S_Gt_W64(0, _s97C::I64)) goto c9yK; else goto c9zl;
+       c9zl: // global
+           if (%MO_S_Ge_W64(_s97C::I64,
+                            _s97a::I64)) goto c9yK; else goto c9zk;
+       c9yK: // global
+           R3 = _s97C::I64;
+           R2 = _s97a::I64;
+           Sp = Sp + 56;
+           call Main.viewGameState3_info(R3, R2) args: 8, res: 0, upd: 8;
+       c9zk: // global
+           if (I64[P64[Sp + 24] + ((%MO_S_Shr_W64(_s97C::I64,
+                                                  6) << 3) + 16)] & (1 << _s97C::I64 & 63) == 0) goto c9zg; else goto c9za;
+       c9zg: // global
+           R1 = GHC.Types.False_closure+1;
+           Sp = Sp + 56;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9za: // global
+           R1 = GHC.Types.True_closure+2;
+           Sp = Sp + 56;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+     }
+ },
+ sat_s9ap_entry() //  [R2, R1]
+         { info_tbl: [(c9zt,
+                       label: block_c9zt_info
+                       rep:StackRep [False]),
+                      (c9zw,
+                       label: sat_s9ap_info
+                       rep:HeapRep 1 ptrs { Fun {arity: 1 fun_type: ArgSpec 5} }),
+                      (c9zz,
+                       label: block_c9zz_info
+                       rep:StackRep [False, False]),
+                      (c9zE,
+                       label: block_c9zE_info
+                       rep:StackRep [True, False]),
+                      (c9A2,
+                       label: block_c9A2_info
+                       rep:StackRep [True, True, False]),
+                      (c9Af,
+                       label: block_c9Af_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9As,
+                       label: block_c9As_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Aw,
+                       label: block_c9Aw_info
+                       rep:StackRep [True]),
+                      (c9B7,
+                       label: block_c9B7_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Bk,
+                       label: block_c9Bk_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9BD,
+                       label: block_c9BD_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9C5,
+                       label: block_c9C5_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Cq,
+                       label: block_c9Cq_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9CI,
+                       label: block_c9CI_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Da,
+                       label: block_c9Da_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9DB,
+                       label: block_c9DB_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9DN,
+                       label: block_c9DN_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9E6,
+                       label: block_c9E6_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Ey,
+                       label: block_c9Ey_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9ET,
+                       label: block_c9ET_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Fb,
+                       label: block_c9Fb_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9FD,
+                       label: block_c9FD_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9G5,
+                       label: block_c9G5_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Gi,
+                       label: block_c9Gi_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9GE,
+                       label: block_c9GE_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9H5,
+                       label: block_c9H5_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9Hh,
+                       label: block_c9Hh_info
+                       rep:StackRep [True, True, True, False]),
+                      (c9HD,
+                       label: block_c9HD_info
+                       rep:StackRep [True, True, True, False])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9zw: // global
+           if ((Sp + -40) < SpLim) (likely: False) goto c9zF; else goto c9zG;
+       c9zF: // global
+           R2 = R2;
+           R1 = R1;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9zG: // global
+           I64[Sp - 16] = c9zt;
+           _s974::P64 = P64[R1 + 7];
+           R1 = R2;
+           P64[Sp - 8] = _s974::P64;
+           Sp = Sp - 16;
+           if (R1 & 7 != 0) goto c9zt; else goto c9zu;
+       c9zu: // global
+           call (I64[R1])(R1) returns to c9zt, args: 8, res: 8, upd: 8;
+       c9zt: // global
+           I64[Sp - 8] = c9zz;
+           _s97V::P64 = P64[R1 + 7];
+           R1 = P64[R1 + 15];
+           P64[Sp] = _s97V::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9zz; else goto c9zA;
+       c9zA: // global
+           call (I64[R1])(R1) returns to c9zz, args: 8, res: 8, upd: 8;
+       c9zz: // global
+           I64[Sp] = c9zE;
+           _s97Y::I64 = I64[R1 + 7];
+           R1 = P64[Sp + 8];
+           I64[Sp + 8] = _s97Y::I64;
+           if (R1 & 7 != 0) goto c9zE; else goto c9zJ;
+       c9zJ: // global
+           call (I64[R1])(R1) returns to c9zE, args: 8, res: 8, upd: 8;
+       c9zE: // global
+           I64[Sp - 8] = c9A2;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(I64[Sp + 8] - 1));
+           _s980::I64 = I64[R1 + 7];
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 - 1));
+           R1 = P64[Sp + 16];
+           I64[Sp] = _s980::I64;
+           Sp = Sp - 8;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9A2, args: 8, res: 8, upd: 8;
+       c9A2: // global
+           _s974::P64 = P64[Sp + 24];
+           _s97Y::I64 = I64[Sp + 16];
+           _s980::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9HU; else goto c9HY;
+       c9HU: // global
+           _s982::I64 = 0;
+           goto s981;
+       c9HY: // global
+           _s982::I64 = 1;
+           goto s981;
+       s981: // global
+           I64[Sp - 8] = c9Af;
+           R3 = _s97Y::I64;
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 - 1));
+           R1 = _s974::P64;
+           I64[Sp] = _s982::I64;
+           Sp = Sp - 8;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Af, args: 8, res: 8, upd: 8;
+       c9Af: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9G7; else goto c9H6;
+       c9G7: // global
+           I64[Sp] = c9G5;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 - 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9G5, args: 8, res: 8, upd: 8;
+       c9G5: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9Gk; else goto c9GF;
+       c9Gk: // global
+           I64[Sp] = c9Gi;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 - 1));
+           R2 = _s980::I64;
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Gi, args: 8, res: 8, upd: 8;
+       c9Gi: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s982::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9Gq; else goto c9Gu;
+       c9Gq: // global
+           _s984::I64 = _s982::I64;
+           goto s983;
+       c9Gu: // global
+           _s984::I64 = _s982::I64 + 1;
+           goto s983;
+       c9GF: // global
+           I64[Sp] = c9GE;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 - 1));
+           R2 = _s980::I64;
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9GE, args: 8, res: 8, upd: 8;
+       c9GE: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s982::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9GL; else goto c9GP;
+       c9GL: // global
+           _s984::I64 = _s982::I64 + 1;
+           goto s983;
+       c9GP: // global
+           _s984::I64 = _s982::I64 + 2;
+           goto s983;
+       c9H6: // global
+           I64[Sp] = c9H5;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 - 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9H5, args: 8, res: 8, upd: 8;
+       c9H5: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9Hj; else goto c9HE;
+       c9Hj: // global
+           I64[Sp] = c9Hh;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 - 1));
+           R2 = _s980::I64;
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Hh, args: 8, res: 8, upd: 8;
+       c9Hh: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s982::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9Hp; else goto c9Ht;
+       c9Hp: // global
+           _s984::I64 = _s982::I64 + 1;
+           goto s983;
+       c9Ht: // global
+           _s984::I64 = _s982::I64 + 2;
+           goto s983;
+       c9HE: // global
+           I64[Sp] = c9HD;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 - 1));
+           R2 = _s980::I64;
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9HD, args: 8, res: 8, upd: 8;
+       c9HD: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s982::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9HK; else goto c9HO;
+       c9HK: // global
+           _s984::I64 = _s982::I64 + 2;
+           goto s983;
+       c9HO: // global
+           _s984::I64 = _s982::I64 + 3;
+           goto s983;
+       s983: // global
+           I64[Sp] = c9As;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = _s980::I64;
+           R1 = _s974::P64;
+           I64[Sp + 8] = _s984::I64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9As, args: 8, res: 8, upd: 8;
+       c9As: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9B9; else goto c9DC;
+       c9B9: // global
+           I64[Sp] = c9B7;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 - 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9B7, args: 8, res: 8, upd: 8;
+       c9B7: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9Bm; else goto c9Cr;
+       c9Bm: // global
+           I64[Sp] = c9Bk;
+           R3 = _s97Y::I64;
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Bk, args: 8, res: 8, upd: 8;
+       c9Bk: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9BF; else goto c9C6;
+       c9BF: // global
+           I64[Sp] = c9BD;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9BD, args: 8, res: 8, upd: 8;
+       c9BD: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9BL; else goto c9BP;
+       c9BL: // global
+           _s986::I64 = _s984::I64;
+           goto s985;
+       c9BP: // global
+           _s986::I64 = _s984::I64 + 1;
+           goto s985;
+       c9C6: // global
+           I64[Sp] = c9C5;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9C5, args: 8, res: 8, upd: 8;
+       c9C5: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9Cc; else goto c9Cg;
+       c9Cc: // global
+           _s986::I64 = _s984::I64 + 1;
+           goto s985;
+       c9Cg: // global
+           _s986::I64 = _s984::I64 + 2;
+           goto s985;
+       c9Cr: // global
+           I64[Sp] = c9Cq;
+           R3 = _s97Y::I64;
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Cq, args: 8, res: 8, upd: 8;
+       c9Cq: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9CK; else goto c9Db;
+       c9CK: // global
+           I64[Sp] = c9CI;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9CI, args: 8, res: 8, upd: 8;
+       c9CI: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9CQ; else goto c9CU;
+       c9CQ: // global
+           _s986::I64 = _s984::I64 + 1;
+           goto s985;
+       c9CU: // global
+           _s986::I64 = _s984::I64 + 2;
+           goto s985;
+       c9Db: // global
+           I64[Sp] = c9Da;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Da, args: 8, res: 8, upd: 8;
+       c9Da: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9Dh; else goto c9Dl;
+       c9Dh: // global
+           _s986::I64 = _s984::I64 + 2;
+           goto s985;
+       c9Dl: // global
+           _s986::I64 = _s984::I64 + 3;
+           goto s985;
+       c9DC: // global
+           I64[Sp] = c9DB;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 - 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9DB, args: 8, res: 8, upd: 8;
+       c9DB: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9DP; else goto c9EU;
+       c9DP: // global
+           I64[Sp] = c9DN;
+           R3 = _s97Y::I64;
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9DN, args: 8, res: 8, upd: 8;
+       c9DN: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9E8; else goto c9Ez;
+       c9E8: // global
+           I64[Sp] = c9E6;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9E6, args: 8, res: 8, upd: 8;
+       c9E6: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9Ee; else goto c9Ei;
+       c9Ee: // global
+           _s986::I64 = _s984::I64 + 1;
+           goto s985;
+       c9Ei: // global
+           _s986::I64 = _s984::I64 + 2;
+           goto s985;
+       c9Ez: // global
+           I64[Sp] = c9Ey;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Ey, args: 8, res: 8, upd: 8;
+       c9Ey: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9EF; else goto c9EJ;
+       c9EF: // global
+           _s986::I64 = _s984::I64 + 2;
+           goto s985;
+       c9EJ: // global
+           _s986::I64 = _s984::I64 + 3;
+           goto s985;
+       c9EU: // global
+           I64[Sp] = c9ET;
+           R3 = _s97Y::I64;
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9ET, args: 8, res: 8, upd: 8;
+       c9ET: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           if (R1 & 7 == 1) goto c9Fd; else goto c9FE;
+       c9Fd: // global
+           I64[Sp] = c9Fb;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Fb, args: 8, res: 8, upd: 8;
+       c9Fb: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9Fj; else goto c9Fn;
+       c9Fj: // global
+           _s986::I64 = _s984::I64 + 2;
+           goto s985;
+       c9Fn: // global
+           _s986::I64 = _s984::I64 + 3;
+           goto s985;
+       c9FE: // global
+           I64[Sp] = c9FD;
+           R3 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s97Y::I64 + 1));
+           R2 = %MO_SS_Conv_W8_W64(%MO_SS_Conv_W64_W8(_s980::I64 + 1));
+           R1 = _s974::P64;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9FD, args: 8, res: 8, upd: 8;
+       c9FD: // global
+           _s974::P64 = P64[Sp + 32];
+           _s97Y::I64 = I64[Sp + 24];
+           _s980::I64 = I64[Sp + 16];
+           _s984::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9FK; else goto c9FO;
+       c9FK: // global
+           _s986::I64 = _s984::I64 + 3;
+           goto s985;
+       c9FO: // global
+           _s986::I64 = _s984::I64 + 4;
+           goto s985;
+       s985: // global
+           I64[Sp + 24] = c9Aw;
+           R3 = _s97Y::I64;
+           R2 = _s980::I64;
+           R1 = _s974::P64;
+           I64[Sp + 32] = _s986::I64;
+           Sp = Sp + 24;
+           call $wg_s974_info(R3,
+                              R2,
+                              R1) returns to c9Aw, args: 8, res: 8, upd: 8;
+       c9Aw: // global
+           _s986::I64 = I64[Sp + 8];
+           if (R1 & 7 == 1) goto c9AH; else goto c9AQ;
+       c9AH: // global
+           if (_s986::I64 == 3) goto c9AP; else goto c9AN;
+       c9AQ: // global
+           if (%MO_S_Lt_W64(_s986::I64, 3)) goto u9JN; else goto u9JO;
+       u9JN: // global
+           if (%MO_S_Lt_W64(_s986::I64, 2)) goto c9AN; else goto c9AP;
+       u9JO: // global
+           if (%MO_S_Lt_W64(_s986::I64, 4)) goto c9AP; else goto c9AN;
+       c9AP: // global
+           R1 = GHC.Types.True_closure+2;
+           Sp = Sp + 16;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9AN: // global
+           R1 = GHC.Types.False_closure+1;
+           Sp = Sp + 16;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+     }
+ },
+ Main.updateGameState_entry() //  [R2]
+         { info_tbl: [(c9JP,
+                       label: Main.updateGameState_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 5} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9JP: // global
+           Hp = Hp + 32;
+           if (Hp > HpLim) (likely: False) goto c9JT; else goto c9JS;
+       c9JT: // global
+           HpAlloc = 32;
+           R2 = R2;
+           R1 = Main.updateGameState_closure;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9JS: // global
+           I64[Hp - 24] = $wg_s974_info;
+           P64[Hp - 16] = R2;
+           I64[Hp - 8] = sat_s9ap_info;
+           P64[Hp] = Hp - 22;
+           R6 = Hp - 7;
+           R5 = Main.xWidth_closure+1;
+           R4 = 15;
+           R3 = Main.fieldSize4_closure+1;
+           R2 = 0;
+           call Main.$w$sarrayByIndex_info(R6,
+                                           R5,
+                                           R4,
+                                           R3,
+                                           R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.39064 UTC
+
+[section ""data" . Main.$wloop_closure" {
+     Main.$wloop_closure:
+         const Main.$wloop_info;
+         const 0;
+ },
+ sat_s9au_entry() //  [R1]
+         { info_tbl: [(c9Mn,
+                       label: sat_s9au_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Mn: // global
+           R2 = P64[R1 + 16];
+           call Main.viewGameState_info(R2) args: 8, res: 0, upd: 8;
+     }
+ },
+ sat_s9ay_entry() //  [R1]
+         { info_tbl: [(c9Mt,
+                       label: sat_s9ay_info
+                       rep:HeapRep 1 ptrs { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Mt: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9Mu; else goto c9Mv;
+       c9Mu: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9Mv: // global
+           I64[Sp - 16] = stg_upd_frame_info;
+           P64[Sp - 8] = R1;
+           R2 = P64[R1 + 16];
+           Sp = Sp - 16;
+           call Main.updateGameState_info(R2) args: 24, res: 0, upd: 24;
+     }
+ },
+ Main.$wloop_entry() //  [R3, R2]
+         { info_tbl: [(c9Mf,
+                       label: block_c9Mf_info
+                       rep:StackRep [False, True]),
+                      (c9Mz,
+                       label: Main.$wloop_info
+                       rep:HeapRep static { Fun {arity: 3 fun_type: ArgSpec 14} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Mz: // global
+           _s9ar::I64 = R3;
+           _s9aq::P64 = R2;
+           if ((Sp + -24) < SpLim) (likely: False) goto c9MA; else goto c9M8;
+       c9M8: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9MD; else goto c9MC;
+       c9MD: // global
+           HpAlloc = 24;
+           goto c9MA;
+       c9MA: // global
+           R3 = _s9ar::I64;
+           R2 = _s9aq::P64;
+           R1 = Main.$wloop_closure;
+           call (stg_gc_fun)(R3, R2, R1) args: 8, res: 0, upd: 8;
+       c9MC: // global
+           if (_s9ar::I64 == 0) goto c9My; else goto c9Mx;
+       c9My: // global
+           Hp = Hp - 24;
+           R1 = GHC.Tuple.()_closure+1;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       c9Mx: // global
+           I64[Hp - 16] = sat_s9au_info;
+           P64[Hp] = _s9aq::P64;
+           I64[Sp - 24] = c9Mf;
+           R4 = GHC.Types.True_closure+2;
+           R3 = Hp - 16;
+           R2 = GHC.IO.Handle.FD.stdout_closure;
+           P64[Sp - 16] = _s9aq::P64;
+           I64[Sp - 8] = _s9ar::I64;
+           Sp = Sp - 24;
+           call GHC.IO.Handle.Text.hPutStr2_info(R4,
+                                                 R3,
+                                                 R2) returns to c9Mf, args: 8, res: 8, upd: 8;
+       c9Mf: // global
+           Hp = Hp + 24;
+           if (Hp > HpLim) (likely: False) goto c9MG; else goto c9MF;
+       c9MG: // global
+           HpAlloc = 24;
+           R1 = R1;
+           call stg_gc_unpt_r1(R1) returns to c9Mf, args: 8, res: 8, upd: 8;
+       c9MF: // global
+           I64[Hp - 16] = sat_s9ay_info;
+           P64[Hp] = P64[Sp + 8];
+           _s9ar::I64 = I64[Sp + 16] - 1;
+           Sp = Sp + 24;
+           _s9aq::P64 = Hp - 16;
+           goto c9M8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4061836 UTC
+
+[section ""data" . Main.loop1_closure" {
+     Main.loop1_closure:
+         const Main.loop1_info;
+         const 0;
+ },
+ Main.loop1_entry() //  [R3, R2]
+         { info_tbl: [(c9MY,
+                       label: block_c9MY_info
+                       rep:StackRep [False]),
+                      (c9N1,
+                       label: Main.loop1_info
+                       rep:HeapRep static { Fun {arity: 3 fun_type: ArgSpec 15} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9N1: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9N2; else goto c9N3;
+       c9N2: // global
+           R3 = R3;
+           R2 = R2;
+           R1 = Main.loop1_closure;
+           call (stg_gc_fun)(R3, R2, R1) args: 8, res: 0, upd: 8;
+       c9N3: // global
+           I64[Sp - 16] = c9MY;
+           R1 = R3;
+           P64[Sp - 8] = R2;
+           Sp = Sp - 16;
+           if (R1 & 7 != 0) goto c9MY; else goto c9MZ;
+       c9MZ: // global
+           call (I64[R1])(R1) returns to c9MY, args: 8, res: 8, upd: 8;
+       c9MY: // global
+           R3 = I64[R1 + 7];
+           R2 = P64[Sp + 8];
+           Sp = Sp + 16;
+           call Main.$wloop_info(R3, R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4061836 UTC
+
+[section ""data" . Main.loop_closure" {
+     Main.loop_closure:
+         const Main.loop_info;
+         const 0;
+ },
+ Main.loop_entry() //  [R3, R2]
+         { info_tbl: [(c9Nf,
+                       label: Main.loop_info
+                       rep:HeapRep static { Fun {arity: 3 fun_type: ArgSpec 15} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Nf: // global
+           R3 = R3;
+           R2 = R2;
+           call Main.loop1_info(R3, R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4061836 UTC
+
+[section ""data" . Main.newGameState1_closure" {
+     Main.newGameState1_closure:
+         const Main.newGameState1_info;
+ },
+ Main.newGameState1_entry() //  [R2]
+         { info_tbl: [(c9Np,
+                       label: block_c9Np_info
+                       rep:StackRep []),
+                      (c9Ns,
+                       label: Main.newGameState1_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 5} }),
+                      (c9Nv,
+                       label: block_c9Nv_info
+                       rep:StackRep [False]),
+                      (c9NP,
+                       label: block_c9NP_info
+                       rep:StackRep []),
+                      (c9O1,
+                       label: block_c9O1_info
+                       rep:StackRep []),
+                      (c9Oj,
+                       label: block_c9Oj_info
+                       rep:StackRep [True, False])]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Ns: // global
+           if ((Sp + -24) < SpLim) (likely: False) goto c9Nw; else goto c9Nx;
+       c9Nw: // global
+           R2 = R2;
+           R1 = Main.newGameState1_closure;
+           call (stg_gc_fun)(R2, R1) args: 8, res: 0, upd: 8;
+       c9Nx: // global
+           I64[Sp - 8] = c9Np;
+           R1 = R2;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9Np; else goto c9Nq;
+       c9Nq: // global
+           call (I64[R1])(R1) returns to c9Np, args: 8, res: 8, upd: 8;
+       c9Np: // global
+           I64[Sp - 8] = c9Nv;
+           _s9aI::P64 = P64[R1 + 15];
+           R1 = P64[R1 + 7];
+           P64[Sp] = _s9aI::P64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9Nv; else goto c9Nz;
+       c9Nz: // global
+           call (I64[R1])(R1) returns to c9Nv, args: 8, res: 8, upd: 8;
+       c9Nv: // global
+           _s9aI::P64 = P64[Sp + 8];
+           _s9aK::I64 = I64[R1 + 7];
+           if (_s9aK::I64 != 0) goto s9aL; else goto c9Ok;
+       c9Ok: // global
+           I64[Sp - 8] = c9Oj;
+           R1 = _s9aI::P64;
+           I64[Sp] = _s9aK::I64;
+           Sp = Sp - 8;
+           if (R1 & 7 != 0) goto c9Oj; else goto c9Ol;
+       c9Ol: // global
+           call (I64[R1])(R1) returns to c9Oj, args: 8, res: 8, upd: 8;
+       c9Oj: // global
+           if (I64[R1 + 7] == 1) goto c9Ot; else goto u9Oy;
+       u9Oy: // global
+           _s9aI::P64 = P64[Sp + 16];
+           _s9aK::I64 = I64[Sp + 8];
+           Sp = Sp + 8;
+           goto s9aL;
+       s9aL: // global
+           if (%MO_S_Lt_W64(_s9aK::I64, 2)) goto u9Ow; else goto u9Ox;
+       u9Ow: // global
+           if (%MO_S_Lt_W64(_s9aK::I64, 1)) goto c9Oa; else goto c9NQ;
+       c9NQ: // global
+           I64[Sp + 8] = c9NP;
+           R1 = _s9aI::P64;
+           Sp = Sp + 8;
+           if (R1 & 7 != 0) goto c9NP; else goto c9NR;
+       c9NR: // global
+           call (I64[R1])(R1) returns to c9NP, args: 8, res: 8, upd: 8;
+       c9NP: // global
+           if (I64[R1 + 7] == 2) goto u9Oz; else goto u9OA;
+       u9Oz: // global
+           Sp = Sp - 16;
+           goto c9Ot;
+       u9OA: // global
+           Sp = Sp - 8;
+           goto c9Oa;
+       u9Ox: // global
+           if (%MO_S_Ge_W64(_s9aK::I64, 3)) goto c9Oa; else goto c9O2;
+       c9O2: // global
+           I64[Sp + 8] = c9O1;
+           R1 = _s9aI::P64;
+           Sp = Sp + 8;
+           if (R1 & 7 != 0) goto c9O1; else goto c9O3;
+       c9O3: // global
+           call (I64[R1])(R1) returns to c9O1, args: 8, res: 8, upd: 8;
+       c9O1: // global
+           _s9aT::I64 = I64[R1 + 7];
+           if (%MO_S_Lt_W64(_s9aT::I64, 3)) goto u9Ou; else goto u9OB;
+       u9Ou: // global
+           if (%MO_S_Lt_W64(_s9aT::I64, 0)) goto u9OC; else goto u9Ov;
+       u9OC: // global
+           Sp = Sp - 8;
+           goto c9Oa;
+       u9Ov: // global
+           if (_s9aT::I64 != 1) goto u9OE; else goto u9OE;
+       u9OE: // global
+           Sp = Sp - 16;
+           goto c9Ot;
+       c9Ot: // global
+           R1 = GHC.Types.True_closure+2;
+           Sp = Sp + 24;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+       u9OB: // global
+           Sp = Sp - 8;
+           goto c9Oa;
+       c9Oa: // global
+           R1 = GHC.Types.False_closure+1;
+           Sp = Sp + 16;
+           call (P64[Sp])(R1) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4286349 UTC
+
+[section ""data" . Main.newGameState_closure" {
+     Main.newGameState_closure:
+         const Main.newGameState_info;
+         const 0;
+         const 0;
+         const 0;
+ },
+ Main.newGameState_entry() //  [R1]
+         { info_tbl: [(c9OP,
+                       label: Main.newGameState_info
+                       rep:HeapRep static { Thunk })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9OP: // global
+           if ((Sp + -16) < SpLim) (likely: False) goto c9OQ; else goto c9OR;
+       c9OQ: // global
+           R1 = R1;
+           call (stg_gc_enter_1)(R1) args: 8, res: 0, upd: 8;
+       c9OR: // global
+           (_c9OM::I64) = call "ccall" arg hints:  [PtrHint,
+                                                    PtrHint]  result hints:  [PtrHint] newCAF(BaseReg, R1);
+           if (_c9OM::I64 == 0) goto c9OO; else goto c9ON;
+       c9OO: // global
+           call (I64[R1])() args: 8, res: 0, upd: 8;
+       c9ON: // global
+           I64[Sp - 16] = stg_bh_upd_frame_info;
+           I64[Sp - 8] = _c9OM::I64;
+           R6 = Main.newGameState1_closure+1;
+           R5 = Main.xWidth_closure+1;
+           R4 = 15;
+           R3 = Main.fieldSize4_closure+1;
+           R2 = 0;
+           Sp = Sp - 16;
+           call Main.$w$sarrayByIndex_info(R6,
+                                           R5,
+                                           R4,
+                                           R3,
+                                           R2) args: 24, res: 0, upd: 24;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4336238 UTC
+
+[section ""data" . Main.main1_closure" {
+     Main.main1_closure:
+         const Main.main1_info;
+         const 0;
+ },
+ Main.main1_entry() //  []
+         { info_tbl: [(c9P0,
+                       label: block_c9P0_info
+                       rep:StackRep []),
+                      (c9P2,
+                       label: Main.main1_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 3} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9P2: // global
+           if ((Sp + -8) < SpLim) (likely: False) goto c9P3; else goto c9P4;
+       c9P3: // global
+           R1 = Main.main1_closure;
+           call (stg_gc_fun)(R1) args: 8, res: 0, upd: 8;
+       c9P4: // global
+           I64[Sp - 8] = c9P0;
+           R3 = GHC.IO.Handle.Types.NoBuffering_closure+1;
+           R2 = GHC.IO.Handle.FD.stdout_closure;
+           Sp = Sp - 8;
+           call GHC.IO.Handle.hSetBuffering1_info(R3,
+                                                  R2) returns to c9P0, args: 8, res: 8, upd: 8;
+       c9P0: // global
+           R3 = 4000;
+           R2 = Main.newGameState_closure;
+           Sp = Sp + 8;
+           call Main.$wloop_info(R3, R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.438616 UTC
+
+[section ""data" . Main.main_closure" {
+     Main.main_closure:
+         const Main.main_info;
+         const 0;
+ },
+ Main.main_entry() //  []
+         { info_tbl: [(c9Pe,
+                       label: Main.main_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 3} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Pe: // global
+           call Main.main1_info() args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4426136 UTC
+
+[section ""data" . Main.main2_closure" {
+     Main.main2_closure:
+         const Main.main2_info;
+         const 0;
+ },
+ Main.main2_entry() //  []
+         { info_tbl: [(c9Po,
+                       label: Main.main2_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 3} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Po: // global
+           R2 = Main.main1_closure+1;
+           call GHC.TopHandler.runMainIO1_info(R2) args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4456114 UTC
+
+[section ""data" . :Main.main_closure" {
+     :Main.main_closure:
+         const :Main.main_info;
+         const 0;
+ },
+ :Main.main_entry() //  []
+         { info_tbl: [(c9Py,
+                       label: :Main.main_info
+                       rep:HeapRep static { Fun {arity: 1 fun_type: ArgSpec 3} })]
+           stack_info: arg_space: 8 updfr_space: Just 8
+         }
+     {offset
+       c9Py: // global
+           call Main.main2_info() args: 8, res: 0, upd: 8;
+     }
+ }]
+
+
+==================== Output Cmm ====================
+2018-12-28 08:49:49.4496058 UTC
+
+[section ""relreadonly" . S9bb_srt" {
+     S9bb_srt:
+         const GHC.Int.$w$cenumFromTo3_closure;
+         const Main.arrayByIndex16_closure;
+         const GHC.Err.error_closure;
+         const Main.arrayByIndex2_closure;
+         const Main.viewGameState3_closure;
+         const GHC.Arr.hopelessIndexError_closure;
+         const Main.viewGameState2_closure;
+         const Main.viewGameState_closure;
+         const Main.viewGameState1_closure;
+         const lvl8_r92e_closure;
+         const lvl11_r92h_closure;
+         const Main.arrayByIndex19_closure;
+         const Main.$w$sarrayByIndex_closure;
+         const Main.$warrayByIndex_closure;
+         const Main.arrayByIndex_closure;
+         const Main.updateGameState_closure;
+         const Main.$wloop_closure;
+         const GHC.IO.Handle.FD.stdout_closure;
+         const GHC.IO.Handle.Text.hPutStr2_closure;
+         const Main.loop1_closure;
+         const Main.newGameState_closure;
+         const Main.main1_closure;
+         const GHC.IO.Handle.hSetBuffering1_closure;
+         const GHC.TopHandler.runMainIO1_closure;
+         const Main.main2_closure;
+ }]
+

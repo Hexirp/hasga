@@ -1,0 +1,4784 @@
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6099995 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.viewGameState1_closure
+Main.viewGameState1_closure:
+	.quad	Main.viewGameState1_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6159914 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.viewGameState1_info)+0
+	.long	0
+	.quad	0
+	.quad	4294967317
+.globl Main.viewGameState1_info
+Main.viewGameState1_info:
+_c9b8:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9b9
+_c9ba:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9b7
+_c9b6:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $15,%esi
+	xorl %r14d,%r14d
+	addq $-16,%rbp
+	jmp GHC.Int.$w$cenumFromTo3_info
+_c9b9:
+	jmp *-16(%r13)
+_c9b7:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6209855 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.viewGameState2_closure
+Main.viewGameState2_closure:
+	.quad	Main.viewGameState2_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6239782 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.viewGameState2_info)+0
+	.long	0
+	.quad	0
+	.quad	4294967317
+.globl Main.viewGameState2_info
+Main.viewGameState2_info:
+_c9bm:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9bn
+_c9bo:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9bl
+_c9bk:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $16,%esi
+	xorl %r14d,%r14d
+	addq $-16,%rbp
+	jmp GHC.Int.$w$cenumFromTo3_info
+_c9bn:
+	jmp *-16(%r13)
+_c9bl:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6269773 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.arrayByIndex17_bytes
+Main.arrayByIndex17_bytes:
+	.asciz ")"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6299739 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.arrayByIndex18_bytes
+Main.arrayByIndex18_bytes:
+	.asciz " not in range [0.."
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6339676 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.arrayByIndex1_bytes
+Main.arrayByIndex1_bytes:
+	.asciz "Error in array index; "
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6369572 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex4_closure
+Main.arrayByIndex4_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	76
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6399538 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex5_closure
+Main.arrayByIndex5_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	83
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6429491 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex6_closure
+Main.arrayByIndex6_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	31
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.645945 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex7_closure
+Main.arrayByIndex7_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	82
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.648939 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.arrayByIndex9_bytes
+Main.arrayByIndex9_bytes:
+	.asciz "libraries\\\\array\\\\Data\\\\Array\\\\Base.hs"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.651933 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex8_closure
+Main.arrayByIndex8_closure:
+	.quad	Main.arrayByIndex8_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6559306 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	0
+	.quad	21
+.globl Main.arrayByIndex8_info
+Main.arrayByIndex8_info:
+_c9bH:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9bI
+_c9bJ:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9bG
+_c9bF:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $Main.arrayByIndex9_bytes,%r14d
+	addq $-16,%rbp
+	jmp GHC.CString.unpackCString#_info
+_c9bI:
+	jmp *-16(%r13)
+_c9bG:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6589265 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.arrayByIndex11_bytes
+Main.arrayByIndex11_bytes:
+	.asciz "Data.Array.Base"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6619174 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex10_closure
+Main.arrayByIndex10_closure:
+	.quad	Main.arrayByIndex10_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6659124 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	0
+	.quad	21
+.globl Main.arrayByIndex10_info
+Main.arrayByIndex10_info:
+_c9bV:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9bW
+_c9bX:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9bU
+_c9bT:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $Main.arrayByIndex11_bytes,%r14d
+	addq $-16,%rbp
+	jmp GHC.CString.unpackCString#_info
+_c9bW:
+	jmp *-16(%r13)
+_c9bU:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6689064 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.arrayByIndex13_bytes
+Main.arrayByIndex13_bytes:
+	.asciz "array-0.5.2.0"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6719017 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex12_closure
+Main.arrayByIndex12_closure:
+	.quad	Main.arrayByIndex12_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6748983 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	0
+	.quad	21
+.globl Main.arrayByIndex12_info
+Main.arrayByIndex12_info:
+_c9c9:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9ca
+_c9cb:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9c8
+_c9c7:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $Main.arrayByIndex13_bytes,%r14d
+	addq $-16,%rbp
+	jmp GHC.CString.unpackCString#_info
+_c9ca:
+	jmp *-16(%r13)
+_c9c8:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6778929 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex3_closure
+Main.arrayByIndex3_closure:
+	.quad	GHC.Stack.Types.SrcLoc_con_info
+	.quad	Main.arrayByIndex12_closure
+	.quad	Main.arrayByIndex10_closure
+	.quad	Main.arrayByIndex8_closure
+	.quad	Main.arrayByIndex7_closure+1
+	.quad	Main.arrayByIndex6_closure+1
+	.quad	Main.arrayByIndex5_closure+1
+	.quad	Main.arrayByIndex4_closure+1
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6808927 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.arrayByIndex15_bytes
+Main.arrayByIndex15_bytes:
+	.asciz "error"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6848832 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex14_closure
+Main.arrayByIndex14_closure:
+	.quad	Main.arrayByIndex14_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6878766 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	0
+	.quad	21
+.globl Main.arrayByIndex14_info
+Main.arrayByIndex14_info:
+_c9co:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9cp
+_c9cq:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9cn
+_c9cm:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $Main.arrayByIndex15_bytes,%r14d
+	addq $-16,%rbp
+	jmp GHC.CString.unpackCString#_info
+_c9cp:
+	jmp *-16(%r13)
+_c9cn:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6908725 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex2_closure
+Main.arrayByIndex2_closure:
+	.quad	GHC.Stack.Types.PushCallStack_con_info
+	.quad	Main.arrayByIndex14_closure
+	.quad	Main.arrayByIndex3_closure+1
+	.quad	GHC.Stack.Types.EmptyCallStack_closure+1
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6938672 UTC
+
+.section .data
+.align 8
+.align 1
+lvl_r925_closure:
+	.quad	GHC.Types.C#_con_info
+	.quad	32
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6958653 UTC
+
+.section .data
+.align 8
+.align 1
+lvl1_r926_closure:
+	.quad	GHC.Types.C#_con_info
+	.quad	45
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.6998623 UTC
+
+.section .data
+.align 8
+.align 1
+lvl2_r927_closure:
+	.quad	GHC.Types.C#_con_info
+	.quad	35
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7038515 UTC
+
+.section .data
+.align 8
+.align 1
+g_r928_closure:
+	.quad	g_r928_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7068462 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	1
+	.quad	16
+sat_s92F_info:
+_c9cN:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9cO
+_c9cP:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	addq $-16,%rbp
+	jmp g_r928_info
+_c9cO:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7098415 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	1
+	.quad	16
+sat_s92E_info:
+_c9d1:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9d2
+_c9d3:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9cU_info,-24(%rbp)
+	movq 16(%rbx),%rbx
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _c9cU
+_c9cV:
+	jmp *(%rbx)
+_c9d2:
+	jmp *-16(%r13)
+.align 8
+	.quad	0
+	.quad	30
+block_c9cU_info:
+_c9cU:
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9cY
+_c9cZ:
+	movl $lvl2_r927_closure+1,%ebx
+	addq $8,%rbp
+	jmp *(%rbp)
+_c9cY:
+	movl $lvl1_r926_closure+1,%ebx
+	addq $8,%rbp
+	jmp *(%rbp)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7148356 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	4294967301
+	.quad	0
+	.quad	14
+g_r928_info:
+_c9de:
+	leaq -8(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9df
+_c9dg:
+	movq $block_c9cD_info,-8(%rbp)
+	movq %r14,%rbx
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9cD
+_c9cE:
+	jmp *(%rbx)
+_c9dn:
+	movq $96,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.quad	0
+	.quad	30
+block_c9cD_info:
+_c9cD:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	je _c9db
+_c9dc:
+	addq $96,%r12
+	cmpq 856(%r13),%r12
+	ja _c9dn
+_c9dm:
+	movq 6(%rbx),%rax
+	movq 14(%rbx),%rbx
+	movq $sat_s92F_info,-88(%r12)
+	movq %rbx,-72(%r12)
+	movq $sat_s92E_info,-64(%r12)
+	movq %rax,-48(%r12)
+	movq $:_con_info,-40(%r12)
+	leaq -64(%r12),%rax
+	movq %rax,-32(%r12)
+	leaq -88(%r12),%rax
+	movq %rax,-24(%r12)
+	movq $:_con_info,-16(%r12)
+	movq $lvl_r925_closure+1,-8(%r12)
+	leaq -38(%r12),%rax
+	movq %rax,(%r12)
+	leaq -14(%r12),%rbx
+	addq $8,%rbp
+	jmp *(%rbp)
+_c9df:
+	movl $g_r928_closure,%ebx
+	jmp *-8(%r13)
+_c9db:
+	movl $[]_closure+1,%ebx
+	addq $8,%rbp
+	jmp *(%rbp)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7178309 UTC
+
+.section .rdata
+.align 1
+.align 1
+lvl3_r929_bytes:
+	.asciz "\n"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7218239 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.viewGameState_f_closure
+Main.viewGameState_f_closure:
+	.quad	Main.viewGameState_f_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7248192 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	1
+	.quad	16
+sat_s92M_info:
+_c9dY:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9dZ
+_c9e0:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	addq $-16,%rbp
+	jmp Main.viewGameState_f_info
+_c9dZ:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7278145 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	1
+	.quad	16
+sat_s92N_info:
+_c9e1:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9e5
+_c9e4:
+	movq 16(%rbx),%rax
+	movq $sat_s92M_info,-16(%r12)
+	movq %rax,(%r12)
+	leaq -16(%r12),%rsi
+	movl $lvl3_r929_bytes,%r14d
+	jmp GHC.CString.unpackAppendCString#_info
+_c9e5:
+	movq $24,904(%r13)
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7318128 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	4294967301
+	.quad	0
+	.quad	14
+.globl Main.viewGameState_f_info
+Main.viewGameState_f_info:
+_c9ea:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9eb
+_c9ec:
+	movq $block_c9dK_info,-8(%rbp)
+	movq %r14,%rbx
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9dK
+_c9dL:
+	jmp *(%rbx)
+_c9ei:
+	movq $24,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.quad	0
+	.quad	30
+block_c9dK_info:
+_c9dK:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	je _c9e7
+_c9e8:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9ei
+_c9eh:
+	movq 6(%rbx),%rax
+	movq 14(%rbx),%rbx
+	movq $sat_s92N_info,-16(%r12)
+	movq %rbx,(%r12)
+	movq $block_c9ef_info,-8(%rbp)
+	movq %rax,%r14
+	leaq -16(%r12),%rax
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	jmp g_r928_info
+.align 8
+	.quad	1
+	.quad	30
+block_c9ef_info:
+_c9ef:
+	movq 8(%rbp),%rsi
+	movq %rbx,%r14
+	addq $16,%rbp
+	jmp GHC.Base.++_info
+_c9eb:
+	movl $Main.viewGameState_f_closure,%ebx
+	jmp *-8(%r13)
+_c9e7:
+	movl $[]_closure+1,%ebx
+	addq $8,%rbp
+	jmp *(%rbp)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7358014 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex16_closure
+Main.arrayByIndex16_closure:
+	.quad	Main.arrayByIndex16_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.738796 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	0
+	.quad	21
+.globl Main.arrayByIndex16_info
+Main.arrayByIndex16_info:
+_c9eF:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9eG
+_c9eH:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9eE
+_c9eD:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $Main.arrayByIndex17_bytes,%r14d
+	addq $-16,%rbp
+	jmp GHC.CString.unpackCString#_info
+_c9eG:
+	jmp *-16(%r13)
+_c9eE:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7437888 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.viewGameState3_closure
+Main.viewGameState3_closure:
+	.quad	Main.viewGameState3_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7467848 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s92W_info)+8
+	.long	0
+	.quad	4294967296
+	.quad	4294967313
+sat_s92W_info:
+_c9f6:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9f7
+_c9f8:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9f4_info,-24(%rbp)
+	movl $GHC.Types.[]_closure+1,%edi
+	movq 16(%rbx),%rsi
+	xorl %r14d,%r14d
+	addq $-24,%rbp
+	jmp GHC.Show.$wshowSignedInt_info
+_c9f7:
+	jmp *-16(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9f4_info)+8
+	.long	0
+	.quad	0
+	.quad	4294967326
+block_c9f4_info:
+_c9f4:
+	movq %r14,%rdi
+	movq %rbx,%rsi
+	movl $Main.arrayByIndex16_closure,%r14d
+	addq $8,%rbp
+	jmp GHC.Base.++_$s++_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7507785 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s92X_info)+8
+	.long	0
+	.quad	4294967296
+	.quad	4294967313
+sat_s92X_info:
+_c9fa:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9fe
+_c9fd:
+	movq 16(%rbx),%rax
+	movq $sat_s92W_info,-16(%r12)
+	movq %rax,(%r12)
+	leaq -16(%r12),%rsi
+	movl $Main.arrayByIndex18_bytes,%r14d
+	jmp GHC.CString.unpackAppendCString#_info
+_c9fe:
+	movq $24,904(%r13)
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7627597 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s92Y_info)+8
+	.long	0
+	.quad	8589934592
+	.quad	4294967316
+sat_s92Y_info:
+_c9ff:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9fg
+_c9fh:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9eU_info,-32(%rbp)
+	movl $GHC.Types.[]_closure+1,%edi
+	movq 24(%rbx),%rsi
+	xorl %r14d,%r14d
+	movq 16(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Show.$wshowSignedInt_info
+_c9fk:
+	movq $24,904(%r13)
+	jmp stg_gc_pp
+.align 8
+	.long	S9bb_srt-(block_c9eU_info)+8
+	.long	0
+	.quad	65
+	.quad	4294967326
+block_c9eU_info:
+_c9eU:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9fk
+_c9fj:
+	movq $sat_s92X_info,-16(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,(%r12)
+	movq %r14,%rdi
+	movq %rbx,%rsi
+	leaq -16(%r12),%r14
+	addq $16,%rbp
+	jmp GHC.Base.++_$s++_info
+_c9fg:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7667573 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.viewGameState3_info)+8
+	.long	0
+	.quad	8589934604
+	.quad	0
+	.quad	64424509454
+.globl Main.viewGameState3_info
+Main.viewGameState3_info:
+_c9fn:
+	leaq -8(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9fo
+_c9fp:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _c9fr
+_c9fq:
+	movq $sat_s92Y_info,-24(%r12)
+	movq %r14,-8(%r12)
+	movq %rsi,(%r12)
+	movq $block_c9fl_info,-8(%rbp)
+	leaq -24(%r12),%rsi
+	movl $Main.arrayByIndex1_bytes,%r14d
+	addq $-8,%rbp
+	jmp GHC.CString.unpackAppendCString#_info
+_c9fr:
+	movq $32,904(%r13)
+_c9fo:
+	movl $Main.viewGameState3_closure,%ebx
+	jmp *-8(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9fl_info)+16
+	.long	0
+	.quad	0
+	.quad	12884901918
+block_c9fl_info:
+_c9fl:
+	movq %rbx,%rsi
+	movl $Main.arrayByIndex2_closure+2,%r14d
+	addq $8,%rbp
+	jmp GHC.Err.error_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7757393 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.viewGameState_closure
+Main.viewGameState_closure:
+	.quad	Main.viewGameState_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.781735 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s93X_info)+32
+	.long	0
+	.quad	3
+	.quad	12884901903
+sat_s93X_info:
+_c9gm:
+	leaq -80(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9gF
+_c9gG:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9gj_info,-40(%rbp)
+	movq 24(%rbx),%rax
+	movq 32(%rbx),%rcx
+	movq 16(%rbx),%rbx
+	movq %rax,-32(%rbp)
+	movq %rcx,-24(%rbp)
+	addq $-40,%rbp
+	testb $7,%bl
+	jne _c9gj
+_c9gk:
+	jmp *(%rbx)
+_c9iC:
+	movl $GHC.Types.False_closure+1,%ebx
+	addq $56,%rbp
+	jmp *(%rbp)
+.align 8
+	.long	S9bb_srt-(block_c9hs_info)+32
+	.long	0
+	.quad	3782
+	.quad	12884901918
+block_c9hs_info:
+_c9hs:
+	movq 8(%rbp),%rax
+	movq 7(%rbx),%rbx
+	cmpq %rbx,%rax
+	jg _u9iJ
+_c9iI:
+	movq 16(%rbp),%rcx
+	movq 48(%rbp),%rdx
+	subq %rdx,%rax
+	movl $1,%esi
+	subq %rdx,%rsi
+	addq %rsi,%rbx
+	movq 32(%rbp),%rdx
+	subq 40(%rbp),%rdx
+	imulq %rbx,%rdx
+	addq %rax,%rdx
+	cmpq $0,%rdx
+	jl _c9i6
+_c9iH:
+	cmpq %rcx,%rdx
+	jge _c9i6
+_c9iG:
+	movl $1,%eax
+	movq %rdx,%rcx
+	andl $63,%ecx
+	shlq %cl,%rax
+	movq 24(%rbp),%rbx
+	sarq $6,%rdx
+	movq 16(%rbx,%rdx,8),%rbx
+	andq %rax,%rbx
+	testq %rbx,%rbx
+	je _c9iC
+_c9iw:
+	movl $GHC.Types.True_closure+2,%ebx
+	addq $56,%rbp
+	jmp *(%rbp)
+_c9i6:
+	movq %rdx,%rsi
+	movq %rcx,%r14
+	addq $56,%rbp
+	jmp Main.viewGameState3_info
+_u9iJ:
+	addq $-8,%rbp
+_c9hC:
+	movl $GHC.Arr.hopelessIndexError_closure,%ebx
+	addq $64,%rbp
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9he_info)+32
+	.long	0
+	.quad	7559
+	.quad	12884901918
+block_c9he_info:
+_c9he:
+	movq 7(%rbx),%rax
+	cmpq 56(%rbp),%rax
+	jl _c9hC
+_c9ht:
+	movq 8(%rbp),%rbx
+	movq $block_c9hs_info,8(%rbp)
+	movq %rax,16(%rbp)
+	addq $8,%rbp
+	testb $7,%bl
+	jne _c9hs
+_c9hu:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9h9_info)+32
+	.long	0
+	.quad	3463
+	.quad	12884901918
+block_c9h9_info:
+_c9h9:
+	movq $block_c9he_info,(%rbp)
+	movq 7(%rbx),%rax
+	movq 56(%rbp),%rbx
+	movq %rax,56(%rbp)
+	testb $7,%bl
+	jne _c9he
+_c9hh:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9gW_info)+32
+	.long	0
+	.quad	3335
+	.quad	12884901918
+block_c9gW_info:
+_c9gW:
+	movq 40(%rbp),%rax
+	cmpq 7(%rbx),%rax
+	jg _c9hC
+_c9hf:
+	movq $block_c9h9_info,(%rbp)
+	movq 16(%rbp),%rbx
+	testb $7,%bl
+	jne _c9h9
+_c9ha:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9gE_info)+32
+	.long	0
+	.quad	2311
+	.quad	12884901918
+block_c9gE_info:
+_c9gE:
+	movq 7(%rbx),%rax
+	cmpq 48(%rbp),%rax
+	jl _c9hC
+_c9gX:
+	movq $block_c9gW_info,(%rbp)
+	movq 40(%rbp),%rbx
+	movq %rax,40(%rbp)
+	testb $7,%bl
+	jne _c9gW
+_c9gY:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9gz_info)+32
+	.long	0
+	.quad	263
+	.quad	12884901918
+block_c9gz_info:
+_c9gz:
+	movq $block_c9gE_info,(%rbp)
+	movq 7(%rbx),%rax
+	movq 48(%rbp),%rbx
+	movq %rax,48(%rbp)
+	testb $7,%bl
+	jne _c9gE
+_c9gL:
+	jmp *(%rbx)
+_c9gF:
+	jmp *-16(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9gu_info)+32
+	.long	0
+	.quad	134
+	.quad	12884901918
+block_c9gu_info:
+_c9gu:
+	movq $block_c9gz_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rbx
+	movq %rbx,%rcx
+	movq 32(%rbp),%rbx
+	movq %rcx,(%rbp)
+	movq %rax,32(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9gz
+_c9gA:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9gp_info)+32
+	.long	0
+	.quad	69
+	.quad	12884901918
+block_c9gp_info:
+_c9gp:
+	movq $block_c9gu_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rbx
+	movq %rbx,%rcx
+	movq 24(%rbp),%rbx
+	movq %rcx,(%rbp)
+	movq %rax,24(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9gu
+_c9gv:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9gj_info)+32
+	.long	0
+	.quad	2
+	.quad	12884901918
+block_c9gj_info:
+_c9gj:
+	movq $block_c9gp_info,-24(%rbp)
+	movq 15(%rbx),%rax
+	movq 23(%rbx),%rcx
+	movq 31(%rbx),%rdx
+	movq 7(%rbx),%rbx
+	movq %rdx,-16(%rbp)
+	movq %rcx,-8(%rbp)
+	movq %rax,(%rbp)
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _c9gp
+_c9gq:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7877205 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(go1_s936_info)+32
+	.long	0
+	.quad	4294967301
+	.quad	2
+	.quad	12884901899
+go1_s936_info:
+_c9iO:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9iP
+_c9iQ:
+	movq $block_c9g8_info,-32(%rbp)
+	movq %rbx,%rax
+	movq 7(%rbx),%rcx
+	movq 15(%rbx),%rbx
+	movq %rbx,%rdx
+	movq %r14,%rbx
+	movq %rcx,-24(%rbp)
+	movq %rdx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _c9g8
+_c9g9:
+	jmp *(%rbx)
+_c9iW:
+	movq $96,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.long	S9bb_srt-(block_c9g8_info)+32
+	.long	0
+	.quad	3
+	.quad	12884901918
+block_c9g8_info:
+_c9g8:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	je _c9iL
+_c9iM:
+	addq $96,%r12
+	cmpq 856(%r13),%r12
+	ja _c9iW
+_c9iV:
+	movq 6(%rbx),%rax
+	movq 14(%rbx),%rbx
+	movq $stg_ap_2_upd_info,-88(%r12)
+	movq 24(%rbp),%rcx
+	movq %rcx,-72(%r12)
+	movq %rbx,-64(%r12)
+	movq $sat_s93X_info,-56(%r12)
+	movq 8(%rbp),%rbx
+	movq %rbx,-40(%r12)
+	movq 16(%rbp),%rbx
+	movq %rbx,-32(%r12)
+	movq %rax,-24(%r12)
+	movq $:_con_info,-16(%r12)
+	leaq -56(%r12),%rax
+	movq %rax,-8(%r12)
+	leaq -88(%r12),%rax
+	movq %rax,(%r12)
+	leaq -14(%r12),%rbx
+	addq $32,%rbp
+	jmp *(%rbp)
+_c9iP:
+	jmp *-8(%r13)
+_c9iL:
+	movl $[]_closure+1,%ebx
+	addq $32,%rbp
+	jmp *(%rbp)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7917168 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s93Z_info)+32
+	.long	0
+	.quad	2
+	.quad	30064771090
+sat_s93Z_info:
+_c9iX:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9iY
+_c9iZ:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9j1
+_c9j0:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rbx
+	movq $go1_s936_info,-16(%r12)
+	movq %rax,-8(%r12)
+	movq %rbx,(%r12)
+	movl $Main.viewGameState2_closure,%r14d
+	leaq -15(%r12),%rbx
+	addq $-16,%rbp
+	jmp go1_s936_info
+_c9j1:
+	movq $24,904(%r13)
+_c9iY:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7957073 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(go_s931_info)+32
+	.long	0
+	.quad	4294967301
+	.quad	1
+	.quad	30064771081
+go_s931_info:
+_c9j6:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9j7
+_c9j8:
+	movq $block_c9fS_info,-24(%rbp)
+	movq %rbx,%rax
+	movq 7(%rbx),%rbx
+	movq %rbx,%rcx
+	movq %r14,%rbx
+	movq %rcx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _c9fS
+_c9fT:
+	jmp *(%rbx)
+_c9je:
+	movq $88,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.long	S9bb_srt-(block_c9fS_info)+32
+	.long	0
+	.quad	2
+	.quad	30064771102
+block_c9fS_info:
+_c9fS:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	je _c9j3
+_c9j4:
+	addq $88,%r12
+	cmpq 856(%r13),%r12
+	ja _c9je
+_c9jd:
+	movq 6(%rbx),%rax
+	movq 14(%rbx),%rbx
+	movq $stg_ap_2_upd_info,-80(%r12)
+	movq 16(%rbp),%rcx
+	movq %rcx,-64(%r12)
+	movq %rbx,-56(%r12)
+	movq $sat_s93Z_info,-48(%r12)
+	movq 8(%rbp),%rbx
+	movq %rbx,-32(%r12)
+	movq %rax,-24(%r12)
+	movq $:_con_info,-16(%r12)
+	leaq -48(%r12),%rax
+	movq %rax,-8(%r12)
+	leaq -80(%r12),%rax
+	movq %rax,(%r12)
+	leaq -14(%r12),%rbx
+	addq $24,%rbp
+	jmp *(%rbp)
+_c9j7:
+	jmp *-8(%r13)
+_c9j3:
+	movl $[]_closure+1,%ebx
+	addq $24,%rbp
+	jmp *(%rbp)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.7997017 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.viewGameState_info)+32
+	.long	0
+	.quad	4294967301
+	.quad	0
+	.quad	133143986190
+.globl Main.viewGameState_info
+Main.viewGameState_info:
+_c9jh:
+	leaq -8(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9ji
+_c9jj:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _c9jl
+_c9jk:
+	movq $go_s931_info,-8(%r12)
+	movq %r14,(%r12)
+	movq $block_c9jf_info,-8(%rbp)
+	movl $Main.viewGameState1_closure,%r14d
+	leaq -7(%r12),%rbx
+	addq $-8,%rbp
+	jmp go_s931_info
+_c9jl:
+	movq $16,904(%r13)
+_c9ji:
+	movl $Main.viewGameState_closure,%ebx
+	jmp *-8(%r13)
+.align 8
+	.quad	0
+	.quad	30
+block_c9jf_info:
+_c9jf:
+	movq %rbx,%r14
+	addq $8,%rbp
+	jmp Main.viewGameState_f_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8026976 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.xWidth_closure
+Main.xWidth_closure:
+	.quad	GHC.Int.I8#_con_info
+	.quad	16
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8056916 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.fieldSize2_closure
+Main.fieldSize2_closure:
+	.quad	GHC.Int.I8#_con_info
+	.quad	15
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8086876 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.fieldSize1_closure
+Main.fieldSize1_closure:
+	.quad	(,)_con_info
+	.quad	Main.fieldSize2_closure+1
+	.quad	Main.xWidth_closure+1
+	.quad	3
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8116835 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.fieldSize4_closure
+Main.fieldSize4_closure:
+	.quad	GHC.Int.I8#_con_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8146807 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.fieldSize3_closure
+Main.fieldSize3_closure:
+	.quad	(,)_con_info
+	.quad	Main.fieldSize4_closure+1
+	.quad	Main.fieldSize4_closure+1
+	.quad	3
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8166757 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.fieldSize_closure
+Main.fieldSize_closure:
+	.quad	(,)_con_info
+	.quad	Main.fieldSize3_closure+1
+	.quad	Main.fieldSize1_closure+1
+	.quad	3
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8196703 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.yWidth_closure
+Main.yWidth_closure:
+	.quad	GHC.Int.I8#_con_info
+	.quad	17
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8226676 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.$trModule2_bytes
+Main.$trModule2_bytes:
+	.asciz "Main"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8246638 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.$trModule1_closure
+Main.$trModule1_closure:
+	.quad	GHC.Types.TrNameS_con_info
+	.quad	Main.$trModule2_bytes
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8276578 UTC
+
+.section .rdata
+.align 1
+.align 1
+.globl Main.$trModule4_bytes
+Main.$trModule4_bytes:
+	.asciz "main"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8306557 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.$trModule3_closure
+Main.$trModule3_closure:
+	.quad	GHC.Types.TrNameS_con_info
+	.quad	Main.$trModule4_bytes
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8336516 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.$trModule_closure
+Main.$trModule_closure:
+	.quad	GHC.Types.Module_con_info
+	.quad	Main.$trModule3_closure+1
+	.quad	Main.$trModule1_closure+1
+	.quad	3
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8356459 UTC
+
+.section .data
+.align 8
+.align 1
+lvl4_r92a_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	74
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8386386 UTC
+
+.section .data
+.align 8
+.align 1
+lvl5_r92b_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	40
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8406425 UTC
+
+.section .data
+.align 8
+.align 1
+lvl6_r92c_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	67
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8436321 UTC
+
+.section .data
+.align 8
+.align 1
+lvl7_r92d_closure:
+	.quad	GHC.Stack.Types.SrcLoc_con_info
+	.quad	Main.arrayByIndex12_closure
+	.quad	Main.arrayByIndex10_closure
+	.quad	Main.arrayByIndex8_closure
+	.quad	lvl4_r92a_closure+1
+	.quad	lvl5_r92b_closure+1
+	.quad	lvl4_r92a_closure+1
+	.quad	lvl6_r92c_closure+1
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8466274 UTC
+
+.section .data
+.align 8
+.align 1
+lvl8_r92e_closure:
+	.quad	GHC.Stack.Types.PushCallStack_con_info
+	.quad	Main.arrayByIndex14_closure
+	.quad	lvl7_r92d_closure+1
+	.quad	GHC.Stack.Types.EmptyCallStack_closure+1
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8496291 UTC
+
+.section .rdata
+.align 1
+.align 1
+lvl9_r92f_bytes:
+	.asciz "Negative range size"
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8536158 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex19_closure
+Main.arrayByIndex19_closure:
+	.quad	Main.arrayByIndex19_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8566117 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.arrayByIndex19_info)+16
+	.long	0
+	.quad	0
+	.quad	554050781205
+.globl Main.arrayByIndex19_info
+Main.arrayByIndex19_info:
+_c9ky:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9kz
+_c9kA:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9kv
+_c9ku:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movq $block_c9kw_info,-24(%rbp)
+	movl $lvl9_r92f_bytes,%r14d
+	addq $-24,%rbp
+	jmp GHC.CString.unpackCString#_info
+_c9kz:
+	jmp *-16(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9kw_info)+16
+	.long	0
+	.quad	0
+	.quad	554050781214
+block_c9kw_info:
+_c9kw:
+	movq %rbx,%rsi
+	movl $lvl8_r92e_closure+2,%r14d
+	addq $8,%rbp
+	jmp GHC.Err.error_info
+_c9kv:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.859607 UTC
+
+.section .data
+.align 8
+.align 1
+lvl10_r92g_closure:
+	.quad	GHC.Types.I#_con_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8636052 UTC
+
+.section .data
+.align 8
+.align 1
+lvl11_r92h_closure:
+	.quad	lvl11_r92h_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.866596 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s948_info)+8
+	.long	0
+	.quad	1
+	.quad	4294967312
+sat_s948_info:
+_c9l1:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9l2
+_c9l3:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movl $Main.arrayByIndex16_closure,%esi
+	movq 16(%rbx),%r14
+	addq $-16,%rbp
+	jmp GHC.Base.++_info
+_c9l2:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8695913 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s949_info)+8
+	.long	0
+	.quad	1
+	.quad	4294967312
+sat_s949_info:
+_c9l4:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9l8
+_c9l7:
+	movq 16(%rbx),%rax
+	movq $sat_s948_info,-16(%r12)
+	movq %rax,(%r12)
+	leaq -16(%r12),%rsi
+	movl $Main.arrayByIndex18_bytes,%r14d
+	jmp GHC.CString.unpackAppendCString#_info
+_c9l8:
+	movq $24,904(%r13)
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8735851 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s94a_info)+8
+	.long	0
+	.quad	4294967297
+	.quad	4294967315
+sat_s94a_info:
+_c9l9:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9la
+_c9lb:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9kR_info,-32(%rbp)
+	movl $GHC.Types.[]_closure+1,%edi
+	movq 24(%rbx),%rsi
+	xorl %r14d,%r14d
+	movq 16(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Show.$wshowSignedInt_info
+_c9le:
+	movq $24,904(%r13)
+	jmp stg_gc_pp
+.align 8
+	.long	S9bb_srt-(block_c9kR_info)+8
+	.long	0
+	.quad	1
+	.quad	4294967326
+block_c9kR_info:
+_c9kR:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9le
+_c9ld:
+	movq $sat_s949_info,-16(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,(%r12)
+	movq %r14,%rdi
+	movq %rbx,%rsi
+	leaq -16(%r12),%r14
+	addq $16,%rbp
+	jmp GHC.Base.++_$s++_info
+_c9la:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8775788 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(lvl11_r92h_info)+8
+	.long	0
+	.quad	8589934606
+	.quad	0
+	.quad	2229088026638
+lvl11_r92h_info:
+_c9lh:
+	leaq -8(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9li
+_c9lj:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _c9ll
+_c9lk:
+	movq $sat_s94a_info,-24(%r12)
+	movq %r14,-8(%r12)
+	movq %rsi,(%r12)
+	movq $block_c9lf_info,-8(%rbp)
+	leaq -24(%r12),%rsi
+	movl $Main.arrayByIndex1_bytes,%r14d
+	addq $-8,%rbp
+	jmp GHC.CString.unpackAppendCString#_info
+_c9ll:
+	movq $32,904(%r13)
+_c9li:
+	movl $lvl11_r92h_closure,%ebx
+	jmp *-8(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9lf_info)+16
+	.long	0
+	.quad	0
+	.quad	12884901918
+block_c9lf_info:
+_c9lf:
+	movq %rbx,%rsi
+	movl $Main.arrayByIndex2_closure+2,%r14d
+	addq $8,%rbp
+	jmp GHC.Err.error_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.8935531 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.$w$sarrayByIndex_closure
+Main.$w$sarrayByIndex_closure:
+	.quad	Main.$w$sarrayByIndex_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.896549 UTC
+
+.section .text
+.align 8
+.globl Main.$w$sarrayByIndex_slow
+Main.$w$sarrayByIndex_slow:
+_c9lE:
+	movq 32(%rbp),%r9
+	movq 24(%rbp),%r8
+	movq 16(%rbp),%rdi
+	movq 8(%rbp),%rsi
+	movq (%rbp),%r14
+	addq $40,%rbp
+	jmp Main.$w$sarrayByIndex_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9015412 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(n_s94q_info)+88
+	.long	0
+	.quad	8589934594
+	.quad	4294967311
+n_s94q_info:
+_c9mb:
+	leaq -48(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9mc
+_c9n2:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 32(%rbx),%rax
+	movq 40(%rbx),%rcx
+	cmpq %rcx,%rax
+	jg _c9m9
+_c9ma:
+	movq $block_c9mf_info,-48(%rbp)
+	movq 24(%rbx),%rdx
+	movq 16(%rbx),%rbx
+	movq %rax,-40(%rbp)
+	movq %rcx,-32(%rbp)
+	movq %rdx,-24(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _c9mf
+_c9mg:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9mk_info)+88
+	.long	0
+	.quad	451
+	.quad	4294967326
+block_c9mk_info:
+_c9mk:
+	addq $16,%r12
+	cmpq 856(%r13),%r12
+	ja _c9ms
+_c9mr:
+	movq 24(%rbp),%rax
+	movq 7(%rbx),%rbx
+	cmpq %rbx,%rax
+	jg _c9mw
+_c9n1:
+	movq %rbx,%rcx
+	subq %rax,%rcx
+	movl $1,%edx
+	subq %rax,%rdx
+	addq %rdx,%rbx
+	movq 16(%rbp),%rax
+	subq 8(%rbp),%rax
+	imulq %rbx,%rax
+	addq %rcx,%rax
+	incq %rax
+	testq %rax,%rax
+	jge _c9mZ
+_c9n0:
+	addq $-16,%r12
+	movl $Main.arrayByIndex19_closure,%ebx
+	addq $32,%rbp
+	jmp *(%rbx)
+_c9mZ:
+	movq $GHC.Types.I#_con_info,-8(%r12)
+	movq %rax,(%r12)
+	leaq -7(%r12),%rbx
+	addq $32,%rbp
+	jmp *(%rbp)
+_c9mw:
+	addq $-16,%r12
+	movl $lvl10_r92g_closure+1,%ebx
+	addq $32,%rbp
+	jmp *(%rbp)
+_c9ms:
+	movq $16,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.long	S9bb_srt-(block_c9mf_info)+88
+	.long	0
+	.quad	195
+	.quad	4294967326
+block_c9mf_info:
+_c9mf:
+	movq $block_c9mk_info,(%rbp)
+	movq 7(%rbx),%rax
+	movq 24(%rbp),%rbx
+	movq %rax,24(%rbp)
+	testb $7,%bl
+	jne _c9mk
+_c9mm:
+	jmp *(%rbx)
+_c9mc:
+	jmp *-16(%r13)
+_c9m9:
+	movl $lvl10_r92g_closure+1,%ebx
+	addq $-16,%rbp
+	jmp *(%rbp)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9115255 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	Main.$w$sarrayByIndex_slow-(Main.$w$sarrayByIndex_info)+0
+	.long	0
+	.quad	325
+	.long	S9bb_srt-(Main.$w$sarrayByIndex_info)+0
+	.long	0
+	.quad	21474836480
+	.quad	0
+	.quad	30928059498510
+.globl Main.$w$sarrayByIndex_info
+Main.$w$sarrayByIndex_info:
+_c9nb:
+	leaq -136(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9nc
+_c9nd:
+	movq %rdi,%rax
+	movq %r14,%rbx
+	cmpq %rdi,%r14
+	jg _c9qY
+_c9n7:
+	movq $block_c9qJ_info,-48(%rbp)
+	movq %rbx,%rcx
+	movq %rsi,%rbx
+	movq %rcx,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %rax,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movq %r9,-8(%rbp)
+	addq $-48,%rbp
+	testb $7,%bl
+	jne _c9qJ
+_c9qK:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9qJ_info)+0
+	.long	0
+	.quad	325
+	.quad	13335873454110
+block_c9qJ_info:
+_c9qJ:
+	movq $block_c9qO_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 32(%rbp),%rbx
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9qO
+_c9qQ:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9qO_info)+0
+	.long	0
+	.quad	710
+	.quad	13335873454110
+block_c9qO_info:
+_c9qO:
+	movq 16(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 32(%rbp),%rdx
+	movq 40(%rbp),%rsi
+	movq 48(%rbp),%rdi
+	movq 8(%rbp),%r8
+	movq 7(%rbx),%rbx
+	cmpq %rbx,%r8
+	jg _u9rY
+_c9qZ:
+	addq $56,%rbp
+	movq %rbx,%r9
+	subq %r8,%r9
+	movl $1,%r10d
+	subq %r8,%r10
+	addq %r10,%rbx
+	movq %rdx,%r8
+	subq %rax,%r8
+	imulq %rbx,%r8
+	addq %r9,%r8
+	leaq 1(%r8),%rbx
+_s94h:
+	testq %rbx,%rbx
+	jge _c9nh
+_c9qF:
+	movq $block_c9qE_info,-8(%rbp)
+	movl $Main.arrayByIndex19_closure,%ebx
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9qE
+_c9qG:
+	jmp *(%rbx)
+_u9rY:
+	addq $56,%rbp
+_n9t8:
+	movq %rdi,%r9
+	movq %rsi,%r8
+	movq %rcx,%rsi
+	movq %rax,%rbx
+	movq %rdx,%rax
+_c9qY:
+	xorl %ecx,%ecx
+_n9t9:
+	movq %r9,%rdi
+	movq %rax,%rdx
+	movq %rbx,%rax
+	movq %rcx,%rbx
+	movq %rsi,%rcx
+	movq %r8,%rsi
+	jmp _s94h
+_u9s1:
+	addq $8,%rbp
+_c9pE:
+	movq $block_c9qE_info,112(%rbp)
+	movl $GHC.Arr.hopelessIndexError_closure,%ebx
+	addq $112,%rbp
+	testb $7,%bl
+	jne _c9qE
+	jmp _c9qG
+_u9s0:
+	addq $8,%rbp
+	jmp _c9pE
+.align 8
+	.long	S9bb_srt-(block_c9q5_info)+0
+	.long	0
+	.quad	1215568
+	.quad	4539780431902
+block_c9q5_info:
+_c9q5:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9qd
+_c9qc:
+	movq 8(%rbp),%rax
+	cmpq 7(%rbx),%rax
+	jge _c9qh
+_c9qp:
+	movq $(,)_con_info,-16(%r12)
+	movq 32(%rbp),%rbx
+	movq %rbx,-8(%r12)
+	movq 16(%rbp),%rbx
+	movq %rbx,(%r12)
+	sarq $6,%rax
+	movq 72(%rbp),%rbx
+	movq 16(%rbx,%rax,8),%rbx
+	movq $block_c9qo_info,(%rbp)
+	leaq -15(%r12),%r14
+	movq %rbx,%rcx
+	movq 112(%rbp),%rbx
+	movq %rcx,16(%rbp)
+	movq %rax,32(%rbp)
+	jmp stg_ap_p_fast
+_c9qd:
+	movq $24,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.long	S9bb_srt-(block_c9pk_info)+0
+	.long	0
+	.quad	607823
+	.quad	4539780431902
+block_c9pk_info:
+_c9pk:
+	movq 40(%rbp),%rax
+	movq 7(%rbx),%rcx
+	cmpq %rcx,%rax
+	jg _u9s0
+_c9qB:
+	movq 32(%rbp),%rdx
+	cmpq %rdx,%rcx
+	jg _u9s1
+_c9qA:
+	movq 120(%rbp),%rsi
+	subq %rax,%rcx
+	movl $1,%edi
+	subq %rax,%rdi
+	addq %rdi,%rdx
+	movq 8(%rbp),%rax
+	subq 72(%rbp),%rax
+	imulq %rdx,%rax
+	addq %rcx,%rax
+	cmpq $0,%rax
+	jl _n9te
+_c9q6:
+	movq $block_c9q5_info,-8(%rbp)
+	movq %rbx,%rcx
+	movq %rsi,%rbx
+	movq %rax,(%rbp)
+	movq %rcx,8(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9q5
+_c9q7:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9oW_info)+0
+	.long	0
+	.quad	303886
+	.quad	4539780431902
+block_c9oW_info:
+_c9oW:
+	movq 7(%rbx),%rax
+	cmpq 64(%rbp),%rax
+	jl _c9pE
+_c9qC:
+	cmpq 80(%rbp),%rax
+	jg _c9pE
+_c9pl:
+	movq $block_c9pk_info,-8(%rbp)
+	movq %rbx,%rcx
+	movq 16(%rbp),%rbx
+	movq %rax,(%rbp)
+	movq %rcx,16(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9pk
+_c9pm:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9oL_info)+0
+	.long	0
+	.quad	75980
+	.quad	4539780431902
+block_c9oL_info:
+_c9oL:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	je _c9oT
+_c9oY:
+	movq $block_c9oW_info,-16(%rbp)
+	movq 6(%rbx),%rax
+	movq 14(%rbx),%rbx
+	movq %rbx,%rcx
+	movq 32(%rbp),%rbx
+	movq %rcx,-8(%rbp)
+	movq %rax,(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _c9oW
+_c9oZ:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9qo_info)+0
+	.long	0
+	.quad	1216208
+	.quad	4539780431902
+block_c9qo_info:
+_c9qo:
+	movq 72(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 8(%rbp),%rdx
+	movq 32(%rbp),%rsi
+	movq 16(%rbp),%rdi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9qv
+_c9qz:
+	movl $1,%ebx
+	movq %rcx,%r8
+	movq %rdx,%rcx
+	andl $63,%ecx
+	shlq %cl,%rbx
+	orq %rbx,%rdi
+	movq %rdi,16(%rax,%rsi,8)
+	addq $32,%rbp
+_c9oJ:
+	movq $block_c9oL_info,(%rbp)
+	movq %r8,%rbx
+	testb $7,%bl
+	jne _c9oL
+_c9oN:
+	jmp *(%rbx)
+_c9qv:
+	movl $1,%ebx
+	movq %rcx,%r8
+	movq %rdx,%rcx
+	andl $63,%ecx
+	shlq %cl,%rbx
+	xorq $-1,%rbx
+	andq %rbx,%rdi
+	movq %rdi,16(%rax,%rsi,8)
+	addq $32,%rbp
+	jmp _c9oJ
+.align 8
+	.long	S9bb_srt-(block_c9ol_info)+0
+	.long	0
+	.quad	75980
+	.quad	4539780431902
+block_c9ol_info:
+_c9ol:
+_n9ta:
+	movq %rbx,%r8
+	jmp _c9oJ
+.align 8
+	.long	S9bb_srt-(block_c9ob_info)+0
+	.long	0
+	.quad	18954
+	.quad	4539780431902
+block_c9ob_info:
+_c9ob:
+	movq $block_c9og_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 56(%rbp),%rbx
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9og
+_c9oh:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9og_info)+0
+	.long	0
+	.quad	37963
+	.quad	4539780431902
+block_c9og_info:
+_c9og:
+	movq $block_c9ol_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq %rax,%rsi
+	movq 8(%rbp),%r14
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	jmp GHC.Int.$w$cenumFromTo3_info
+.align 8
+	.long	S9bb_srt-(block_c9o0_info)+0
+	.long	0
+	.quad	4744
+	.quad	4539780431902
+block_c9o0_info:
+_c9o0:
+	movq 16(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 32(%rbp),%rdx
+	movq 40(%rbp),%rsi
+	movq 56(%rbp),%rdi
+	movq 8(%rbp),%r8
+	movq %rbx,%r9
+	andl $7,%r9d
+	cmpq $1,%r9
+	je _c9ns
+_c9on:
+	movq $block_c9ob_info,-16(%rbp)
+	movq 6(%rbx),%rax
+	movq 14(%rbx),%rbx
+	movq %rbx,%rdx
+	movq %rcx,%rbx
+	movq %rdx,-8(%rbp)
+	movq %rax,(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _c9ob
+_c9oc:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9nf_info)+0
+	.long	0
+	.quad	4744
+	.quad	4539780431902
+block_c9nf_info:
+_c9nf:
+_c9nY:
+	movq $block_c9o0_info,(%rbp)
+	testb $7,%bl
+	jne _c9o0
+_c9o2:
+	jmp *(%rbx)
+_c9oT:
+	movq 24(%rbp),%rax
+	addq $32,%rbp
+_n9tb:
+	movq %rax,%rbx
+	jmp _c9nY
+_c9nT:
+	movq $24,904(%r13)
+	jmp stg_gc_pp
+.align 8
+	.long	S9bb_srt-(block_c9nO_info)+80
+	.long	0
+	.quad	65
+	.quad	4294967326
+block_c9nO_info:
+_c9nO:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9nT
+_c9nS:
+	movq $:_con_info,-16(%r12)
+	movq %rbx,-8(%r12)
+	movq %r14,(%r12)
+	movq 8(%rbp),%rax
+	movq $block_c9qE_info,8(%rbp)
+	movq %rax,%rsi
+	leaq -14(%r12),%r14
+	addq $8,%rbp
+	jmp lvl11_r92h_info
+_c9qh:
+	addq $-24,%r12
+	movq 128(%rbp),%rbx
+	addq $8,%rbp
+_s95a:
+	movq $block_c9nC_info,112(%rbp)
+	movq %rax,120(%rbp)
+	addq $112,%rbp
+	testb $7,%bl
+	jne _c9nC
+_c9nD:
+	jmp *(%rbx)
+_n9te:
+	movq %rsi,%rbx
+	jmp _s95a
+.align 8
+	.long	S9bb_srt-(block_c9nC_info)+80
+	.long	0
+	.quad	65
+	.quad	4294967326
+block_c9nC_info:
+_c9nC:
+	movq $block_c9nO_info,(%rbp)
+	movl $GHC.Types.[]_closure+1,%edi
+	movq 7(%rbx),%rsi
+	xorl %r14d,%r14d
+	jmp GHC.Show.$wshowSignedInt_info
+_c9nw:
+	movq $120,904(%r13)
+	movq $block_c9nr_info,(%rbp)
+	jmp stg_gc_noregs
+_c9nk:
+	movq $48,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.long	S9bb_srt-(block_c9lW_info)+0
+	.long	0
+	.quad	6471
+	.quad	13335873454110
+block_c9lW_info:
+_c9lW:
+	addq $48,%r12
+	cmpq 856(%r13),%r12
+	ja _c9nk
+_c9nj:
+	movq 8(%rbp),%rax
+	movq 16(%rbp),%rcx
+	movq 24(%rbp),%rdx
+	movq 32(%rbp),%rsi
+	subq $8,%rsp
+	movq %rcx,%rdi
+	leaq 16(%rbx),%rcx
+	movq %rdx,%r8
+	xorl %edx,%edx
+	movq %r8,%r9
+	movq 56(%rbp),%r8
+	subq $32,%rsp
+	movq %rax,%r10
+	xorl %eax,%eax
+	movq %r10,%r14
+	movq %r9,104(%rsp)
+	call memset
+	addq $40,%rsp
+	movq $n_s94q_info,-40(%r12)
+	movq %rdi,-24(%r12)
+	movq %rsi,-16(%r12)
+	movq %r14,-8(%r12)
+	movq 64(%rsp),%rax
+	movq %rax,(%r12)
+	movq $block_c9nf_info,-8(%rbp)
+	movq %rax,%rsi
+	movq %rbx,(%rbp)
+	leaq -40(%r12),%rax
+	movq %rax,56(%rbp)
+	addq $-8,%rbp
+	jmp GHC.Int.$w$cenumFromTo3_info
+_c9nh:
+	movq $block_c9lW_info,-64(%rbp)
+	leaq 7(%rbx),%r8
+	sarq $3,%r8
+	movq %rbx,%r9
+	movq %r8,%rbx
+	movq %rax,-56(%rbp)
+	movq %rcx,-48(%rbp)
+	movq %rdx,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %rdi,-24(%rbp)
+	movq %r9,-16(%rbp)
+	movq %r8,-8(%rbp)
+	addq $-64,%rbp
+	jmp stg_newByteArray#
+.align 8
+	.quad	0
+	.quad	30
+block_c9qE_info:
+_c9qE:
+	addq $-64,%rbp
+_c9ng:
+	andq $-8,%rbx
+	addq $72,%rbp
+	jmp *(%rbx)
+.align 8
+	.quad	14984
+	.quad	30
+block_c9nr_info:
+_c9nr:
+	movq 16(%rbp),%rax
+	movq 24(%rbp),%rbx
+	movq 32(%rbp),%rcx
+	movq 40(%rbp),%rdx
+	movq 56(%rbp),%rsi
+	movq 8(%rbp),%rdi
+_n9tc:
+	movq %rdi,%r8
+	movq %rsi,%rdi
+	movq %rdx,%rsi
+	movq %rcx,%rdx
+	movq %rbx,%rcx
+_c9ns:
+	addq $120,%r12
+	cmpq 856(%r13),%r12
+	ja _c9nw
+_c9nv:
+	movq $GHC.Int.I8#_con_info,-112(%r12)
+	movq %rdx,-104(%r12)
+	movq $(,)_con_info,-96(%r12)
+	leaq -111(%r12),%rdx
+	movq %rdx,-88(%r12)
+	movq %rsi,-80(%r12)
+	movq $GHC.Int.I8#_con_info,-72(%r12)
+	movq %rax,-64(%r12)
+	movq $(,)_con_info,-56(%r12)
+	leaq -71(%r12),%rax
+	movq %rax,-48(%r12)
+	movq %rcx,-40(%r12)
+	movq $Data.Array.Base.UArray_con_info,-32(%r12)
+	leaq -55(%r12),%rax
+	movq %rax,-24(%r12)
+	leaq -95(%r12),%rax
+	movq %rax,-16(%r12)
+	movq %r8,-8(%r12)
+	movq %rdi,(%r12)
+	leaq -31(%r12),%rax
+_n9td:
+	movq %rax,%rbx
+	jmp _c9ng
+_c9nc:
+	movl $Main.$w$sarrayByIndex_closure,%ebx
+	movq %r14,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %rdi,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movq %r9,-8(%rbp)
+	addq $-40,%rbp
+	jmp *-8(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9255029 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.$warrayByIndex_closure
+Main.$warrayByIndex_closure:
+	.quad	Main.$warrayByIndex_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9295005 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(n_s96n_info)+88
+	.long	0
+	.quad	3
+	.quad	4294967311
+n_s96n_info:
+_c9tv:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9tw
+_c9tx:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9tz
+_c9ty:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rbx
+	movq $(,)_con_info,-16(%r12)
+	movq %rcx,-8(%r12)
+	movq %rbx,(%r12)
+	movq $block_c9tt_info,-24(%rbp)
+	movq %rax,%r14
+	movq $stg_ap_p_info,-40(%rbp)
+	leaq -15(%r12),%rax
+	movq %rax,-32(%rbp)
+	addq $-40,%rbp
+	jmp GHC.Arr.rangeSize_info
+.align 8
+	.long	S9bb_srt-(block_c9tt_info)+88
+	.long	0
+	.quad	0
+	.quad	4294967326
+block_c9tt_info:
+_c9tt:
+	cmpq $0,7(%rbx)
+	jge _c9tG
+_c9tH:
+	movl $Main.arrayByIndex19_closure,%ebx
+	addq $8,%rbp
+	jmp *(%rbx)
+_c9tG:
+	andq $-8,%rbx
+	addq $8,%rbp
+	jmp *(%rbx)
+_c9tz:
+	movq $24,904(%r13)
+_c9tw:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9334904 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s96y_info)+8
+	.long	0
+	.quad	1
+	.quad	4294967312
+sat_s96y_info:
+_c9tT:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9tX
+_c9tY:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9tQ_info,-24(%rbp)
+	movq 16(%rbx),%rbx
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _c9tQ
+_c9tR:
+	jmp *(%rbx)
+_c9tX:
+	jmp *-16(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9tW_info)+8
+	.long	0
+	.quad	0
+	.quad	4294967326
+block_c9tW_info:
+_c9tW:
+	movq %r14,%rdi
+	movq %rbx,%rsi
+	movl $Main.arrayByIndex16_closure,%r14d
+	addq $8,%rbp
+	jmp GHC.Base.++_$s++_info
+.align 8
+	.long	S9bb_srt-(block_c9tQ_info)+8
+	.long	0
+	.quad	0
+	.quad	4294967326
+block_c9tQ_info:
+_c9tQ:
+	movq $block_c9tW_info,(%rbp)
+	movl $GHC.Types.[]_closure+1,%edi
+	movq 7(%rbx),%rsi
+	xorl %r14d,%r14d
+	jmp GHC.Show.$wshowSignedInt_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9364876 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(lvl23_s96s_info)+8
+	.long	0
+	.quad	1
+	.quad	4294967312
+lvl23_s96s_info:
+_c9u2:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9u3
+_c9u4:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9u6
+_c9u5:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq $sat_s96y_info,-16(%r12)
+	movq %rax,(%r12)
+	leaq -16(%r12),%rsi
+	movl $Main.arrayByIndex18_bytes,%r14d
+	addq $-16,%rbp
+	jmp GHC.CString.unpackAppendCString#_info
+_c9u6:
+	movq $24,904(%r13)
+_c9u3:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.94048 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	4294967297
+	.quad	19
+sat_s96K_info:
+_c9uD:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9uE
+_c9uF:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9uB_info,-32(%rbp)
+	movl $GHC.Types.[]_closure+1,%edi
+	movq 24(%rbx),%rsi
+	xorl %r14d,%r14d
+	movq 16(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-32,%rbp
+	jmp GHC.Show.$wshowSignedInt_info
+_c9uE:
+	jmp *-16(%r13)
+.align 8
+	.quad	1
+	.quad	30
+block_c9uB_info:
+_c9uB:
+	movq %r14,%rdi
+	movq %rbx,%rsi
+	movq 8(%rbp),%r14
+	addq $16,%rbp
+	jmp GHC.Base.++_$s++_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9444738 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s96Q_info)+16
+	.long	0
+	.quad	5
+	.quad	12884901903
+sat_s96Q_info:
+_c9uH:
+	leaq -64(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9uI
+_c9uJ:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq $block_c9uo_info,-40(%rbp)
+	movq 16(%rbx),%r14
+	movq $stg_ap_pp_info,-64(%rbp)
+	movq 24(%rbx),%rax
+	movq %rax,-56(%rbp)
+	movq 48(%rbx),%rax
+	movq %rax,-48(%rbp)
+	movq 32(%rbx),%rax
+	movq %rax,-32(%rbp)
+	movq 40(%rbx),%rax
+	movq %rax,-24(%rbp)
+	addq $-64,%rbp
+	jmp GHC.Arr.index_info
+.align 8
+	.long	S9bb_srt-(block_c9uZ_info)+16
+	.long	0
+	.quad	67
+	.quad	12884901918
+block_c9uZ_info:
+_c9uZ:
+	movq 8(%rbp),%rax
+	cmpq 7(%rbx),%rax
+	jge _u9vb
+_c9va:
+	movq 16(%rbp),%rbx
+	andq $-8,%rbx
+	addq $32,%rbp
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9uo_info)+16
+	.long	0
+	.quad	2
+	.quad	12884901918
+block_c9uo_info:
+_c9uo:
+	movq 16(%rbp),%rax
+	movq 7(%rbx),%rcx
+	cmpq $0,%rcx
+	jl _c9uv
+_c9v0:
+	movq $block_c9uZ_info,-8(%rbp)
+	movq %rbx,%rax
+	movq 8(%rbp),%rbx
+	movq %rcx,(%rbp)
+	movq %rax,8(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9uZ
+_c9v1:
+	jmp *(%rbx)
+_c9uO:
+	movq $32,904(%r13)
+	movq $block_c9uu_info,(%rbp)
+	movq %rcx,8(%rbp)
+	jmp stg_gc_noregs
+.align 8
+	.long	S9bb_srt-(block_c9uu_info)+16
+	.long	0
+	.quad	66
+	.quad	12884901918
+block_c9uu_info:
+_c9uu:
+	movq 16(%rbp),%rax
+	movq 8(%rbp),%rbx
+_n9w4:
+	movq %rbx,%rcx
+_c9uv:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _c9uO
+_c9uN:
+	movq $sat_s96K_info,-24(%r12)
+	movq %rax,-8(%r12)
+	movq %rcx,(%r12)
+	movq $block_c9uL_info,16(%rbp)
+	leaq -24(%r12),%rsi
+	movl $Main.arrayByIndex1_bytes,%r14d
+	addq $16,%rbp
+	jmp GHC.CString.unpackAppendCString#_info
+_u9vb:
+	movq 24(%rbp),%rbx
+	addq $8,%rbp
+_n9w5:
+	movq %rax,%rcx
+	movq %rbx,%rax
+	jmp _c9uv
+.align 8
+	.long	S9bb_srt-(block_c9uL_info)+16
+	.long	0
+	.quad	0
+	.quad	12884901918
+block_c9uL_info:
+_c9uL:
+	movq %rbx,%rsi
+	movl $Main.arrayByIndex2_closure+2,%r14d
+	addq $8,%rbp
+	jmp GHC.Err.error_info
+_c9uI:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9504637 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(go_s96z_info)+16
+	.long	0
+	.quad	4294967301
+	.quad	5
+	.quad	12884901896
+go_s96z_info:
+_c9vg:
+	leaq -56(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9vh
+_c9vi:
+	movq $block_c9uc_info,-56(%rbp)
+	movq %rbx,%rax
+	movq 7(%rbx),%rcx
+	movq 15(%rbx),%rdx
+	movq 23(%rbx),%rsi
+	movq 31(%rbx),%rdi
+	movq 39(%rbx),%rbx
+	movq %rbx,%r8
+	movq %r14,%rbx
+	movq %rcx,-48(%rbp)
+	movq %rdx,-40(%rbp)
+	movq %rsi,-32(%rbp)
+	movq %rdi,-24(%rbp)
+	movq %r8,-16(%rbp)
+	movq %rax,-8(%rbp)
+	addq $-56,%rbp
+	testb $7,%bl
+	jne _c9uc
+_c9ud:
+	jmp *(%rbx)
+_c9vp:
+	movq $168,904(%r13)
+	jmp stg_gc_unpt_r1
+.align 8
+	.long	S9bb_srt-(block_c9uc_info)+16
+	.long	0
+	.quad	6
+	.quad	12884901918
+block_c9uc_info:
+_c9uc:
+	movq %rbx,%rax
+	andl $7,%eax
+	cmpq $1,%rax
+	je _c9vd
+_c9ve:
+	addq $168,%r12
+	cmpq 856(%r13),%r12
+	ja _c9vp
+_c9vo:
+	movq 6(%rbx),%rax
+	movq 14(%rbx),%rbx
+	movq $stg_ap_2_upd_info,-160(%r12)
+	movq 48(%rbp),%rcx
+	movq %rcx,-144(%r12)
+	movq %rbx,-136(%r12)
+	movq $stg_ap_2_upd_info,-128(%r12)
+	movq 16(%rbp),%rbx
+	movq %rbx,-112(%r12)
+	movq %rax,-104(%r12)
+	movq $sat_s96Q_info,-96(%r12)
+	movq 8(%rbp),%rbx
+	movq %rbx,-80(%r12)
+	movq 24(%rbp),%rbx
+	movq %rbx,-72(%r12)
+	movq 32(%rbp),%rbx
+	movq %rbx,-64(%r12)
+	movq 40(%rbp),%rbx
+	movq %rbx,-56(%r12)
+	movq %rax,-48(%r12)
+	movq $(,)_con_info,-40(%r12)
+	leaq -96(%r12),%rax
+	movq %rax,-32(%r12)
+	leaq -128(%r12),%rax
+	movq %rax,-24(%r12)
+	movq $:_con_info,-16(%r12)
+	leaq -39(%r12),%rax
+	movq %rax,-8(%r12)
+	leaq -160(%r12),%rax
+	movq %rax,(%r12)
+	leaq -14(%r12),%rbx
+	addq $56,%rbp
+	jmp *(%rbp)
+_c9vh:
+	jmp *-8(%r13)
+_c9vd:
+	movl $[]_closure+1,%ebx
+	addq $56,%rbp
+	jmp *(%rbp)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9554559 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s96V_info)+8
+	.long	0
+	.quad	4
+	.quad	4428111282191
+sat_s96V_info:
+_c9vs:
+	leaq -48(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9vt
+_c9vu:
+	addq $136,%r12
+	cmpq 856(%r13),%r12
+	ja _c9vw
+_c9vv:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%rax
+	movq 24(%rbx),%rcx
+	movq 32(%rbx),%rdx
+	movq 40(%rbx),%rbx
+	movq $(,)_con_info,-128(%r12)
+	movq %rcx,-120(%r12)
+	movq %rdx,-112(%r12)
+	movq $n_s96n_info,-104(%r12)
+	movq %rax,-88(%r12)
+	movq %rcx,-80(%r12)
+	movq %rdx,-72(%r12)
+	movq $lvl23_s96s_info,-64(%r12)
+	leaq -104(%r12),%rcx
+	movq %rcx,-48(%r12)
+	movq $go_s96z_info,-40(%r12)
+	movq %rax,-32(%r12)
+	movq %rbx,-24(%r12)
+	leaq -127(%r12),%rbx
+	movq %rbx,-16(%r12)
+	movq %rcx,-8(%r12)
+	leaq -64(%r12),%rcx
+	movq %rcx,(%r12)
+	movq $block_c9vq_info,-32(%rbp)
+	movq %rax,%r14
+	movq $stg_ap_p_info,-48(%rbp)
+	movq %rbx,-40(%rbp)
+	leaq -39(%r12),%rax
+	movq %rax,-24(%rbp)
+	addq $-48,%rbp
+	jmp GHC.Arr.range_info
+_c9vw:
+	movq $136,904(%r13)
+_c9vt:
+	jmp *-16(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9vq_info)+16
+	.long	0
+	.quad	1
+	.quad	12884901918
+block_c9vq_info:
+_c9vq:
+	movq %rbx,%r14
+	movq 8(%rbp),%rbx
+	addq $16,%rbp
+	jmp go_s96z_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9604493 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.$warrayByIndex_info)+8
+	.long	0
+	.quad	21474836505
+	.quad	0
+	.quad	22020297326606
+.globl Main.$warrayByIndex_info
+Main.$warrayByIndex_info:
+_c9vB:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9vC
+_c9vD:
+	addq $72,%r12
+	cmpq 856(%r13),%r12
+	ja _c9vF
+_c9vE:
+	movq $sat_s96V_info,-64(%r12)
+	movq %rsi,-48(%r12)
+	movq %rdi,-40(%r12)
+	movq %r8,-32(%r12)
+	movq %r9,-24(%r12)
+	movq $(,)_con_info,-16(%r12)
+	movq %rdi,-8(%r12)
+	movq %r8,(%r12)
+	movq $stg_ap_ppp_info,-32(%rbp)
+	movq %rsi,-24(%rbp)
+	leaq -15(%r12),%rax
+	movq %rax,-16(%rbp)
+	leaq -64(%r12),%rax
+	movq %rax,-8(%rbp)
+	addq $-32,%rbp
+	jmp Data.Array.Base.unsafeArray_info
+_c9vF:
+	movq $72,904(%r13)
+_c9vC:
+	movl $Main.$warrayByIndex_closure,%ebx
+	jmp *-8(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9644443 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.arrayByIndex_closure
+Main.arrayByIndex_closure:
+	.quad	Main.arrayByIndex_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.967439 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.arrayByIndex_info)+104
+	.long	0
+	.quad	17179869208
+	.quad	0
+	.quad	12884901902
+.globl Main.arrayByIndex_info
+Main.arrayByIndex_info:
+_c9wC:
+	leaq -32(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9wD
+_c9wE:
+	movq $block_c9wz_info,-32(%rbp)
+	movq %rdi,%rbx
+	movq %r14,-24(%rbp)
+	movq %rsi,-16(%rbp)
+	movq %r8,-8(%rbp)
+	addq $-32,%rbp
+	testb $7,%bl
+	jne _c9wz
+_c9wA:
+	jmp *(%rbx)
+_c9wD:
+	movl $Main.arrayByIndex_closure,%ebx
+	jmp *-8(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9wz_info)+104
+	.long	0
+	.quad	3
+	.quad	4294967326
+block_c9wz_info:
+_c9wz:
+	movq 24(%rbp),%r9
+	movq 15(%rbx),%r8
+	movq 7(%rbx),%rdi
+	movq 16(%rbp),%rsi
+	movq 8(%rbp),%r14
+	addq $32,%rbp
+	jmp Main.$warrayByIndex_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9864124 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.updateGameState_closure
+Main.updateGameState_closure:
+	.quad	Main.updateGameState_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:10.9913995 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-($wg_s974_info)+32
+	.long	0
+	.quad	8589934604
+	.quad	1
+	.quad	12884901897
+$wg_s974_info:
+_c9wY:
+	leaq -64(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9xc
+_c9xd:
+	movq $block_c9wV_info,-24(%rbp)
+	movq 6(%rbx),%rbx
+	movq %r14,-16(%rbp)
+	movq %rsi,-8(%rbp)
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _c9wV
+_c9wW:
+	jmp *(%rbx)
+_c9zg:
+	movl $GHC.Types.False_closure+1,%ebx
+	addq $56,%rbp
+	jmp *(%rbp)
+.align 8
+	.long	S9bb_srt-(block_c9y6_info)+32
+	.long	0
+	.quad	3782
+	.quad	12884901918
+block_c9y6_info:
+_c9y6:
+	movq 8(%rbp),%rax
+	movq 7(%rbx),%rbx
+	cmpq %rbx,%rax
+	jg _u9zn
+_c9zm:
+	movq 16(%rbp),%rcx
+	movq 48(%rbp),%rdx
+	subq %rdx,%rax
+	movl $1,%esi
+	subq %rdx,%rsi
+	addq %rsi,%rbx
+	movq 32(%rbp),%rdx
+	subq 40(%rbp),%rdx
+	imulq %rbx,%rdx
+	addq %rax,%rdx
+	cmpq $0,%rdx
+	jl _c9yK
+_c9zl:
+	cmpq %rcx,%rdx
+	jge _c9yK
+_c9zk:
+	movl $1,%eax
+	movq %rdx,%rcx
+	andl $63,%ecx
+	shlq %cl,%rax
+	movq 24(%rbp),%rbx
+	sarq $6,%rdx
+	movq 16(%rbx,%rdx,8),%rbx
+	andq %rax,%rbx
+	testq %rbx,%rbx
+	je _c9zg
+_c9za:
+	movl $GHC.Types.True_closure+2,%ebx
+	addq $56,%rbp
+	jmp *(%rbp)
+_c9yK:
+	movq %rdx,%rsi
+	movq %rcx,%r14
+	addq $56,%rbp
+	jmp Main.viewGameState3_info
+_u9zn:
+	addq $-8,%rbp
+_c9yg:
+	movl $GHC.Arr.hopelessIndexError_closure,%ebx
+	addq $64,%rbp
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9xQ_info)+32
+	.long	0
+	.quad	7559
+	.quad	12884901918
+block_c9xQ_info:
+_c9xQ:
+	movsbq %bl,%rax
+	cmpq 56(%rbp),%rax
+	jl _c9yg
+_c9y7:
+	movq 8(%rbp),%rbx
+	movq $block_c9y6_info,8(%rbp)
+	movq %rax,16(%rbp)
+	addq $8,%rbp
+	testb $7,%bl
+	jne _c9y6
+_c9y8:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9xy_info)+32
+	.long	0
+	.quad	7431
+	.quad	12884901918
+block_c9xy_info:
+_c9xy:
+	movq 40(%rbp),%rax
+	cmpq 7(%rbx),%rax
+	jg _c9yg
+_c9xR:
+	movq $block_c9xL_info,(%rbp)
+	movq 16(%rbp),%rbx
+	testb $7,%bl
+	jne _c9xL
+_c9xM:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9xL_info)+32
+	.long	0
+	.quad	7559
+	.quad	12884901918
+block_c9xL_info:
+_c9xL:
+	movq $block_c9xQ_info,(%rbp)
+	movl $17,%esi
+	movq 56(%rbp),%r14
+	movq 7(%rbx),%rax
+	movq %rax,56(%rbp)
+	jmp GHC.Classes.modInt#_info
+.align 8
+	.long	S9bb_srt-(block_c9xb_info)+32
+	.long	0
+	.quad	6407
+	.quad	12884901918
+block_c9xb_info:
+_c9xb:
+	movq 7(%rbx),%rax
+	movq 48(%rbp),%rbx
+	andl $15,%ebx
+	movsbq %bl,%rbx
+	cmpq %rbx,%rax
+	jg _c9yg
+_c9xz:
+	movq $block_c9xy_info,(%rbp)
+	movq %rbx,%rcx
+	movq 40(%rbp),%rbx
+	movq %rcx,40(%rbp)
+	movq %rax,48(%rbp)
+	testb $7,%bl
+	jne _c9xy
+_c9xA:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9x6_info)+32
+	.long	0
+	.quad	3206
+	.quad	12884901918
+block_c9x6_info:
+_c9x6:
+	movq $block_c9xb_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rbx
+	movq %rbx,%rcx
+	movq 32(%rbp),%rbx
+	movq %rcx,(%rbp)
+	movq %rax,32(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9xb
+_c9xh:
+	jmp *(%rbx)
+_c9xc:
+	jmp *-8(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9x1_info)+32
+	.long	0
+	.quad	1605
+	.quad	12884901918
+block_c9x1_info:
+_c9x1:
+	movq $block_c9x6_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rbx
+	movq %rbx,%rcx
+	movq 24(%rbp),%rbx
+	movq %rcx,(%rbp)
+	movq %rax,24(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9x6
+_c9x7:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9wV_info)+32
+	.long	0
+	.quad	194
+	.quad	12884901918
+block_c9wV_info:
+_c9wV:
+	movq $block_c9x1_info,-24(%rbp)
+	movq 15(%rbx),%rax
+	movq 23(%rbx),%rcx
+	movq 31(%rbx),%rdx
+	movq 7(%rbx),%rbx
+	movq %rdx,-16(%rbp)
+	movq %rcx,-8(%rbp)
+	movq %rax,(%rbp)
+	addq $-24,%rbp
+	testb $7,%bl
+	jne _c9x1
+_c9x2:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0053782 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s9ap_info)+32
+	.long	0
+	.quad	4294967301
+	.quad	1
+	.quad	12884901897
+sat_s9ap_info:
+_c9zw:
+	leaq -40(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9zF
+_c9zG:
+	movq $block_c9zt_info,-16(%rbp)
+	movq 7(%rbx),%rax
+	movq %r14,%rbx
+	movq %rax,-8(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _c9zt
+_c9zu:
+	jmp *(%rbx)
+.align 8
+	.long	S9bb_srt-(block_c9BD_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9BD_info:
+_c9BD:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _s985
+_c9BP:
+	leaq 1(%rsi),%rbx
+_n9LI:
+	movq %rbx,%rsi
+_s985:
+	movq $block_c9Aw_info,24(%rbp)
+	movq %rsi,%rbx
+	movq %rcx,%rsi
+	movq %rdx,%r14
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,32(%rbp)
+	addq $24,%rbp
+	jmp $wg_s974_info
+_c9Cc:
+	leaq 1(%rsi),%rbx
+_n9LJ:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9C5_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9C5_info:
+_c9C5:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Cc
+_c9Cg:
+	leaq 2(%rsi),%rbx
+_n9LK:
+	movq %rbx,%rsi
+	jmp _s985
+_c9CQ:
+	leaq 1(%rsi),%rbx
+_n9LL:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9CI_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9CI_info:
+_c9CI:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9CQ
+_c9CU:
+	leaq 2(%rsi),%rbx
+_n9LM:
+	movq %rbx,%rsi
+	jmp _s985
+_c9Dh:
+	leaq 2(%rsi),%rbx
+_n9LN:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9Da_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Da_info:
+_c9Da:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Dh
+_c9Dl:
+	leaq 3(%rsi),%rbx
+_n9LO:
+	movq %rbx,%rsi
+	jmp _s985
+_c9Ee:
+	leaq 1(%rsi),%rbx
+_n9LP:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9E6_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9E6_info:
+_c9E6:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Ee
+_c9Ei:
+	leaq 2(%rsi),%rbx
+_n9LQ:
+	movq %rbx,%rsi
+	jmp _s985
+_c9EF:
+	leaq 2(%rsi),%rbx
+_n9LR:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9Ey_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Ey_info:
+_c9Ey:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9EF
+_c9EJ:
+	leaq 3(%rsi),%rbx
+_n9LS:
+	movq %rbx,%rsi
+	jmp _s985
+_c9Fj:
+	leaq 2(%rsi),%rbx
+_n9LT:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9Fb_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Fb_info:
+_c9Fb:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Fj
+_c9Fn:
+	leaq 3(%rsi),%rbx
+_n9LU:
+	movq %rbx,%rsi
+	jmp _s985
+_c9FK:
+	leaq 3(%rsi),%rbx
+_n9LV:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9FD_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9FD_info:
+_c9FD:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9FK
+_c9FO:
+	leaq 4(%rsi),%rbx
+_n9LW:
+	movq %rbx,%rsi
+	jmp _s985
+.align 8
+	.long	S9bb_srt-(block_c9Gi_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Gi_info:
+_c9Gi:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _s983
+_c9Gu:
+	leaq 1(%rsi),%rbx
+_n9LX:
+	movq %rbx,%rsi
+_s983:
+	movq $block_c9As_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movq %rsi,%rcx
+	movsbq %bl,%rsi
+	movq %rdx,%r14
+	movq %rax,%rbx
+	movq %rcx,8(%rbp)
+	jmp $wg_s974_info
+_c9GL:
+	leaq 1(%rsi),%rbx
+_n9LY:
+	movq %rbx,%rsi
+	jmp _s983
+.align 8
+	.long	S9bb_srt-(block_c9GE_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9GE_info:
+_c9GE:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9GL
+_c9GP:
+	leaq 2(%rsi),%rbx
+_n9LZ:
+	movq %rbx,%rsi
+	jmp _s983
+_c9Hp:
+	leaq 1(%rsi),%rbx
+_n9M0:
+	movq %rbx,%rsi
+	jmp _s983
+.align 8
+	.long	S9bb_srt-(block_c9Hh_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Hh_info:
+_c9Hh:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Hp
+_c9Ht:
+	leaq 2(%rsi),%rbx
+_n9M1:
+	movq %rbx,%rsi
+	jmp _s983
+_c9HK:
+	leaq 2(%rsi),%rbx
+_n9M2:
+	movq %rbx,%rsi
+	jmp _s983
+.align 8
+	.long	S9bb_srt-(block_c9HD_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9HD_info:
+_c9HD:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	movq 8(%rbp),%rsi
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9HK
+_c9HO:
+	leaq 3(%rsi),%rbx
+_n9M3:
+	movq %rbx,%rsi
+	jmp _s983
+_c9HU:
+	xorl %ebx,%ebx
+_s981:
+	movq $block_c9Af_info,-8(%rbp)
+	movq %rcx,%rsi
+	leaq -1(%rdx),%rcx
+	movsbq %cl,%r14
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,(%rbp)
+	addq $-8,%rbp
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9A2_info)+32
+	.long	0
+	.quad	195
+	.quad	12884901918
+block_c9A2_info:
+_c9A2:
+	movq 24(%rbp),%rax
+	movq 16(%rbp),%rcx
+	movq 8(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9HU
+_c9HY:
+	movl $1,%ebx
+	jmp _s981
+.align 8
+	.long	S9bb_srt-(block_c9H5_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9H5_info:
+_c9H5:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Hj
+_c9HE:
+	movq $block_c9HD_info,(%rbp)
+	leaq -1(%rcx),%rbx
+	movsbq %bl,%rsi
+	movq %rdx,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9Hj:
+	movq $block_c9Hh_info,(%rbp)
+	leaq -1(%rcx),%rbx
+	movsbq %bl,%rsi
+	movq %rdx,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9Af_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Af_info:
+_c9Af:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9G7
+_c9H6:
+	movq $block_c9H5_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq -1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9G5_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9G5_info:
+_c9G5:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Gk
+_c9GF:
+	movq $block_c9GE_info,(%rbp)
+	leaq -1(%rcx),%rbx
+	movsbq %bl,%rsi
+	movq %rdx,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9Gk:
+	movq $block_c9Gi_info,(%rbp)
+	leaq -1(%rcx),%rbx
+	movsbq %bl,%rsi
+	movq %rdx,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9G7:
+	movq $block_c9G5_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq -1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9ET_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9ET_info:
+_c9ET:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Fd
+_c9FE:
+	movq $block_c9FD_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9Fd:
+	movq $block_c9Fb_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9DB_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9DB_info:
+_c9DB:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9DP
+_c9EU:
+	movq $block_c9ET_info,(%rbp)
+	movq %rcx,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9DN_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9DN_info:
+_c9DN:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9E8
+_c9Ez:
+	movq $block_c9Ey_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9E8:
+	movq $block_c9E6_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9DP:
+	movq $block_c9DN_info,(%rbp)
+	movq %rcx,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9As_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9As_info:
+_c9As:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9B9
+_c9DC:
+	movq $block_c9DB_info,(%rbp)
+	leaq -1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9Cq_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Cq_info:
+_c9Cq:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9CK
+_c9Db:
+	movq $block_c9Da_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9CK:
+	movq $block_c9CI_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9B7_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9B7_info:
+_c9B7:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9Bm
+_c9Cr:
+	movq $block_c9Cq_info,(%rbp)
+	movq %rcx,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9Bk_info)+32
+	.long	0
+	.quad	452
+	.quad	12884901918
+block_c9Bk_info:
+_c9Bk:
+	movq 32(%rbp),%rax
+	movq 24(%rbp),%rcx
+	movq 16(%rbp),%rdx
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9BF
+_c9C6:
+	movq $block_c9C5_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9BF:
+	movq $block_c9BD_info,(%rbp)
+	leaq 1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9Bm:
+	movq $block_c9Bk_info,(%rbp)
+	movq %rcx,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_c9B9:
+	movq $block_c9B7_info,(%rbp)
+	leaq -1(%rcx),%rbx
+	movsbq %bl,%rsi
+	leaq 1(%rdx),%rbx
+	movsbq %bl,%r14
+	movq %rax,%rbx
+	jmp $wg_s974_info
+_u9JN:
+	cmpq $2,%rax
+	jl _c9AN
+_c9AP:
+	movl $GHC.Types.True_closure+2,%ebx
+	addq $16,%rbp
+	jmp *(%rbp)
+_c9AH:
+	cmpq $3,%rax
+	je _c9AP
+_c9AN:
+	movl $GHC.Types.False_closure+1,%ebx
+	addq $16,%rbp
+	jmp *(%rbp)
+.align 8
+	.quad	65
+	.quad	30
+block_c9Aw_info:
+_c9Aw:
+	movq 8(%rbp),%rax
+	andl $7,%ebx
+	cmpq $1,%rbx
+	je _c9AH
+_c9AQ:
+	cmpq $3,%rax
+	jl _u9JN
+_u9JO:
+	cmpq $4,%rax
+	jl _c9AP
+	jmp _c9AN
+.align 8
+	.long	S9bb_srt-(block_c9zz_info)+32
+	.long	0
+	.quad	2
+	.quad	12884901918
+block_c9zz_info:
+_c9zz:
+	movq $block_c9zE_info,(%rbp)
+	movq 7(%rbx),%rax
+	movq 8(%rbp),%rbx
+	movq %rax,8(%rbp)
+	testb $7,%bl
+	jne _c9zE
+_c9zJ:
+	jmp *(%rbx)
+_c9zF:
+	jmp *-8(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9zE_info)+32
+	.long	0
+	.quad	66
+	.quad	12884901918
+block_c9zE_info:
+_c9zE:
+	movq $block_c9A2_info,-8(%rbp)
+	movq 8(%rbp),%rax
+	decq %rax
+	movsbq %al,%rsi
+	movq 7(%rbx),%rax
+	leaq -1(%rax),%rbx
+	movsbq %bl,%r14
+	movq 16(%rbp),%rbx
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	jmp $wg_s974_info
+.align 8
+	.long	S9bb_srt-(block_c9zt_info)+32
+	.long	0
+	.quad	1
+	.quad	12884901918
+block_c9zt_info:
+_c9zt:
+	movq $block_c9zz_info,-8(%rbp)
+	movq 7(%rbx),%rax
+	movq 15(%rbx),%rbx
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9zz
+_c9zA:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0193562 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.updateGameState_info)+32
+	.long	0
+	.quad	4294967301
+	.quad	0
+	.quad	9908489551886
+.globl Main.updateGameState_info
+Main.updateGameState_info:
+_c9JP:
+	addq $32,%r12
+	cmpq 856(%r13),%r12
+	ja _c9JT
+_c9JS:
+	movq $$wg_s974_info,-24(%r12)
+	movq %r14,-16(%r12)
+	movq $sat_s9ap_info,-8(%r12)
+	leaq -22(%r12),%rax
+	movq %rax,(%r12)
+	leaq -7(%r12),%r9
+	movl $Main.xWidth_closure+1,%r8d
+	movl $15,%edi
+	movl $Main.fieldSize4_closure+1,%esi
+	xorl %r14d,%r14d
+	jmp Main.$w$sarrayByIndex_info
+_c9JT:
+	movq $32,904(%r13)
+	movl $Main.updateGameState_closure,%ebx
+	jmp *-8(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0243477 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.$wloop_closure
+Main.$wloop_closure:
+	.quad	Main.$wloop_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0273437 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s9au_info)+56
+	.long	0
+	.quad	1
+	.quad	4294967312
+sat_s9au_info:
+_c9Mn:
+	movq 16(%rbx),%r14
+	jmp Main.viewGameState_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.030346 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(sat_s9ay_info)+120
+	.long	0
+	.quad	1
+	.quad	4294967312
+sat_s9ay_info:
+_c9Mt:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9Mu
+_c9Mv:
+	movq $stg_upd_frame_info,-16(%rbp)
+	movq %rbx,-8(%rbp)
+	movq 16(%rbx),%r14
+	addq $-16,%rbp
+	jmp Main.updateGameState_info
+_c9Mu:
+	jmp *-16(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0353311 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.$wloop_info)+56
+	.long	0
+	.quad	12884901902
+	.quad	0
+	.quad	16496969383950
+.globl Main.$wloop_info
+Main.$wloop_info:
+_c9Mz:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9MA
+_c9M8:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9MD
+_c9MC:
+	testq %rsi,%rsi
+	je _c9My
+_c9Mx:
+	movq $sat_s9au_info,-16(%r12)
+	movq %r14,(%r12)
+	movq $block_c9Mf_info,-24(%rbp)
+	movl $GHC.Types.True_closure+2,%edi
+	movq %rsi,%rax
+	leaq -16(%r12),%rsi
+	movq %r14,%rbx
+	movl $GHC.IO.Handle.FD.stdout_closure,%r14d
+	movq %rbx,-16(%rbp)
+	movq %rax,-8(%rbp)
+	addq $-24,%rbp
+	jmp GHC.IO.Handle.Text.hPutStr2_info
+_c9MG:
+	movq $24,904(%r13)
+	jmp stg_gc_unpt_r1
+_c9MD:
+	movq $24,904(%r13)
+_c9MA:
+	movl $Main.$wloop_closure,%ebx
+	jmp *-8(%r13)
+_c9My:
+	addq $-24,%r12
+	movl $GHC.Tuple.()_closure+1,%ebx
+	jmp *(%rbp)
+.align 8
+	.long	S9bb_srt-(block_c9Mf_info)+56
+	.long	0
+	.quad	130
+	.quad	16496969383966
+block_c9Mf_info:
+_c9Mf:
+	addq $24,%r12
+	cmpq 856(%r13),%r12
+	ja _c9MG
+_c9MF:
+	movq $sat_s9ay_info,-16(%r12)
+	movq 8(%rbp),%rax
+	movq %rax,(%r12)
+	movq 16(%rbp),%rax
+	decq %rax
+	addq $24,%rbp
+	leaq -16(%r12),%rbx
+_n9MT:
+	movq %rax,%rsi
+	movq %rbx,%r14
+	jmp _c9M8
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0383258 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.loop1_closure
+Main.loop1_closure:
+	.quad	Main.loop1_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0423247 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.loop1_info)+128
+	.long	0
+	.quad	12884901903
+	.quad	0
+	.quad	38654705678
+.globl Main.loop1_info
+Main.loop1_info:
+_c9N1:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9N2
+_c9N3:
+	movq $block_c9MY_info,-16(%rbp)
+	movq %rsi,%rbx
+	movq %r14,-8(%rbp)
+	addq $-16,%rbp
+	testb $7,%bl
+	jne _c9MY
+_c9MZ:
+	jmp *(%rbx)
+_c9N2:
+	movl $Main.loop1_closure,%ebx
+	jmp *-8(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9MY_info)+128
+	.long	0
+	.quad	1
+	.quad	4294967326
+block_c9MY_info:
+_c9MY:
+	movq 7(%rbx),%rsi
+	movq 8(%rbp),%r14
+	addq $16,%rbp
+	jmp Main.$wloop_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0453155 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.loop_closure
+Main.loop_closure:
+	.quad	Main.loop_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0483165 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.loop_info)+152
+	.long	0
+	.quad	12884901903
+	.quad	0
+	.quad	4294967310
+.globl Main.loop_info
+Main.loop_info:
+_c9Nf:
+	jmp Main.loop1_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0533036 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.newGameState1_closure
+Main.newGameState1_closure:
+	.quad	Main.newGameState1_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.057296 UTC
+
+.section .text
+.align 8
+.align 8
+	.quad	4294967301
+	.quad	0
+	.quad	14
+.globl Main.newGameState1_info
+Main.newGameState1_info:
+_c9Ns:
+	leaq -24(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9Nw
+_c9Nx:
+	movq $block_c9Np_info,-8(%rbp)
+	movq %r14,%rbx
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9Np
+_c9Nq:
+	jmp *(%rbx)
+_u9Ou:
+	testq %rax,%rax
+	jl _u9OC
+_u9Ov:
+	cmpq $1,%rax
+	jne _u9OE
+_u9OE:
+	addq $-16,%rbp
+_c9Ot:
+	movl $GHC.Types.True_closure+2,%ebx
+	addq $24,%rbp
+	jmp *(%rbp)
+_u9Oz:
+	addq $-16,%rbp
+	jmp _c9Ot
+.align 8
+	.quad	1
+	.quad	30
+block_c9Nv_info:
+_c9Nv:
+	movq 8(%rbp),%rax
+	movq 7(%rbx),%rbx
+	testq %rbx,%rbx
+	jne _s9aL
+_c9Ok:
+	movq $block_c9Oj_info,-8(%rbp)
+	movq %rbx,%rcx
+	movq %rax,%rbx
+	movq %rcx,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9Oj
+_c9Ol:
+	jmp *(%rbx)
+_u9OC:
+	addq $-8,%rbp
+_c9Oa:
+	movl $GHC.Types.False_closure+1,%ebx
+	addq $16,%rbp
+	jmp *(%rbp)
+.align 8
+	.quad	0
+	.quad	30
+block_c9O1_info:
+_c9O1:
+	movq 7(%rbx),%rax
+	cmpq $3,%rax
+	jl _u9Ou
+_u9OB:
+	addq $-8,%rbp
+	jmp _c9Oa
+.align 8
+	.quad	0
+	.quad	30
+block_c9NP_info:
+_c9NP:
+	cmpq $2,7(%rbx)
+	je _u9Oz
+_u9OA:
+	addq $-8,%rbp
+	jmp _c9Oa
+.align 8
+	.quad	66
+	.quad	30
+block_c9Oj_info:
+_c9Oj:
+	cmpq $1,7(%rbx)
+	je _c9Ot
+_u9Oy:
+	movq 16(%rbp),%rax
+	movq 8(%rbp),%rbx
+	addq $8,%rbp
+_s9aL:
+	cmpq $2,%rbx
+	jl _u9Ow
+_u9Ox:
+	cmpq $3,%rbx
+	jge _c9Oa
+_c9O2:
+	movq $block_c9O1_info,8(%rbp)
+	movq %rax,%rbx
+	addq $8,%rbp
+	testb $7,%bl
+	jne _c9O1
+_c9O3:
+	jmp *(%rbx)
+_u9Ow:
+	cmpq $1,%rbx
+	jl _c9Oa
+_c9NQ:
+	movq $block_c9NP_info,8(%rbp)
+	movq %rax,%rbx
+	addq $8,%rbp
+	testb $7,%bl
+	jne _c9NP
+_c9NR:
+	jmp *(%rbx)
+.align 8
+	.quad	0
+	.quad	30
+block_c9Np_info:
+_c9Np:
+	movq $block_c9Nv_info,-8(%rbp)
+	movq 15(%rbx),%rax
+	movq 7(%rbx),%rbx
+	movq %rax,(%rbp)
+	addq $-8,%rbp
+	testb $7,%bl
+	jne _c9Nv
+_c9Nz:
+	jmp *(%rbx)
+_c9Nw:
+	movl $Main.newGameState1_closure,%ebx
+	jmp *-8(%r13)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0612904 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.newGameState_closure
+Main.newGameState_closure:
+	.quad	Main.newGameState_info
+	.quad	0
+	.quad	0
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.065288 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.newGameState_info)+96
+	.long	0
+	.quad	0
+	.quad	4294967317
+.globl Main.newGameState_info
+Main.newGameState_info:
+_c9OP:
+	leaq -16(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9OQ
+_c9OR:
+	subq $8,%rsp
+	movq %r13,%rcx
+	movq %rbx,%rdx
+	subq $32,%rsp
+	xorl %eax,%eax
+	call newCAF
+	addq $40,%rsp
+	testq %rax,%rax
+	je _c9OO
+_c9ON:
+	movq $stg_bh_upd_frame_info,-16(%rbp)
+	movq %rax,-8(%rbp)
+	movl $Main.newGameState1_closure+1,%r9d
+	movl $Main.xWidth_closure+1,%r8d
+	movl $15,%edi
+	movl $Main.fieldSize4_closure+1,%esi
+	xorl %r14d,%r14d
+	addq $-16,%rbp
+	jmp Main.$w$sarrayByIndex_info
+_c9OQ:
+	jmp *-16(%r13)
+_c9OO:
+	jmp *(%rbx)
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0682794 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.main1_closure
+Main.main1_closure:
+	.quad	Main.main1_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0712747 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.main1_info)+128
+	.long	0
+	.quad	4294967299
+	.quad	0
+	.quad	493921239054
+.globl Main.main1_info
+Main.main1_info:
+_c9P2:
+	leaq -8(%rbp),%rax
+	cmpq %r15,%rax
+	jb _c9P3
+_c9P4:
+	movq $block_c9P0_info,-8(%rbp)
+	movl $GHC.IO.Handle.Types.NoBuffering_closure+1,%esi
+	movl $GHC.IO.Handle.FD.stdout_closure,%r14d
+	addq $-8,%rbp
+	jmp GHC.IO.Handle.hSetBuffering1_info
+_c9P3:
+	movl $Main.main1_closure,%ebx
+	jmp *-8(%r13)
+.align 8
+	.long	S9bb_srt-(block_c9P0_info)+128
+	.long	0
+	.quad	0
+	.quad	73014444062
+block_c9P0_info:
+_c9P0:
+	movl $4000,%esi
+	movl $Main.newGameState_closure,%r14d
+	addq $8,%rbp
+	jmp Main.$wloop_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0742713 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.main_closure
+Main.main_closure:
+	.quad	Main.main_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0772711 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.main_info)+168
+	.long	0
+	.quad	4294967299
+	.quad	0
+	.quad	4294967310
+.globl Main.main_info
+Main.main_info:
+_c9Pe:
+	jmp Main.main1_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0812629 UTC
+
+.section .data
+.align 8
+.align 1
+.globl Main.main2_closure
+Main.main2_closure:
+	.quad	Main.main2_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0842543 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(Main.main2_info)+168
+	.long	0
+	.quad	4294967299
+	.quad	0
+	.quad	21474836494
+.globl Main.main2_info
+Main.main2_info:
+_c9Po:
+	movl $Main.main1_closure+1,%r14d
+	jmp GHC.TopHandler.runMainIO1_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0872496 UTC
+
+.section .data
+.align 8
+.align 1
+.globl :Main.main_closure
+:Main.main_closure:
+	.quad	:Main.main_info
+	.quad	0
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0892478 UTC
+
+.section .text
+.align 8
+.align 8
+	.long	S9bb_srt-(:Main.main_info)+192
+	.long	0
+	.quad	4294967299
+	.quad	0
+	.quad	4294967310
+.globl :Main.main_info
+:Main.main_info:
+_c9Py:
+	jmp Main.main2_info
+
+
+==================== Asm code ====================
+2018-12-28 09:15:11.0922424 UTC
+
+.section .rdata$rel.ro
+.align 8
+.align 1
+S9bb_srt:
+	.quad	GHC.Int.$w$cenumFromTo3_closure
+	.quad	Main.arrayByIndex16_closure
+	.quad	GHC.Err.error_closure
+	.quad	Main.arrayByIndex2_closure
+	.quad	Main.viewGameState3_closure
+	.quad	GHC.Arr.hopelessIndexError_closure
+	.quad	Main.viewGameState2_closure
+	.quad	Main.viewGameState_closure
+	.quad	Main.viewGameState1_closure
+	.quad	lvl8_r92e_closure
+	.quad	lvl11_r92h_closure
+	.quad	Main.arrayByIndex19_closure
+	.quad	Main.$w$sarrayByIndex_closure
+	.quad	Main.$warrayByIndex_closure
+	.quad	Main.arrayByIndex_closure
+	.quad	Main.updateGameState_closure
+	.quad	Main.$wloop_closure
+	.quad	GHC.IO.Handle.FD.stdout_closure
+	.quad	GHC.IO.Handle.Text.hPutStr2_closure
+	.quad	Main.loop1_closure
+	.quad	Main.newGameState_closure
+	.quad	Main.main1_closure
+	.quad	GHC.IO.Handle.hSetBuffering1_closure
+	.quad	GHC.TopHandler.runMainIO1_closure
+	.quad	Main.main2_closure
+
