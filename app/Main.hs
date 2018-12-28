@@ -1,4 +1,4 @@
-{-# OPTIONS -ddump-to-file -ddump-simpl #-}
+{-# OPTIONS -ddump-to-file -ddump-simpl -O #-}
 
 module Main where
 
