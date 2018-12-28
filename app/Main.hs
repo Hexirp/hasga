@@ -23,11 +23,8 @@ module Main where
  loop :: GameState -> Int -> IO ()
  loop a 0 = return ()
  loop a i = do
-  -- threadDelay $ 100 * 1000
-  v <- evaluate $ viewGameState a
-  putStrLn v
-  b <- evaluate $ updateGameState a
-  loop b (i - 1)
+  putStrLn (viewGameState a)
+  loop (updateGameState a) (i - 1)
 
  -- xy-.
  -- z-w.
