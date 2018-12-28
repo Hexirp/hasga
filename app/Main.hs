@@ -1,4 +1,4 @@
-{-# OPTIONS -O #-}
+{-# OPTIONS --ddump-to-file --ddump-ds -O #-}
 
 module Main where
 
@@ -20,11 +20,11 @@ module Main where
  main :: IO ()
  main = do
   hSetBuffering stdout NoBuffering
-  putStrLn $ loop newGameState $ 4 * 1000
+  loop newGameState $ 4 * 1000
 
- loop :: GameState -> Int -> String
- loop a 0 = ""
- loop a i = viewGameState a ++ "n" ++ loop (updateGameState a) (i - 1)
+ loop :: GameState -> Int -> IO ()
+ loop a 0 = putStrLn (viewGameState a)
+ loop a i = loop (updateGameState a) (i - 1)
 
  -- xy-.
  -- z-w.
