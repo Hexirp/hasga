@@ -1,3 +1,5 @@
+{-# OPTIONS -ddump-to-file -ddump-simpl #-}
+
 module Main where
 
  import Prelude
