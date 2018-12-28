@@ -1,0 +1,439 @@
+
+==================== Desugar (after optimization) ====================
+2018-12-28 10:48:18.4936642 UTC
+
+Result size of Desugar (after optimization)
+  = {terms: 469, types: 342, coercions: 0, joins: 3/9}
+
+-- RHS size: {terms: 28, types: 41, coercions: 0, joins: 0/0}
+arrayByIndex
+  :: forall (a :: * -> * -> *) e i.
+     (IArray a e, Ix i) =>
+     (i, i) -> (i -> e) -> a i e
+[LclIdX]
+arrayByIndex
+  = \ (@ (a_a4ww :: * -> * -> *))
+      (@ e_a4wx)
+      (@ i_a4wy)
+      ($dIArray_a4wA :: IArray a_a4ww e_a4wx)
+      ($dIx_a4wB :: Ix i_a4wy)
+      (bd_a24R :: (i_a4wy, i_a4wy))
+      (f_a24S :: i_a4wy -> e_a4wx) ->
+      array
+        @ a_a4ww
+        @ e_a4wx
+        @ i_a4wy
+        $dIArray_a4wA
+        $dIx_a4wB
+        bd_a24R
+        (GHC.Base.build
+           @ (i_a4wy, e_a4wx)
+           (\ (@ a_d4F8)
+              (c_d4F9 [OS=OneShot] :: (i_a4wy, e_a4wx) -> a_d4F8 -> a_d4F8)
+              (n_d4Fa [OS=OneShot] :: a_d4F8) ->
+              GHC.Base.foldr
+                @ i_a4wy
+                @ a_d4F8
+                (\ (ds_d4Fc :: i_a4wy) (ds_d4Fb [OS=OneShot] :: a_d4F8) ->
+                   c_d4F9 (ds_d4Fc, f_a24S ds_d4Fc) ds_d4Fb)
+                n_d4Fa
+                (range @ i_a4wy $dIx_a4wB bd_a24R)))
+
+-- RHS size: {terms: 5, types: 0, coercions: 0, joins: 0/0}
+Main.$trModule :: GHC.Types.Module
+[LclIdX]
+Main.$trModule
+  = GHC.Types.Module
+      (GHC.Types.TrNameS "main"#) (GHC.Types.TrNameS "Main"#)
+
+-- RHS size: {terms: 3, types: 2, coercions: 0, joins: 0/0}
+$dIx_a4we :: Ix (Int8, Int8)
+[LclId]
+$dIx_a4we
+  = GHC.Arr.$fIx(,) @ Int8 @ Int8 GHC.Int.$fIxInt8 GHC.Int.$fIxInt8
+
+-- RHS size: {terms: 3, types: 1, coercions: 0, joins: 0/0}
+yWidth :: Int8
+[LclIdX]
+yWidth = fromInteger @ Int8 GHC.Int.$fNumInt8 17
+
+-- RHS size: {terms: 3, types: 1, coercions: 0, joins: 0/0}
+xWidth :: Int8
+[LclIdX]
+xWidth = fromInteger @ Int8 GHC.Int.$fNumInt8 16
+
+-- RHS size: {terms: 21, types: 16, coercions: 0, joins: 0/0}
+fieldSize :: ((Int8, Int8), (Int8, Int8))
+[LclIdX]
+fieldSize
+  = ((fromInteger @ Int8 GHC.Int.$fNumInt8 0,
+      fromInteger @ Int8 GHC.Int.$fNumInt8 0),
+     (- @ Int8
+        GHC.Int.$fNumInt8
+        xWidth
+        (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
+      - @ Int8
+        GHC.Int.$fNumInt8
+        yWidth
+        (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
+
+-- RHS size: {terms: 160, types: 94, coercions: 0, joins: 0/2}
+updateGameState :: GameState -> GameState
+[LclIdX]
+updateGameState
+  = \ (a_a25b :: GameState) ->
+      let {
+        g_a25d :: (Int8, Int8) -> Bool
+        [LclId]
+        g_a25d
+          = \ (ds_d4FS :: (Int8, Int8)) ->
+              case ds_d4FS of { (x_a3ro, y_a3rp) ->
+              ! @ UArray
+                @ Bool
+                @ (Int8, Int8)
+                Data.Array.Base.$fIArrayUArrayBool
+                $dIx_a4we
+                a_a25b
+                (mod @ Int8 GHC.Int.$fIntegralInt8 x_a3ro xWidth,
+                 mod @ Int8 GHC.Int.$fIntegralInt8 y_a3rp yWidth)
+              } } in
+      arrayByIndex
+        @ UArray
+        @ Bool
+        @ (Int8, Int8)
+        Data.Array.Base.$fIArrayUArrayBool
+        $dIx_a4we
+        fieldSize
+        (uncurry
+           @ Int8
+           @ Int8
+           @ Bool
+           (\ (x_a25e :: Int8) (y_a25f :: Int8) ->
+              let {
+                n_a25p :: Int
+                [LclId]
+                n_a25p
+                  = $ @ 'GHC.Types.LiftedRep
+                      @ [Bool]
+                      @ Int
+                      (length @ [] Data.Foldable.$fFoldable[] @ Bool)
+                      (filter
+                         @ Bool
+                         (id @ Bool)
+                         (GHC.Base.build
+                            @ Bool
+                            (\ (@ a_d4FE)
+                               (c_d4FF [OS=OneShot] :: Bool -> a_d4FE -> a_d4FE)
+                               (n_d4FG [OS=OneShot] :: a_d4FE) ->
+                               c_d4FF
+                                 (g_a25d
+                                    (- @ Int8
+                                       GHC.Int.$fNumInt8
+                                       x_a25e
+                                       (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
+                                     - @ Int8
+                                       GHC.Int.$fNumInt8
+                                       y_a25f
+                                       (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
+                                 (c_d4FF
+                                    (g_a25d
+                                       (- @ Int8
+                                          GHC.Int.$fNumInt8
+                                          x_a25e
+                                          (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
+                                        y_a25f))
+                                    (c_d4FF
+                                       (g_a25d
+                                          (- @ Int8
+                                             GHC.Int.$fNumInt8
+                                             x_a25e
+                                             (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
+                                           + @ Int8
+                                             GHC.Int.$fNumInt8
+                                             y_a25f
+                                             (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
+                                       (c_d4FF
+                                          (g_a25d
+                                             (x_a25e,
+                                              - @ Int8
+                                                GHC.Int.$fNumInt8
+                                                y_a25f
+                                                (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
+                                          (c_d4FF
+                                             (g_a25d
+                                                (x_a25e,
+                                                 + @ Int8
+                                                   GHC.Int.$fNumInt8
+                                                   y_a25f
+                                                   (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
+                                             (c_d4FF
+                                                (g_a25d
+                                                   (+ @ Int8
+                                                      GHC.Int.$fNumInt8
+                                                      x_a25e
+                                                      (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
+                                                    - @ Int8
+                                                      GHC.Int.$fNumInt8
+                                                      y_a25f
+                                                      (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))
+                                                (c_d4FF
+                                                   (g_a25d
+                                                      (+ @ Int8
+                                                         GHC.Int.$fNumInt8
+                                                         x_a25e
+                                                         (fromInteger @ Int8 GHC.Int.$fNumInt8 1),
+                                                       y_a25f))
+                                                   (c_d4FF
+                                                      (g_a25d
+                                                         (+ @ Int8
+                                                            GHC.Int.$fNumInt8
+                                                            x_a25e
+                                                            (fromInteger
+                                                               @ Int8 GHC.Int.$fNumInt8 1),
+                                                          + @ Int8
+                                                            GHC.Int.$fNumInt8
+                                                            y_a25f
+                                                            (fromInteger
+                                                               @ Int8 GHC.Int.$fNumInt8 1)))
+                                                      n_d4FG)))))))))) } in
+              case g_a25d (x_a25e, y_a25f) of {
+                False -> == @ Int GHC.Classes.$fEqInt n_a25p (GHC.Types.I# 3#);
+                True ->
+                  ||
+                    (== @ Int GHC.Classes.$fEqInt n_a25p (GHC.Types.I# 2#))
+                    (== @ Int GHC.Classes.$fEqInt n_a25p (GHC.Types.I# 3#))
+              }))
+
+-- RHS size: {terms: 95, types: 79, coercions: 0, joins: 0/4}
+viewGameState :: GameState -> String
+[LclIdX]
+viewGameState
+  = \ (a_a3Bo :: GameState) ->
+      let {
+        yv_a3Br :: Int8 -> [Bool]
+        [LclId]
+        yv_a3Br
+          = \ (x_a3Bw :: Int8) ->
+              GHC.Base.build
+                @ Bool
+                (\ (@ a_d4F0)
+                   (c_d4F1 [OS=OneShot] :: Bool -> a_d4F0 -> a_d4F0)
+                   (n_d4F2 [OS=OneShot] :: a_d4F0) ->
+                   GHC.Base.foldr
+                     @ Int8
+                     @ a_d4F0
+                     (\ (ds_d4F4 :: Int8) (ds_d4F3 [OS=OneShot] :: a_d4F0) ->
+                        c_d4F1
+                          (! @ UArray
+                             @ Bool
+                             @ (Int8, Int8)
+                             Data.Array.Base.$fIArrayUArrayBool
+                             $dIx_a4we
+                             a_a3Bo
+                             (x_a3Bw, ds_d4F4))
+                          ds_d4F3)
+                     n_d4F2
+                     (enumFromTo
+                        @ Int8
+                        GHC.Int.$fEnumInt8
+                        (fromInteger @ Int8 GHC.Int.$fNumInt8 0)
+                        (- @ Int8
+                           GHC.Int.$fNumInt8
+                           yWidth
+                           (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))) } in
+      let {
+        b2c_a3Bp :: Bool -> Char
+        [LclId]
+        b2c_a3Bp
+          = \ (x_a3Bu :: Bool) ->
+              case x_a3Bu of {
+                False -> GHC.Types.C# '-'#;
+                True -> GHC.Types.C# '#'#
+              } } in
+      letrec {
+        g_a3Bt [Occ=LoopBreaker] :: [Bool] -> String
+        [LclId]
+        g_a3Bt
+          = \ (ds_d4EK :: [Bool]) ->
+              case ds_d4EK of {
+                [] -> GHC.Types.[] @ Char;
+                : x_a3BA xs_a3BB ->
+                  GHC.Types.:
+                    @ Char
+                    (GHC.Types.C# ' '#)
+                    (GHC.Types.: @ Char (b2c_a3Bp x_a3BA) (g_a3Bt xs_a3BB))
+              }; } in
+      letrec {
+        f_a3Bs [Occ=LoopBreaker] :: [[Bool]] -> String
+        [LclId]
+        f_a3Bs
+          = \ (ds_d4Ep :: [[Bool]]) ->
+              case ds_d4Ep of {
+                [] -> GHC.Types.[] @ Char;
+                : x_a3By xs_a3Bz ->
+                  ++
+                    @ Char
+                    (g_a3Bt x_a3By)
+                    (++ @ Char (GHC.CString.unpackCString# "\n"#) (f_a3Bs xs_a3Bz))
+              }; } in
+      f_a3Bs
+        (GHC.Base.build
+           @ [Bool]
+           (\ (@ a_d4ES)
+              (c_d4ET [OS=OneShot] :: [Bool] -> a_d4ES -> a_d4ES)
+              (n_d4EU [OS=OneShot] :: a_d4ES) ->
+              GHC.Base.foldr
+                @ Int8
+                @ a_d4ES
+                (\ (ds_d4EW :: Int8) (ds_d4EV [OS=OneShot] :: a_d4ES) ->
+                   c_d4ET (yv_a3Br ds_d4EW) ds_d4EV)
+                n_d4EU
+                (enumFromTo
+                   @ Int8
+                   GHC.Int.$fEnumInt8
+                   (fromInteger @ Int8 GHC.Int.$fNumInt8 0)
+                   (- @ Int8
+                      GHC.Int.$fNumInt8
+                      xWidth
+                      (fromInteger @ Int8 GHC.Int.$fNumInt8 1)))))
+
+Rec {
+-- RHS size: {terms: 20, types: 6, coercions: 0, joins: 0/0}
+loop [Occ=LoopBreaker] :: GameState -> Int -> IO ()
+[LclIdX]
+loop
+  = \ (a_a24O :: GameState) (ds_d4FX :: Int) ->
+      case ds_d4FX of { GHC.Types.I# ds_d4FZ ->
+      case ds_d4FZ of {
+        __DEFAULT ->
+          loop
+            (updateGameState a_a24O)
+            (- @ Int GHC.Num.$fNumInt ds_d4FX (GHC.Types.I# 1#));
+        0# -> putStrLn (viewGameState a_a24O)
+      }
+      }
+end Rec }
+
+-- RHS size: {terms: 103, types: 43, coercions: 0, joins: 3/3}
+newGameState :: GameState
+[LclIdX]
+newGameState
+  = arrayByIndex
+      @ UArray
+      @ Bool
+      @ (Int8, Int8)
+      Data.Array.Base.$fIArrayUArrayBool
+      $dIx_a4we
+      fieldSize
+      (uncurry
+         @ Int8
+         @ Int8
+         @ Bool
+         (\ (ds_d4Fn :: Int8) (ds_d4Fo :: Int8) ->
+            join {
+              fail_d4FA :: GHC.Prim.Void# -> Bool
+              [LclId[JoinId(1)]]
+              fail_d4FA _ [Occ=Dead, OS=OneShot]
+                = join {
+                    fail_d4Fy :: GHC.Prim.Void# -> Bool
+                    [LclId[JoinId(1)]]
+                    fail_d4Fy _ [Occ=Dead, OS=OneShot]
+                      = join {
+                          fail_d4Fs :: GHC.Prim.Void# -> Bool
+                          [LclId[JoinId(1)]]
+                          fail_d4Fs _ [Occ=Dead, OS=OneShot] = GHC.Types.False } in
+                        case ==
+                               @ Int8
+                               GHC.Int.$fEqInt8
+                               ds_d4Fn
+                               (fromInteger @ Int8 GHC.Int.$fNumInt8 2)
+                        of {
+                          False -> jump fail_d4Fs GHC.Prim.void#;
+                          True ->
+                            case ==
+                                   @ Int8
+                                   GHC.Int.$fEqInt8
+                                   ds_d4Fo
+                                   (fromInteger @ Int8 GHC.Int.$fNumInt8 0)
+                            of {
+                              False ->
+                                case ==
+                                       @ Int8
+                                       GHC.Int.$fEqInt8
+                                       ds_d4Fo
+                                       (fromInteger @ Int8 GHC.Int.$fNumInt8 1)
+                                of {
+                                  False ->
+                                    case ==
+                                           @ Int8
+                                           GHC.Int.$fEqInt8
+                                           ds_d4Fo
+                                           (fromInteger @ Int8 GHC.Int.$fNumInt8 2)
+                                    of {
+                                      False -> jump fail_d4Fs GHC.Prim.void#;
+                                      True -> GHC.Types.True
+                                    };
+                                  True -> GHC.Types.True
+                                };
+                              True -> GHC.Types.True
+                            }
+                        } } in
+                  case ==
+                         @ Int8
+                         GHC.Int.$fEqInt8
+                         ds_d4Fn
+                         (fromInteger @ Int8 GHC.Int.$fNumInt8 1)
+                  of {
+                    False -> jump fail_d4Fy GHC.Prim.void#;
+                    True ->
+                      case ==
+                             @ Int8
+                             GHC.Int.$fEqInt8
+                             ds_d4Fo
+                             (fromInteger @ Int8 GHC.Int.$fNumInt8 2)
+                      of {
+                        False -> jump fail_d4Fy GHC.Prim.void#;
+                        True -> GHC.Types.True
+                      }
+                  } } in
+            case ==
+                   @ Int8
+                   GHC.Int.$fEqInt8
+                   ds_d4Fn
+                   (fromInteger @ Int8 GHC.Int.$fNumInt8 0)
+            of {
+              False -> jump fail_d4FA GHC.Prim.void#;
+              True ->
+                case ==
+                       @ Int8
+                       GHC.Int.$fEqInt8
+                       ds_d4Fo
+                       (fromInteger @ Int8 GHC.Int.$fNumInt8 1)
+                of {
+                  False -> jump fail_d4FA GHC.Prim.void#;
+                  True -> GHC.Types.True
+                }
+            }))
+
+-- RHS size: {terms: 14, types: 8, coercions: 0, joins: 0/0}
+main :: IO ()
+[LclIdX]
+main
+  = >>
+      @ IO
+      GHC.Base.$fMonadIO
+      @ ()
+      @ ()
+      (hSetBuffering stdout GHC.IO.Handle.Types.NoBuffering)
+      ($ @ 'GHC.Types.LiftedRep
+         @ Int
+         @ (IO ())
+         (loop newGameState)
+         (* @ Int GHC.Num.$fNumInt (GHC.Types.I# 4#) (GHC.Types.I# 1000#)))
+
+-- RHS size: {terms: 2, types: 1, coercions: 0, joins: 0/0}
+:Main.main :: IO ()
+[LclIdX]
+:Main.main = GHC.TopHandler.runMainIO @ () main
+
+
