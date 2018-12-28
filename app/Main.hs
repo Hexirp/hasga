@@ -18,15 +18,16 @@ module Main where
  main :: IO ()
  main = do
   hSetBuffering stdout NoBuffering
-  loop newGameState
+  loop newGameState $ 4 * 1000
 
- loop :: GameState -> IO ()
- loop a = do
-  threadDelay $ 100 * 1000
+ loop :: GameState -> Int -> IO ()
+ loop a 0 = return ()
+ loop a i = do
+  -- threadDelay $ 100 * 1000
   v <- evaluate $ viewGameState a
   putStrLn v
   b <- evaluate $ updateGameState a
-  loop b
+  loop b (i - 1)
 
  -- xy-.
  -- z-w.
