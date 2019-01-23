@@ -18,7 +18,7 @@ module Main where
  main :: IO ()
  main = do
   hSetBuffering stdout NoBuffering
-  loop newGameState $ 4 * 1000
+  loop newGameState $ 4 * 1000 * 1000
 
  loop :: GameState -> Int -> IO ()
  loop a 0 = evaluate a >>= \a' -> putStrLn (viewGameState a)
