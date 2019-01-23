@@ -1,5 +1,5 @@
 #!/bin/bash
 
-stack build
+stack build --profile
 
-stack exec -- hasga-exe +RTS -sstats -RTS
+stack exec -- hasga-exe +RTS -p -RTS
