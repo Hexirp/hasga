@@ -77,18 +77,24 @@ module Main where
   where
    b2i :: Bool -> Int
    b2i False = 0
-   b2i True = 1
+   b2i True  = 1
    f :: Int -> Int -> Int
    f x y = let
-     n0 = g (x - 1, y - 1)
-     n1 = g (x - 1, y    )
-     n2 = g (x - 1, y + 1)
-     n3 = g (x    , y - 1)
-     n4 = g (x    , y    )
-     n5 = g (x    , y + 1)
-     n6 = g (x + 1, y - 1)
-     n7 = g (x + 1, y    )
-     n8 = g (x + 1, y + 1)
+     xn = x - 1
+     xz = x
+     xp = x + 1
+     yn = y - 1
+     yz = y
+     yp = y + 1
+     n0 = g (xn, yn)
+     n1 = g (xn, yz)
+     n2 = g (xn, yp)
+     n3 = g (xz, yn)
+     n4 = g (xz, yz)
+     n5 = g (xz, yp)
+     n6 = g (xp, yn)
+     n7 = g (xp, yz)
+     n8 = g (xp, yp)
      n = n0 + n1 + n2 + n3 + n5 + n6 + n7 + n8
     in
      if n4 == 0 then b2i (n == 3) else b2i (n == 2 || n == 3)
