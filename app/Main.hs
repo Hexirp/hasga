@@ -75,6 +75,9 @@ module Main where
  updateGameState :: GameState -> GameState
  updateGameState a = arrayByIndex fieldSize (uncurry f)
   where
+   b2i :: Bool -> Int
+   b2i False = 0
+   b2i True = 1
    f :: Int -> Int -> Int
    f x y = let
      n0 = g (x - 1, y - 1)
@@ -88,7 +91,7 @@ module Main where
      n8 = g (x + 1, y + 1)
      n = n0 + n1 + n2 + n3 + n5 + n6 + n7 + n8
     in
-     if n4 == 0 then n == 3 else n == 2 || n == 3
+     if n4 == 0 then b2i (n == 3) else b2i (n == 2 || n == 3)
    g :: (Int, Int) -> Int
    g (x, y) = a ! (x `mod` xWidth, y `mod` yWidth)
 
@@ -107,7 +110,7 @@ module Main where
    f (x : xs) = g x ++ "\n" ++ f xs
    g :: [Int] -> String
    g []       = ""
-   g (x : xs) = ' ' : b2c x : g xs
+   g (x : xs) = ' ' : i2c x : g xs
 
  -- References:
  -- - https://github.com/Hexirp/haskell-gist/blob/f940d84bd79c2d6d9f05ad68f93152abeeed6297/Lifegame.hs
