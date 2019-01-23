@@ -21,8 +21,8 @@ module Main where
   loop newGameState $ 4 * 1000
 
  loop :: GameState -> Int -> IO ()
- loop a 0 = return ()
- loop a i = putStrLn (viewGameState a) >> loop (updateGameState a) (i - 1)
+ loop a 0 = evaluate a >>= \a' -> putStrLn (viewGameState a)
+ loop a i = evaluate a >>= \a' -> loop (updateGameState a') (i - 1)
 
  -- xy-.
  -- z-w.
