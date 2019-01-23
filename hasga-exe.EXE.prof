@@ -1,79 +1,86 @@
-	Wed Jan 23 15:41 2019 Time and Allocation Profiling Report  (Final)
+	Wed Jan 23 15:58 2019 Time and Allocation Profiling Report  (Final)
 
 	   hasga-exe.EXE +RTS -N -p -RTS
 
-	total time  =        0.61 secs   (2458 ticks @ 1000 us, 4 processors)
-	total alloc = 3,583,556,992 bytes  (excludes profiling overheads)
+	total time  =        0.44 secs   (1769 ticks @ 1000 us, 4 processors)
+	total alloc = 166,631,208 bytes  (excludes profiling overheads)
 
-COST CENTRE       MODULE    SRC                           %time %alloc
+COST CENTRE          MODULE    SRC                         %time %alloc
 
-loop              Main      app\Main.hs:(24,2)-(25,74)     75.9   85.7
-updateGameState.g Main      app\Main.hs:93:4-50             9.2    0.0
-viewGameState.yv  Main      app\Main.hs:104:4-51            3.9    3.0
-updateGameState.f Main      app\Main.hs:(79,4)-(91,44)      2.5    0.0
-viewGameState.f   Main      app\Main.hs:(106,4)-(107,35)    2.3    3.7
-viewGameState.g   Main      app\Main.hs:(109,4)-(110,34)    2.0    2.9
-arrayByIndex      Main      app\Main.hs:45:2-58             1.8    4.1
+updateGameState.g    Main      app\Main.hs:93:4-50          56.4    0.0
+updateGameState.f    Main      app\Main.hs:(79,4)-(91,44)   16.9    0.0
+arrayByIndex         Main      app\Main.hs:45:2-58          10.7   88.6
+updateGameState.f.n  Main      app\Main.hs:89:6-60           3.3   10.4
+updateGameState.f.n6 Main      app\Main.hs:86:6-26           1.9    0.0
+updateGameState.f.n1 Main      app\Main.hs:81:6-26           1.7    0.0
+updateGameState.f.n5 Main      app\Main.hs:85:6-26           1.5    0.0
+updateGameState.f.n7 Main      app\Main.hs:87:6-26           1.5    0.0
+updateGameState.f.n8 Main      app\Main.hs:88:6-26           1.4    0.0
+updateGameState.f.n2 Main      app\Main.hs:82:6-26           1.4    0.0
+updateGameState.f.n0 Main      app\Main.hs:80:6-26           1.1    0.0
+updateGameState.f.n4 Main      app\Main.hs:84:6-26           1.1    0.0
 
 
-                                                                                                    individual      inherited
-COST CENTRE                MODULE                   SRC                          no.     entries  %time %alloc   %time %alloc
+                                                                                                     individual      inherited
+COST CENTRE                 MODULE                   SRC                          no.     entries  %time %alloc   %time %alloc
 
-MAIN                       MAIN                     <built-in>                    86          0    0.0    0.0   100.0  100.0
- CAF                       GHC.IO.Encoding.CodePage <entire-module>              157          0    0.0    0.0     0.0    0.0
- CAF                       GHC.IO.Encoding          <entire-module>              150          0    0.0    0.0     0.0    0.0
- CAF                       GHC.Conc.Windows         <entire-module>              147          0    0.0    0.0     0.0    0.0
- CAF                       GHC.IO.Handle.FD         <entire-module>              139          0    0.0    0.0     0.0    0.0
- CAF:fieldSize             Main                     app\Main.hs:57:2-10          102          0    0.0    0.0     0.0    0.0
-  fieldSize                Main                     app\Main.hs:57:2-47          189          1    0.0    0.0     0.0    0.0
- CAF:fieldSize2            Main                     <no location info>           101          0    0.0    0.0     0.0    0.0
-  fieldSize                Main                     app\Main.hs:57:2-47          192          0    0.0    0.0     0.0    0.0
- CAF:fieldSize3            Main                     <no location info>            98          0    0.0    0.0     0.0    0.0
-  fieldSize                Main                     app\Main.hs:57:2-47          190          0    0.0    0.0     0.0    0.0
- CAF:main1                 Main                     <no location info>           107          0    0.0    0.0     0.0    0.0
-  main                     Main                     app\Main.hs:(19,2)-(21,30)   172          1    0.0    0.0     0.0    0.0
- CAF:newGameState          Main                     app\Main.hs:61:2-13          106          0    0.0    0.0     0.0    0.0
-  newGameState             Main                     app\Main.hs:(61,2)-(72,16)   188          1    0.0    0.0     0.0    0.0
-   arrayByIndex            Main                     app\Main.hs:45:2-58          191          1    0.0    0.0     0.0    0.0
-    newGameState.f         Main                     app\Main.hs:(67,4)-(72,16)   193        272    0.0    0.0     0.0    0.0
- CAF:viewGameState1        Main                     <no location info>            99          0    0.0    0.0     0.0    0.0
-  viewGameState            Main                     app\Main.hs:(97,2)-(110,34)  177          0    0.0    0.0     0.0    0.0
-   viewGameState.xv        Main                     app\Main.hs:102:4-42         178          0    0.0    0.0     0.0    0.0
- CAF:viewGameState2        Main                     <no location info>           103          0    0.0    0.0     0.0    0.0
-  viewGameState            Main                     app\Main.hs:(97,2)-(110,34)  183          0    0.0    0.0     0.0    0.0
-   viewGameState.xv        Main                     app\Main.hs:102:4-42         184          0    0.0    0.0     0.0    0.0
-    viewGameState.yv       Main                     app\Main.hs:104:4-51         185          0    0.0    0.0     0.0    0.0
- CAF:xWidth                Main                     app\Main.hs:49:2-7            97          0    0.0    0.0     0.0    0.0
-  xWidth                   Main                     app\Main.hs:49:2-12          179          1    0.0    0.0     0.0    0.0
- CAF:yWidth                Main                     app\Main.hs:53:2-7           100          0    0.0    0.0     0.0    0.0
-  yWidth                   Main                     app\Main.hs:53:2-12          186          1    0.0    0.0     0.0    0.0
- main                      Main                     app\Main.hs:(19,2)-(21,30)   173          0    0.0    0.0   100.0  100.0
-  loop                     Main                     app\Main.hs:(24,2)-(25,74)   174       4001   75.9   85.7   100.0  100.0
-   viewGameState           Main                     app\Main.hs:(97,2)-(110,34)  175       4000    0.0    0.0     8.5    9.7
-    viewGameState.f        Main                     app\Main.hs:(106,4)-(107,35) 180      68000    2.3    3.7     4.5    6.6
-     viewGameState.g       Main                     app\Main.hs:(109,4)-(110,34) 181    1152000    2.0    2.9     2.2    2.9
-      viewGameState.b2c    Main                     app\Main.hs:100:4-33         187    1088000    0.2    0.0     0.2    0.0
-    viewGameState.xv       Main                     app\Main.hs:102:4-42         176       4000    0.2    0.2     4.0    3.1
-     viewGameState.yv      Main                     app\Main.hs:104:4-51         182      64000    3.9    3.0     3.9    3.0
-   updateGameState         Main                     app\Main.hs:(76,2)-(93,50)   194       3999    0.0    0.0    15.6    4.6
-    arrayByIndex           Main                     app\Main.hs:45:2-58          195       3999    1.8    4.1    15.6    4.6
-     updateGameState.f     Main                     app\Main.hs:(79,4)-(91,44)   196    1087728    2.5    0.0    13.8    0.5
-      updateGameState.f.n  Main                     app\Main.hs:89:6-60          213    1087728    0.4    0.5     0.4    0.5
-      updateGameState.f.n0 Main                     app\Main.hs:80:6-26          211    1087728    0.2    0.0     1.2    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          212    1087728    0.9    0.0     0.9    0.0
-      updateGameState.f.n1 Main                     app\Main.hs:81:6-26          209    1087728    0.2    0.0     1.3    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          210    1087728    1.2    0.0     1.2    0.0
-      updateGameState.f.n2 Main                     app\Main.hs:82:6-26          207    1087728    0.2    0.0     1.0    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          208    1087728    0.8    0.0     0.8    0.0
-      updateGameState.f.n3 Main                     app\Main.hs:83:6-26          205    1087728    0.2    0.0     1.4    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          206    1087728    1.2    0.0     1.2    0.0
-      updateGameState.f.n4 Main                     app\Main.hs:84:6-26          214    1087728    0.2    0.0     1.4    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          215    1087728    1.2    0.0     1.2    0.0
-      updateGameState.f.n5 Main                     app\Main.hs:85:6-26          203    1087728    0.2    0.0     1.1    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          204    1087728    0.9    0.0     0.9    0.0
-      updateGameState.f.n6 Main                     app\Main.hs:86:6-26          201    1087728    0.2    0.0     1.1    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          202    1087728    0.9    0.0     0.9    0.0
-      updateGameState.f.n7 Main                     app\Main.hs:87:6-26          199    1087728    0.1    0.0     1.1    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          200    1087728    1.1    0.0     1.1    0.0
-      updateGameState.f.n8 Main                     app\Main.hs:88:6-26          197    1087728    0.2    0.0     1.3    0.0
-       updateGameState.g   Main                     app\Main.hs:93:4-50          198    1087728    1.0    0.0     1.0    0.0
+MAIN                        MAIN                     <built-in>                    86          0    0.1    0.0   100.0  100.0
+ CAF                        GHC.IO.Encoding.CodePage <entire-module>              157          0    0.0    0.0     0.0    0.0
+ CAF                        GHC.IO.Encoding          <entire-module>              150          0    0.0    0.0     0.0    0.0
+ CAF                        GHC.Conc.Windows         <entire-module>              147          0    0.0    0.0     0.0    0.0
+ CAF                        GHC.IO.Handle.FD         <entire-module>              139          0    0.0    0.0     0.0    0.0
+ CAF:fieldSize              Main                     app\Main.hs:57:2-10          102          0    0.0    0.0     0.0    0.0
+  fieldSize                 Main                     app\Main.hs:57:2-47          176          1    0.0    0.0     0.0    0.0
+ CAF:fieldSize2             Main                     <no location info>           101          0    0.0    0.0     0.0    0.0
+  fieldSize                 Main                     app\Main.hs:57:2-47          180          0    0.0    0.0     0.0    0.0
+ CAF:fieldSize3             Main                     <no location info>            98          0    0.0    0.0     0.0    0.0
+  fieldSize                 Main                     app\Main.hs:57:2-47          177          0    0.0    0.0     0.0    0.0
+ CAF:main1                  Main                     <no location info>           107          0    0.0    0.0     0.0    0.0
+  main                      Main                     app\Main.hs:(19,2)-(21,30)   172          1    0.0    0.0     0.0    0.0
+ CAF:newGameState           Main                     app\Main.hs:61:2-13          106          0    0.0    0.0     0.0    0.0
+  newGameState              Main                     app\Main.hs:(61,2)-(72,16)   175          1    0.0    0.0     0.0    0.0
+   arrayByIndex             Main                     app\Main.hs:45:2-58          179          1    0.0    0.0     0.0    0.0
+    newGameState.f          Main                     app\Main.hs:(67,4)-(72,16)   182        272    0.0    0.0     0.0    0.0
+ CAF:viewGameState1         Main                     <no location info>            99          0    0.0    0.0     0.0    0.0
+  viewGameState             Main                     app\Main.hs:(97,2)-(110,34)  209          0    0.0    0.0     0.0    0.0
+   viewGameState.xv         Main                     app\Main.hs:102:4-42         210          0    0.0    0.0     0.0    0.0
+ CAF:viewGameState2         Main                     <no location info>           103          0    0.0    0.0     0.0    0.0
+  viewGameState             Main                     app\Main.hs:(97,2)-(110,34)  214          0    0.0    0.0     0.0    0.0
+   viewGameState.xv         Main                     app\Main.hs:102:4-42         215          0    0.0    0.0     0.0    0.0
+    viewGameState.yv        Main                     app\Main.hs:104:4-51         216          0    0.0    0.0     0.0    0.0
+ CAF:xWidth                 Main                     app\Main.hs:49:2-7            97          0    0.0    0.0     0.0    0.0
+  xWidth                    Main                     app\Main.hs:49:2-12          178          1    0.0    0.0     0.0    0.0
+ CAF:yWidth                 Main                     app\Main.hs:53:2-7           100          0    0.0    0.0     0.0    0.0
+  yWidth                    Main                     app\Main.hs:53:2-12          181          1    0.0    0.0     0.0    0.0
+ main                       Main                     app\Main.hs:(19,2)-(21,30)   173          0    0.0    0.0    99.9  100.0
+  loop                      Main                     app\Main.hs:(24,2)-(25,67)   174       4001    0.0    0.1    99.9  100.0
+   loop.\                   Main                     app\Main.hs:25:35-67         183       4000    0.1    0.1    99.6   99.4
+    updateGameState         Main                     app\Main.hs:(76,2)-(93,50)   184       4000    0.0    0.3    99.5   99.3
+     arrayByIndex           Main                     app\Main.hs:45:2-58          185       4000   10.7   88.6    99.5   99.1
+      updateGameState.f     Main                     app\Main.hs:(79,4)-(91,44)   186    1088000   16.9    0.0    88.9   10.4
+       updateGameState.f.n  Main                     app\Main.hs:89:6-60          203    1088000    3.3   10.4     3.3   10.4
+       updateGameState.f.n0 Main                     app\Main.hs:80:6-26          201    1088000    1.1    0.0     7.7    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          202    1088000    6.6    0.0     6.6    0.0
+       updateGameState.f.n1 Main                     app\Main.hs:81:6-26          199    1088000    1.7    0.0     7.0    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          200    1088000    5.3    0.0     5.3    0.0
+       updateGameState.f.n2 Main                     app\Main.hs:82:6-26          197    1088000    1.4    0.0     7.5    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          198    1088000    6.1    0.0     6.1    0.0
+       updateGameState.f.n3 Main                     app\Main.hs:83:6-26          195    1088000    0.7    0.0     6.8    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          196    1088000    6.0    0.0     6.0    0.0
+       updateGameState.f.n4 Main                     app\Main.hs:84:6-26          204    1088000    1.1    0.0     7.5    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          205    1088000    6.4    0.0     6.4    0.0
+       updateGameState.f.n5 Main                     app\Main.hs:85:6-26          193    1088000    1.5    0.0     8.5    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          194    1088000    7.0    0.0     7.0    0.0
+       updateGameState.f.n6 Main                     app\Main.hs:86:6-26          191    1088000    1.9    0.0     7.5    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          192    1088000    5.6    0.0     5.6    0.0
+       updateGameState.f.n7 Main                     app\Main.hs:87:6-26          189    1088000    1.5    0.0     8.0    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          190    1088000    6.6    0.0     6.6    0.0
+       updateGameState.f.n8 Main                     app\Main.hs:88:6-26          187    1088000    1.4    0.0     8.3    0.0
+        updateGameState.g   Main                     app\Main.hs:93:4-50          188    1088000    6.8    0.0     6.8    0.0
+   loop.\                   Main                     app\Main.hs:24:35-60         206          1    0.2    0.5     0.3    0.5
+    viewGameState           Main                     app\Main.hs:(97,2)-(110,34)  207          1    0.0    0.0     0.1    0.1
+     viewGameState.f        Main                     app\Main.hs:(106,4)-(107,35) 211         17    0.1    0.0     0.1    0.0
+      viewGameState.g       Main                     app\Main.hs:(109,4)-(110,34) 212        288    0.0    0.0     0.0    0.0
+       viewGameState.b2c    Main                     app\Main.hs:100:4-33         217        272    0.0    0.0     0.0    0.0
+     viewGameState.xv       Main                     app\Main.hs:102:4-42         208          1    0.0    0.0     0.0    0.0
+      viewGameState.yv      Main                     app\Main.hs:104:4-51         213         16    0.0    0.0     0.0    0.0
