@@ -34,7 +34,7 @@ module Main where
  -- z = (1, 0)
  -- w = (1, 2)
  -- v = (2, 1)
- type GameState = UArray (Int8, Int8) Bool
+ type GameState = UArray (Int, Int) Int
 
  -- | Build array by function to compute elements from index
  arrayByIndex
@@ -45,15 +45,15 @@ module Main where
  arrayByIndex bd f = array bd [ (i, f i) | i <- range bd ]
 
  -- | Width of x
- xWidth :: Int8
+ xWidth :: Int
  xWidth = 16
 
  -- | Width of y
- yWidth :: Int8
+ yWidth :: Int
  yWidth = 17
 
  -- | Size of the field
- fieldSize :: ((Int8, Int8), (Int8, Int8))
+ fieldSize :: ((Int, Int), (Int, Int))
  fieldSize = ((0, 0), (xWidth - 1, yWidth - 1))
 
  -- | Initial state of the game
@@ -63,19 +63,19 @@ module Main where
    -- -#-
    -- --#
    -- ###
-   f :: Int8 -> Int8 -> Bool
-   f 0 1 = True
-   f 1 2 = True
-   f 2 0 = True
-   f 2 1 = True
-   f 2 2 = True
-   f _ _ = False
+   f :: Int -> Int -> Int
+   f 0 1 = 1
+   f 1 2 = 1
+   f 2 0 = 1
+   f 2 1 = 1
+   f 2 2 = 1
+   f _ _ = 0
 
  -- | Update state of the game
  updateGameState :: GameState -> GameState
  updateGameState a = arrayByIndex fieldSize (uncurry f)
   where
-   f :: Int8 -> Int8 -> Bool
+   f :: Int -> Int -> Int
    f x y = let
      n0 = g (x - 1, y - 1)
      n1 = g (x - 1, y    )
@@ -86,26 +86,26 @@ module Main where
      n6 = g (x + 1, y - 1)
      n7 = g (x + 1, y    )
      n8 = g (x + 1, y + 1)
-     n = length $ filter id [n0, n1, n2, n3, n5, n6, n7, n8]
+     n = n0 + n1 + n2 + n3 + n5 + n6 + n7 + n8
     in
-     if n4 then n == 2 || n == 3 else n == 3
-   g :: (Int8, Int8) -> Bool
+     if n4 == 0 then n == 3 else n == 2 || n == 3
+   g :: (Int, Int) -> Int
    g (x, y) = a ! (x `mod` xWidth, y `mod` yWidth)
 
  -- | View state of the game
  viewGameState :: GameState -> String
  viewGameState a = f xv
   where
-   b2c :: Bool -> Char
-   b2c x = if x then '#' else '-'
-   xv :: [[Bool]]
+   i2c :: Int -> Char
+   i2c x = if x == 0 then '-' else '#'
+   xv :: [[Int]]
    xv = [ yv x | x <- [ 0 .. xWidth - 1] ]
-   yv :: Int8 -> [Bool]
+   yv :: Int -> [Int]
    yv x = [ a ! (x, y) | y <- [ 0 .. yWidth - 1 ] ]
-   f :: [[Bool]] -> String
+   f :: [[Int]] -> String
    f []       = ""
    f (x : xs) = g x ++ "\n" ++ f xs
-   g :: [Bool] -> String
+   g :: [Int] -> String
    g []       = ""
    g (x : xs) = ' ' : b2c x : g xs
 
