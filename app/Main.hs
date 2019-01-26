@@ -26,5 +26,6 @@ module Main where
   |                   n `mod` 5 == 0 = "Buzz"
   | otherwise                        = show n
 
+ -- approx. (32/15) * x + (7/15) * x * log_10 x
  fizz_buzz_length :: Int -> Int
  fizz_buzz_length n = length $ concat $ map fizz_buzz [1..n]
