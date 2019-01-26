@@ -26,10 +26,6 @@ module Main where
   |                   n `mod` 5 == 0 = "Buzz"
   | otherwise                        = show n
 
- -- approx. (32/15) * x + (7/15) * x * log_10 x
- fizz_buzz_length :: Int -> Int
- fizz_buzz_length n = length $ concat $ map fizz_buzz [1..n]
-
  -- 1: 12Fizz4BuzzFizz78Fizz
  -- 2: Buzz11Fizz1314FizzBuzz16...
  -- 3: Buzz101Fizz103104FizzBuzz106...
@@ -37,3 +33,9 @@ module Main where
  fizz_buzz_class_size 1 = 21
  fizz_buzz_class_size n = 6 * 10 ^ (n - 2) * f n where
   f n = 8 * n + 32
+
+ fizz_buzz_classification :: Int -> Int
+ fizz_buzz_classification n = go n 0 where
+  go :: Int -> Int -> Int
+  go n k = k `seq`
+   if n <= 0 then k else go (n - fizz_buzz_class_size (k + 1)) (k + 1)
