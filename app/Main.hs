@@ -58,4 +58,4 @@ module Main where
 
  -- ちょっと前に発言された整数は何か、どれだけ文字列を切り捨てないといけないか
  fizz_buzz_culc :: Int -> (Int, Int) -> (Int, Int)
- fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15 + 1, r)
+ fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15 + 1, r - 1)
