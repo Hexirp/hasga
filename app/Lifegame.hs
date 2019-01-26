@@ -1,9 +1,9 @@
-module Main where
+module Lifegame where
 
  import Prelude
 
  import Control.Exception (evaluate)
- import Control.Concurrent (threadDelay)
+ import Control.Concurrent (threadDelay) -- 速度をいじるときに使う
 
  import Data.List (intercalate)
 
