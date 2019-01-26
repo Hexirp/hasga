@@ -2,122 +2,60 @@ module Main where
 
  import Prelude
 
- import Control.Exception (evaluate)
- import Control.Concurrent (threadDelay)
-
- import Data.List (intercalate)
-
- import Data.Int
-
- import Data.Ix
- import Data.Array.IArray
- import Data.Array.Unboxed
-
- import System.IO
-
  main :: IO ()
  main = do
-  hSetBuffering stdout NoBuffering
-  loop newGameState $ 40 * 1000
+  s <- return $ 10 ^ 18 :: IO Int
+  putStrLn $ fizz_buzz_string_r s
 
- loop :: GameState -> Int -> IO ()
- loop a 0 = evaluate a >>= \a' -> putStrLn (viewGameState a)
- loop a i = evaluate a >>= \a' -> loop (updateGameState a') (i - 1)
+ fizz_buzz_string_r :: Int -> String
+ fizz_buzz_string_r s =
+  let
+   (n, k) = fizz_buzz_class s
+   (q, r) = fizz_buzz_period (n, k)
+   (t, p) = fizz_buzz_culc k (q, r)
+  in
+   fizz_buzz_string_t t p
 
- -- xy-.
- -- z-w.
- -- -v-.
- -- ....
- --
- -- x = (0, 0)
- -- y = (0, 1)
- -- z = (1, 0)
- -- w = (1, 2)
- -- v = (2, 1)
- type GameState = UArray (Int, Int) Int
+ fizz_buzz_string_t :: Int -> Int -> String
+ fizz_buzz_string_t c s = take 20 $ fizz_buzz_string_d c s
 
- -- | Build array by function to compute elements from index
- arrayByIndex
-  :: (IArray a e, Ix i)
-  => (i, i) -- ^ bounds of the array: (lower, highest)
-  -> (i -> e) -- ^ function to compute elements from index
-  -> a i e
- arrayByIndex bd f = array bd [ (i, f i) | i <- range bd ]
+ fizz_buzz_string_d :: Int -> Int -> String
+ fizz_buzz_string_d c s = drop s $ fizz_buzz_string c
 
- -- | Width of x
- xWidth :: Int
- xWidth = 16
+ fizz_buzz_string :: Int -> String
+ fizz_buzz_string c = concat $ fizz_buzz_list c
 
- -- | Width of y
- yWidth :: Int
- yWidth = 17
+ fizz_buzz_list :: Int -> [String]
+ fizz_buzz_list c = map fizz_buzz [c..]
 
- -- | Size of the field
- fieldSize :: ((Int, Int), (Int, Int))
- fieldSize = ((0, 0), (xWidth - 1, yWidth - 1))
+ fizz_buzz :: Int -> String
+ fizz_buzz n
+  | n `mod` 3 == 0 && n `mod` 5 == 0 = "FizzBuzz"
+  | n `mod` 3 == 0                   = "Fizz"
+  |                   n `mod` 5 == 0 = "Buzz"
+  | otherwise                        = show n
 
- -- | Initial state of the game
- newGameState :: GameState
- newGameState = arrayByIndex fieldSize (uncurry f)
-  where
-   -- -#-
-   -- --#
-   -- ###
-   f :: Int -> Int -> Int
-   f 0 1 = 1
-   f 1 2 = 1
-   f 2 0 = 1
-   f 2 1 = 1
-   f 2 2 = 1
-   f _ _ = 0
+ -- 1: 12Fizz4BuzzFizz78Fizz
+ -- 2: Buzz11Fizz1314FizzBuzz16...
+ -- 3: Buzz101Fizz103104FizzBuzz106...
+ fizz_buzz_class_size :: Int -> Int
+ fizz_buzz_class_size 1 = 21
+ fizz_buzz_class_size n = 6 * 10 ^ (n - 2) * fizz_buzz_period_size n
 
- -- | Update state of the game
- updateGameState :: GameState -> GameState
- updateGameState a = arrayByIndex fieldSize (uncurry f)
-  where
-   b2i :: Bool -> Int
-   b2i False = 0
-   b2i True  = 1
-   f :: Int -> Int -> Int
-   f x y = let
-     xn = x - 1
-     xz = x
-     xp = x + 1
-     yn = y - 1
-     yz = y
-     yp = y + 1
-     n0 = g (xn, yn)
-     n1 = g (xn, yz)
-     n2 = g (xn, yp)
-     n3 = g (xz, yn)
-     n4 = g (xz, yz)
-     n5 = g (xz, yp)
-     n6 = g (xp, yn)
-     n7 = g (xp, yz)
-     n8 = g (xp, yp)
-     n = n0 + n1 + n2 + n3 + n5 + n6 + n7 + n8
-    in
-     if n4 == 0 then b2i (n == 3) else b2i (n == 2 || n == 3)
-   g :: (Int, Int) -> Int
-   g (x, y) = a ! (x `mod` xWidth, y `mod` yWidth)
+ fizz_buzz_period_size :: Int -> Int
+ fizz_buzz_period_size n = 8 * n + 32
 
- -- | View state of the game
- viewGameState :: GameState -> String
- viewGameState a = f xv
-  where
-   i2c :: Int -> Char
-   i2c x = if x == 0 then '-' else '#'
-   xv :: [[Int]]
-   xv = [ yv x | x <- [ 0 .. xWidth - 1] ]
-   yv :: Int -> [Int]
-   yv x = [ a ! (x, y) | y <- [ 0 .. yWidth - 1 ] ]
-   f :: [[Int]] -> String
-   f []       = ""
-   f (x : xs) = g x ++ "\n" ++ f xs
-   g :: [Int] -> String
-   g []       = ""
-   g (x : xs) = ' ' : i2c x : g xs
+ -- 全体でn番目の文字がどのクラスに入っているか、そしてクラスの中で何番目か
+ fizz_buzz_class :: Int -> (Int, Int)
+ fizz_buzz_class n = go (n, 1) where
+  go :: (Int, Int) -> (Int, Int)
+  go (n, k) = let c = fizz_buzz_class_size k in
+   if n <= c then (n, k) else go (n - c, k + 1)
 
- -- References:
- -- - https://github.com/Hexirp/haskell-gist/blob/f940d84bd79c2d6d9f05ad68f93152abeeed6297/Lifegame.hs
- -- - https://qiita.com/lotz/items/bdb04c771efc8919b79c
+ -- クラスkの中でn番目の文字がどの周期に入っているか、その中で何番目か
+ fizz_buzz_period :: (Int, Int) -> (Int, Int)
+ fizz_buzz_period (n, k) = quotRem n (fizz_buzz_period_size k)
+
+ -- ちょっと前に発言された整数は何か、どれだけ文字列を切り捨てないといけないか
+ fizz_buzz_culc :: Int -> (Int, Int) -> (Int, Int)
+ fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15 + 1, r - 1)
