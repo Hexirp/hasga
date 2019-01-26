@@ -42,11 +42,11 @@ module Main where
   go :: (Int, Int) -> (Int, Int)
   go n k = let c = fizz_buzz_class_size k in
    if n <= c then (n, k) else go (n - c, k + 1)
- 
+
  -- クラスkの中でn番目の文字がどの周期に入っているか、その中で何番目か
  fizz_buzz_period :: (Int, Int) -> (Int, Int)
  fizz_buzz_period (n, k) = quotRem n (fizz_buzz_period_size k)
 
  -- ちょっと前に発言された整数は何か、どれだけ文字列を切り捨てないといけないか
- fizz_buzz_culc :: Int -> Int
- fizz_buzz_culc = undefined
+ fizz_buzz_culc :: Int -> (Int, Int) -> (Int, Int)
+ fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15, r)
