@@ -34,8 +34,10 @@ module Main where
  fizz_buzz_class_size n = 6 * 10 ^ (n - 2) * f n where
   f n = 8 * n + 32
 
- fizz_buzz_classification :: Int -> Int
+ fizz_buzz_classification :: Int -> (Int, Int)
  fizz_buzz_classification n = go n 0 where
-  go :: Int -> Int -> Int
+  go :: Int -> Int -> (Int, Int)
   go n k = k `seq`
-   if n <= 0 then k else go (n - fizz_buzz_class_size (k + 1)) (k + 1)
+   if n <= 0
+    then (k, n)
+    else go (n - fizz_buzz_class_size (k + 1)) (k + 1)
