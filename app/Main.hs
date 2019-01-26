@@ -7,17 +7,26 @@ module Main where
   s <- return 1000000000 :: IO Int
   putStrLn $ fizz_buzz_string_t s
 
- fizz_buzz_string_t :: Int -> String
- fizz_buzz_string_t s = take 20 $ fizz_buzz_string_d s
+ fizz_buzz_string_r :: Int -> String
+ fizz_buzz_string_r s =
+  let
+   (n, k) = fizz_buzz_class s
+   (q, r) = fizz_buzz_period (n, k)
+   (t, p) = fizz_buzz_culc k (q, r)
+  in
+   fizz_buzz_string_t t p
 
- fizz_buzz_string_d :: Int -> String
- fizz_buzz_string_d s = drop (s - 1) $ fizz_buzz_string
+ fizz_buzz_string_t :: Int -> Int -> String
+ fizz_buzz_string_t c s = take 20 $ fizz_buzz_string_d c s
 
- fizz_buzz_string :: String
- fizz_buzz_string = concat fizz_buzz_list
+ fizz_buzz_string_d :: Int -> Int -> String
+ fizz_buzz_string_d c s = drop s $ fizz_buzz_string c
 
- fizz_buzz_list :: [String]
- fizz_buzz_list = map fizz_buzz [1..]
+ fizz_buzz_string :: Int -> String
+ fizz_buzz_string c = concat $ fizz_buzz_list c
+
+ fizz_buzz_list :: Int -> [String]
+ fizz_buzz_list c = map fizz_buzz [c..]
 
  fizz_buzz :: Int -> String
  fizz_buzz n
@@ -49,4 +58,4 @@ module Main where
 
  -- ちょっと前に発言された整数は何か、どれだけ文字列を切り捨てないといけないか
  fizz_buzz_culc :: Int -> (Int, Int) -> (Int, Int)
- fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15, r)
+ fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15 + 1, r)
