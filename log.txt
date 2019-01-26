@@ -1,12 +1,67 @@
-*Main Lib Lifegame> fizz_buzz_classification 1
-1
-*Main Lib Lifegame> fizz_buzz_classification 2
-1
-*Main Lib Lifegame> fizz_buzz_classification 21
-1
-*Main Lib Lifegame> fizz_buzz_classification 22
-2
-*Main Lib Lifegame> fizz_buzz_classification 100000
-5
-*Main Lib Lifegame> fizz_buzz_classification 10000000000000000
-15
+*Main> fizz_buzz_string_r 1
+"12Fizz4BuzzFizz78Fiz"
+*Main> fizz_buzz_string_r 2
+"2Fizz4BuzzFizz78Fizz"
+*Main> fizz_buzz_string_r 3
+"Fizz4BuzzFizz78FizzB"
+*Main> fizz_buzz_string_r 4
+"izz4BuzzFizz78FizzBu"
+*Main> fizz_buzz_string_r 5
+"zz4BuzzFizz78FizzBuz"
+*Main> fizz_buzz_string_r 6
+"z4BuzzFizz78FizzBuzz"
+*Main> fizz_buzz_string_r 7
+"4BuzzFizz78FizzBuzz1"
+*Main> fizz_buzz_string_r 20
+"zzBuzz11Fizz1314Fizz"
+*Main> fizz_buzz_string_r 19
+"izzBuzz11Fizz1314Fiz"
+*Main> fizz_buzz_string_r 18
+"FizzBuzz11Fizz1314Fi"
+*Main> fizz_buzz_string_r 17
+"8FizzBuzz11Fizz1314F"
+*Main> fizz_buzz_string_r 21
+"zBuzz11Fizz1314FizzB"
+*Main> fizz_buzz_string_r 25
+"z11Fizz1314FizzBuzz1"
+*Main> fizz_buzz_string_r 26
+"11Fizz1314FizzBuzz16"
+*Main> fizz_buzz_string_r (10 ^ 10)
+"93FizzBuzz1418650796"
+*Main> fizz_buzz_string_r (10 ^ 10 + 1)
+"3FizzBuzz1418650796F"
+*Main> fizz_buzz_string_r (10 ^ 10 + 2)
+"FizzBuzz1418650796Fi"
+*Main> fizz_buzz_string_r (10 ^ 11)
+"Fizz1324074074213240"
+*Main> fizz_buzz_string_r (10 ^ 20)
+"Buzz6814298008732202"
+*Main> fizz_buzz_string_r (10 ^ 20 + 1)
+"Buzz6814298008732202"
+*Main> fizz_buzz_string_r (10 ^ 20 - 1)
+"Buzz6814298008732202"
+*Main> fizz_buzz_string_r (10 ^ 18)
+"14814814BuzzFizz8981"
+*Main> fizz_buzz_string_r (10 ^ 18 + 1)
+"4814814BuzzFizz89814"
+*Main> fizz_buzz_string_r (10 ^ 19)
+"-3167529027641081849"
+
+*Main Lib Lifegame> 2 ^ 31
+2147483648
+*Main Lib Lifegame> 2 ^ 31 + 1
+2147483649
+*Main Lib Lifegame> 2 ^ 32
+4294967296
+*Main Lib Lifegame> 2 ^ 32 + 1
+4294967297
+*Main Lib Lifegame> 2 ^ 64
+18446744073709551616
+*Main Lib Lifegame> 2 ^ 64 + 1
+18446744073709551617
+*Main Lib Lifegame> (2 ^ 32) :: Int
+4294967296
+*Main Lib Lifegame> (2 ^ 32 + 1) :: Int
+4294967297
+*Main Lib Lifegame> (2 ^ 64) :: Int
+0
