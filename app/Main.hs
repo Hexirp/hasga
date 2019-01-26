@@ -34,8 +34,6 @@ module Main where
  -- 2: Buzz11Fizz1314FizzBuzz16...
  -- 3: Buzz101Fizz103104FizzBuzz106...
  fizz_buzz_class_size :: Int -> Int
- fizz_buzz_class_size n = chp n + fb n where
-  chp n = 9 * 10 ^ (n - 1) * (pre n + body n + suf n)
-  fb n = pre_fb n + body_fb n + suf_fb n
-
-  pre n = 
+ fizz_buzz_class_size 1 = 21
+ fizz_buzz_class_size n = 6 * 10 ^ (n - 2) * f n where
+  f n = 8 * n + 32
