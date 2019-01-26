@@ -29,3 +29,13 @@ module Main where
  -- approx. (32/15) * x + (7/15) * x * log_10 x
  fizz_buzz_length :: Int -> Int
  fizz_buzz_length n = length $ concat $ map fizz_buzz [1..n]
+
+ -- 1: 12Fizz4BuzzFizz78Fizz
+ -- 2: Buzz11Fizz1314FizzBuzz16...
+ -- 3: Buzz101Fizz103104FizzBuzz106...
+ fizz_buzz_class_size :: Int -> Int
+ fizz_buzz_class_size n = chp n + fb n where
+  chp n = 9 * 10 ^ (n - 1) * (pre n + body n + suf n)
+  fb n = pre_fb n + body_fb n + suf_fb n
+
+  pre n = 
