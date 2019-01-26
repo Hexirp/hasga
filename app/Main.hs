@@ -4,11 +4,20 @@ module Main where
 
  main :: IO ()
  main = do
-  s <- readLn :: IO Int
-  putStrLn $ take 20 $ drop (s - 1) $ fizz_buzz_string
+  s <- return 100 :: IO Int
+  putStrLn $ fizz_buzz_string_t s
+
+ fizz_buzz_string_t :: Int -> String
+ fizz_buzz_string_t s = take 20 $ fizz_buzz_string_d s
+
+ fizz_buzz_string_d :: Int -> String
+ fizz_buzz_string_d s = drop (s - 1) fizz_buzz_string
 
  fizz_buzz_string :: String
- fizz_buzz_string = concat $ map fizz_buzz [1..]
+ fizz_buzz_string = concat fizz_buzz_list
+
+ fizz_buzz_list :: [String]
+ fizz_buzz_list = map fizz_buzz [1..]
 
  fizz_buzz :: Int -> String
  fizz_buzz n
