@@ -8,16 +8,19 @@ module Main where
   putStrLn $ fizz_buzz_string_t s
 
  fizz_buzz_string_t :: Int -> String
- fizz_buzz_string_t s = take 20 $ fizz_buzz_string_d s
+ fizz_buzz_string_t s = take 20 $ fizz_buzz_string_d s $ fizz_buzz_estimate s
 
- fizz_buzz_string_d :: Int -> String
- fizz_buzz_string_d s = drop (s - 1) fizz_buzz_string
+ fizz_buzz_string_d :: Int -> Int -> String
+ fizz_buzz_string_d s c = let cut = fizz_buzz_length c in
+  if cut <= s
+   then drop (s - cut - 2) $ fizz_buzz_string c
+   else error "The estimate failed!"
 
- fizz_buzz_string :: String
- fizz_buzz_string = concat fizz_buzz_list
+ fizz_buzz_string :: Int -> String
+ fizz_buzz_string c = concat $ fizz_buzz_list c
 
- fizz_buzz_list :: [String]
- fizz_buzz_list = map fizz_buzz [1..]
+ fizz_buzz_list :: Int -> [String]
+ fizz_buzz_list c = map fizz_buzz [c..]
 
  fizz_buzz :: Int -> String
  fizz_buzz n
@@ -25,3 +28,9 @@ module Main where
   | n `mod` 3 == 0                   = "Fizz"
   |                   n `mod` 5 == 0 = "Buzz"
   | otherwise                        = show n
+
+ fizz_buzz_estimate :: Int -> Int
+ fizz_buzz_estimate = undefined
+
+ fizz_buzz_length :: Int -> Int
+ fizz_buzz_length = undefined
