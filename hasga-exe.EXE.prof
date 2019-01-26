@@ -1,23 +1,22 @@
-	Sat Jan 26 13:13 2019 Time and Allocation Profiling Report  (Final)
+	Sat Jan 26 13:14 2019 Time and Allocation Profiling Report  (Final)
 
 	   hasga-exe.EXE +RTS -N -p -RTS
 
-	total time  =        0.02 secs   (87 ticks @ 1000 us, 4 processors)
-	total alloc =  98,173,512 bytes  (excludes profiling overheads)
+	total time  =        0.01 secs   (40 ticks @ 1000 us, 4 processors)
+	total alloc = 979,313,616 bytes  (excludes profiling overheads)
 
 COST CENTRE        MODULE SRC                         %time %alloc
 
-fizz_buzz_string   Main   app\Main.hs:17:2-41          42.5   61.9
-fizz_buzz          Main   app\Main.hs:(23,2)-(27,45)   28.7   23.5
-fizz_buzz_list     Main   app\Main.hs:20:2-37          14.9   14.6
-fizz_buzz_string_d Main   app\Main.hs:14:2-53          10.3    0.0
-MAIN               MAIN   <built-in>                    3.4    0.0
+fizz_buzz_string   Main   app\Main.hs:17:2-41          47.5   61.6
+fizz_buzz          Main   app\Main.hs:(23,2)-(27,45)   35.0   25.1
+fizz_buzz_list     Main   app\Main.hs:20:2-37          10.0   13.3
+fizz_buzz_string_d Main   app\Main.hs:14:2-53           7.5    0.0
 
 
                                                                                               individual      inherited
 COST CENTRE            MODULE                   SRC                        no.     entries  %time %alloc   %time %alloc
 
-MAIN                   MAIN                     <built-in>                  92          0    3.4    0.0   100.0  100.0
+MAIN                   MAIN                     <built-in>                  92          0    0.0    0.0   100.0  100.0
  CAF                   GHC.IO.Encoding.CodePage <entire-module>            169          0    0.0    0.0     0.0    0.0
  CAF                   GHC.IO.Encoding          <entire-module>            163          0    0.0    0.0     0.0    0.0
  CAF                   GHC.Conc.Windows         <entire-module>            160          0    0.0    0.0     0.0    0.0
@@ -26,15 +25,15 @@ MAIN                   MAIN                     <built-in>                  92  
  CAF:fizz_buzz1        Main                     <no location info>         115          0    0.0    0.0     0.0    0.0
  CAF:fizz_buzz3        Main                     <no location info>         114          0    0.0    0.0     0.0    0.0
  CAF:fizz_buzz5        Main                     <no location info>         113          0    0.0    0.0     0.0    0.0
- CAF:fizz_buzz_list    Main                     app\Main.hs:20:2-15        116          0    0.0    0.0    43.7   38.0
-  fizz_buzz_list       Main                     app\Main.hs:20:2-37        190          1   14.9   14.6    43.7   38.0
-   fizz_buzz           Main                     app\Main.hs:(23,2)-(27,45) 191     198615   28.7   23.5    28.7   23.5
- CAF:fizz_buzz_string  Main                     app\Main.hs:17:2-17        117          0    0.0    0.0    42.5   61.9
-  fizz_buzz_string     Main                     app\Main.hs:17:2-41        189          1   42.5   61.9    42.5   61.9
+ CAF:fizz_buzz_list    Main                     app\Main.hs:20:2-15        116          0    0.0    0.0    45.0   38.4
+  fizz_buzz_list       Main                     app\Main.hs:20:2-37        190          1   10.0   13.3    45.0   38.4
+   fizz_buzz           Main                     app\Main.hs:(23,2)-(27,45) 191    1805559   35.0   25.1    35.0   25.1
+ CAF:fizz_buzz_string  Main                     app\Main.hs:17:2-17        117          0    0.0    0.0    47.5   61.6
+  fizz_buzz_string     Main                     app\Main.hs:17:2-41        189          1   47.5   61.6    47.5   61.6
  CAF:main1             Main                     <no location info>         119          0    0.0    0.0     0.0    0.0
   main                 Main                     app\Main.hs:(6,2)-(8,33)   184          1    0.0    0.0     0.0    0.0
- CAF:main2             Main                     <no location info>         118          0    0.0    0.0    10.3    0.0
-  main                 Main                     app\Main.hs:(6,2)-(8,33)   186          0    0.0    0.0    10.3    0.0
-   fizz_buzz_string_t  Main                     app\Main.hs:11:2-54        187          1    0.0    0.0    10.3    0.0
-    fizz_buzz_string_d Main                     app\Main.hs:14:2-53        188          1   10.3    0.0    10.3    0.0
+ CAF:main2             Main                     <no location info>         118          0    0.0    0.0     7.5    0.0
+  main                 Main                     app\Main.hs:(6,2)-(8,33)   186          0    0.0    0.0     7.5    0.0
+   fizz_buzz_string_t  Main                     app\Main.hs:11:2-54        187          1    0.0    0.0     7.5    0.0
+    fizz_buzz_string_d Main                     app\Main.hs:14:2-53        188          1    7.5    0.0     7.5    0.0
  main                  Main                     app\Main.hs:(6,2)-(8,33)   185          0    0.0    0.0     0.0    0.0
