@@ -1,0 +1,16 @@
+*Main Lib Lifegame> fizz_buzz 1
+"1"
+*Main Lib Lifegame> fizz_buzz 3
+"Fizz"
+*Main Lib Lifegame> fizz_buzz 2
+"2"
+*Main Lib Lifegame> fizz_buzz 150
+"FizzBuzz"
+*Main Lib Lifegame> take 1 $ fizz_buzz_string
+"1"
+*Main Lib Lifegame> take 3 $ fizz_buzz_string
+"12F"
+*Main Lib Lifegame> take 20 $ fizz_buzz_string
+"12Fizz4BuzzFizz78Fiz"
+*Main Lib Lifegame> take 20 $ drop 1 $ fizz_buzz_string
+"2Fizz4BuzzFizz78Fizz"
