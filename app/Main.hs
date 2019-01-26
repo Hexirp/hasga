@@ -4,7 +4,7 @@ module Main where
 
  main :: IO ()
  main = do
-  s <- return 1000000000 :: IO Int
+  s <- return 10000000000 :: IO Int
   putStrLn $ fizz_buzz_string_r s
 
  fizz_buzz_string_r :: Int -> String
