@@ -1,7 +1,60 @@
-$ stack exec -- hasga-exe
+*Main Lib Lifegame> fizz_buzz_length 1
 1
-12Fizz4BuzzFizz78Fiz
-
-$ stack exec -- hasga-exe
-20
-zzBuzz11Fizz1314Fizz
+*Main Lib Lifegame> fizz_buzz_length 2
+2
+*Main Lib Lifegame> fizz_buzz_length 3
+6
+*Main Lib Lifegame> fizz_buzz_length 4
+7
+*Main Lib Lifegame> fizz_buzz_length 5
+11
+*Main Lib Lifegame> fizz_buzz_length 6
+15
+*Main Lib Lifegame> fizz_buzz_length 7
+16
+*Main Lib Lifegame> fizz_buzz_length 8
+17
+*Main Lib Lifegame> fizz_buzz_length 9
+21
+*Main Lib Lifegame> fizz_buzz_length 10
+25
+*Main Lib Lifegame> fizz_buzz_length 20
+57
+*Main Lib Lifegame> fizz_buzz_length 30
+91
+*Main Lib Lifegame> fizz_buzz_length 40
+121
+*Main Lib Lifegame> fizz_buzz_length 50
+153
+*Main Lib Lifegame> fizz_buzz_length 60
+187
+*Main Lib Lifegame> fizz_buzz_length 70
+217
+*Main Lib Lifegame> fizz_buzz_length 80
+249
+*Main Lib Lifegame> fizz_buzz_length 90
+283
+*Main Lib Lifegame> fizz_buzz_length 100
+313
+*Main Lib Lifegame> fizz_buzz_length 200
+687
+*Main Lib Lifegame> fizz_buzz_length 300
+1062
+*Main Lib Lifegame> fizz_buzz_length 400
+1433
+*Main Lib Lifegame> fizz_buzz_length 500
+1807
+*Main Lib Lifegame> fizz_buzz_length 600
+2182
+*Main Lib Lifegame> fizz_buzz_length 700
+2553
+*Main Lib Lifegame> fizz_buzz_length 800
+2927
+*Main Lib Lifegame> fizz_buzz_length 900
+3302
+*Main Lib Lifegame> fizz_buzz_length 1000
+3673
+*Main Lib Lifegame> fizz_buzz_length 10000
+42073
+*Main Lib Lifegame> fizz_buzz_length 100000
+474073
