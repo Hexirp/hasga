@@ -5,7 +5,7 @@ module Main where
  main :: IO ()
  main = do
   s <- return 1000000000 :: IO Int
-  putStrLn $ fizz_buzz_string_t s
+  putStrLn $ fizz_buzz_string_r s
 
  fizz_buzz_string_r :: Int -> String
  fizz_buzz_string_r s =
@@ -49,7 +49,7 @@ module Main where
  fizz_buzz_class :: Int -> (Int, Int)
  fizz_buzz_class n = go (n, 1) where
   go :: (Int, Int) -> (Int, Int)
-  go n k = let c = fizz_buzz_class_size k in
+  go (n, k) = let c = fizz_buzz_class_size k in
    if n <= c then (n, k) else go (n - c, k + 1)
 
  -- クラスkの中でn番目の文字がどの周期に入っているか、その中で何番目か
