@@ -31,12 +31,22 @@ module Main where
  -- 3: Buzz101Fizz103104FizzBuzz106...
  fizz_buzz_class_size :: Int -> Int
  fizz_buzz_class_size 1 = 21
- fizz_buzz_class_size n = 6 * 10 ^ (n - 2) * f n where
-  f n = 8 * n + 32
+ fizz_buzz_class_size n = 6 * 10 ^ (n - 2) * fizz_buzz_period_size n
 
- -- n 番目の文字がどのクラスに入っているか、そしてクラスの中で何番目か
- fizz_buzz_classification :: Int -> (Int, Int)
- fizz_buzz_classification n = go (n, 1) where
+ fizz_buzz_period_size :: Int -> Int
+ fizz_buzz_period_size n = 8 * n + 32
+
+ -- 全体でn番目の文字がどのクラスに入っているか、そしてクラスの中で何番目か
+ fizz_buzz_class :: Int -> (Int, Int)
+ fizz_buzz_class n = go (n, 1) where
   go :: (Int, Int) -> (Int, Int)
   go n k = let c = fizz_buzz_class_size k in
    if n <= c then (n, k) else go (n - c, k + 1)
+ 
+ -- クラスkの中でn番目の文字がどの周期に入っているか、その中で何番目か
+ fizz_buzz_period :: (Int, Int) -> (Int, Int)
+ fizz_buzz_period (n, k) = quotRem n (fizz_buzz_period_size k)
+
+ -- ちょっと前に発言された整数は何か、どれだけ文字列を切り捨てないといけないか
+ fizz_buzz_culc :: Int -> Int
+ fizz_buzz_culc = undefined
