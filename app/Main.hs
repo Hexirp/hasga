@@ -20,7 +20,7 @@ module Main where
  fizz_buzz_string_t c s = take 20 $ fizz_buzz_string_d c s
 
  fizz_buzz_string_d :: Int -> Int -> String
- fizz_buzz_string_d c s = drop s $ fizz_buzz_string c
+ fizz_buzz_string_d c s = drop (s - 1) $ fizz_buzz_string c
 
  fizz_buzz_string :: Int -> String
  fizz_buzz_string c = concat $ fizz_buzz_list c
@@ -56,6 +56,6 @@ module Main where
  fizz_buzz_period :: (Int, Int) -> (Int, Int)
  fizz_buzz_period (n, k) = quotRem n (fizz_buzz_period_size k)
 
- -- ちょっと前に発言された整数は何か、どれだけ文字列を切り捨てないといけないか
+ -- ちょっと前に発言された整数は何か、返すべき文字列の先頭は何番目か
  fizz_buzz_culc :: Int -> (Int, Int) -> (Int, Int)
- fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15 + 1, r - 1)
+ fizz_buzz_culc k (q, r) = ((10 ^ (k - 1) - 1) + q * 15 + 1, r)
